@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An independent, bilingual (English/Arabic) reference for vitamins, minerals and herbs: adult RDA/AI, upper limits, food sources, absorption tips, drug interactions, and live NIH DSLD label search.">
+<meta name="theme-color" content="#faf6ef">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Nutrient Glossary">
+<meta property="og:title" content="The Nutrient Glossary — Independent Vitamins, Minerals &amp; Herbs Reference">
+<meta property="og:description" content="Evidence-based RDA/AI values, upper limits, food sources, absorption tips and drug interactions, with direct links to NIH ODS, NCCIH and MedlinePlus.">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta name="twitter:card" content="summary">
+<title>The Nutrient Glossary — Independent Vitamins, Minerals &amp; Herbs Reference</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2324453a'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%23eadfc4' font-family='Georgia,serif'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="author" href="https://azzubair.ly">
+<meta name="author" content="Azzubair">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Nutrient Glossary",
+  "alternateName": "دليل المغذيات",
+  "description": "Independent bilingual reference for vitamins, minerals, herbs and supplements: adult RDA/AI, upper limits, food sources, absorption guidance, documented interactions and a live NIH DSLD label search.",
+  "inLanguage": ["en", "ar"],
+  "isAccessibleForFree": true,
+  "author": { "@type": "Person", "name": "Azzubair", "url": "https://azzubair.ly" },
+  "creator": { "@type": "Person", "name": "Azzubair", "url": "https://azzubair.ly" },
+  "publisher": { "@type": "Person", "name": "Azzubair", "url": "https://azzubair.ly" },
+  "isBasedOn": [
+    "https://ods.od.nih.gov/factsheets/list-VitaminsMinerals/",
+    "https://ods.od.nih.gov/factsheets/list-Botanicals/",
+    "https://www.nccih.nih.gov/",
+    "https://medlineplus.gov/"
+  ]
+}
+</script>
+<!-- Set language, direction and theme before first paint (prevents a flash) -->
+<script>
+(function () {
+  try {
+    var qs = new URLSearchParams(location.search);
+    var qLang = qs.get('lang'), qTheme = qs.get('theme');
+    if (qLang === 'ar' || qLang === 'en') localStorage.setItem('ng_lang', qLang);
+    if (qTheme === 'dark' || qTheme === 'light') localStorage.setItem('ng_theme', qTheme);
+
+    var saved = localStorage.getItem('ng_lang');
+    var auto = (navigator.language || 'en').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en';
+    var l = saved || auto;
+    document.documentElement.lang = l === 'ar' ? 'ar' : 'en-GB';
+    document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+    var th = localStorage.getItem('ng_theme');
+    if (th) document.documentElement.setAttribute('data-theme', th);
+  } catch (e) {}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Thmanyah Sans (ثمانية سانس) — official family via the community web package -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dawod/thmanyah-font-web@1.2.0/sans.css">
+<style>
+  :root {
+    color-scheme:light;
+    --font-ar:'Thmanyah Sans','IBM Plex Sans Arabic','Segoe UI',system-ui,sans-serif;
+    --cream:#faf6ef; --cream-2:#f3ede1; --card:#ffffff; --elevated:#ffffff;
+    --ink:#20281f; --muted:#636b5f; --line:#e6ddc9;
+    --forest:#24453a; --forest-2:#2f5c4c; --gold:#b68a46; --gold-ink:#8f6428; --gold-soft:#eadfc4;
+    --sage:#8aa78f; --danger:#9d3333; --danger-bg:#fbeaea; --danger-line:#efc7c7;
+    --ok:#245a3d; --ok-bg:#e7f3ec; --ok-line:#bddcc9;
+    --warn:#8f5d14; --warn-bg:#fbf1e1; --warn-line:#e9d2a2;
+    --radius:16px;
+    --shadow:0 12px 30px -18px rgba(36,69,58,.24);
+  }
+  [data-theme="dark"] {
+    color-scheme:dark;
+    --cream:#121714; --cream-2:#1a221d; --card:#1e2722; --elevated:#242f29;
+    --ink:#ece8df; --muted:#a6afa5; --line:#2e3a33;
+    --forest:#9cc5b3; --forest-2:#b7d9ca; --gold:#d4a964; --gold-ink:#d4a964; --gold-soft:#322a1d;
+    --sage:#6a8d75; --danger:#f29b9b; --danger-bg:#331e1e; --danger-line:#5e3333;
+    --ok:#8ed4ad; --ok-bg:#1b2f24; --ok-line:#2e553f;
+    --warn:#ecc17a; --warn-bg:#2e2618; --warn-line:#574525;
+    --shadow:0 14px 34px -18px rgba(0,0,0,.6);
+  }
+
+  .skip-link {
+    position:fixed; inset-inline-start:0; top:-64px; z-index:200;
+    background:var(--ink); color:var(--cream); padding:11px 18px;
+    border-radius:0 0 10px 0; font-size:.86rem; font-weight:600; text-decoration:none;
+    transition:top .16s ease;
+  }
+  [dir="rtl"] .skip-link { border-radius:0 0 0 10px; }
+  .skip-link:focus { top:0; }
+  main:focus { outline:none; }
+
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0; background:var(--cream); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif; line-height:1.65;
+    transition:background-color .2s ease, color .2s ease;
+  }
+  [dir="rtl"] body {
+    font-family:var(--font-ar); font-size:1.02rem; line-height:1.85;
+    letter-spacing:0;
+  }
+  h1, h2, h3, .brand { font-family:'Fraunces',Georgia,serif; }
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .brand,
+  [dir="rtl"] .letter-heading .big {
+    font-family:var(--font-ar); font-weight:700; letter-spacing:0;
+  }
+  /* Thmanyah Sans ships 300/400/500/700/900 — keep Arabic at real weights */
+  [dir="rtl"] h1 { font-weight:700; line-height:1.35; }
+  [dir="rtl"] h3 { font-weight:700; }
+  [dir="rtl"] .brand { font-weight:700; }
+  [dir="rtl"] .hero p, [dir="rtl"] .card .summary { line-height:1.8; }
+
+  button, input, select { font-family:inherit; }
+  [dir="rtl"] input, [dir="rtl"] select, [dir="rtl"] textarea { font-size:1rem; }
+
+  /* ---------- Topbar ---------- */
+  .topbar {
+    display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;
+    padding:14px 28px; border-bottom:1px solid var(--line); background:var(--cream);
+    position:sticky; top:0; z-index:40; backdrop-filter:blur(8px);
+  }
+  .brand-wrap { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .brand-credit {
+    font-size:.66rem; letter-spacing:.06em; text-transform:uppercase; text-decoration:none;
+    color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:3px 9px;
+    transition:all .15s ease;
+  }
+  [dir="rtl"] .brand-credit { letter-spacing:0; text-transform:none; font-size:.72rem; }
+  .brand-credit:hover { color:var(--forest-2); border-color:var(--gold); }
+  .brand { font-size:1.3rem; font-weight:600; color:var(--forest); letter-spacing:.01em; }
+  .brand span { color:var(--gold-ink); }
+  .topbar nav { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .topbar nav button.tab-btn {
+    background:none; border:1px solid transparent; font-size:.86rem; color:var(--muted);
+    cursor:pointer; padding:7px 12px; border-radius:999px; transition:all .15s ease;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  .topbar nav button.tab-btn:hover { color:var(--ink); background:var(--cream-2); }
+  .topbar nav button.tab-btn.active {
+    color:#fff; background:var(--forest); border-color:var(--forest); font-weight:600;
+  }
+  [data-theme="dark"] .topbar nav button.tab-btn.active { color:#121714; }
+  .top-actions { display:flex; gap:8px; align-items:center; }
+  .icon-btn {
+    border:1px solid var(--line); background:var(--card); color:var(--ink);
+    padding:6px 12px; border-radius:999px; cursor:pointer; font-size:.8rem; font-weight:600;
+    display:inline-flex; align-items:center; gap:5px; transition:border-color .15s ease;
+  }
+  .icon-btn:hover { border-color:var(--gold); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    text-align:center; padding:48px 20px 44px;
+    background:
+      radial-gradient(760px 320px at 50% -80px, var(--gold-soft), transparent 70%),
+      var(--cream);
+  }
+  .hero .kicker {
+    display:inline-block; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--forest-2); background:var(--cream-2); border:1px solid var(--line);
+    padding:6px 16px; border-radius:999px; margin-bottom:14px; font-weight:600;
+  }
+  [dir="rtl"] .hero .kicker { letter-spacing:0; }
+  .hero h1 { font-size:clamp(1.9rem,4vw,2.85rem); font-weight:500; margin:0 0 12px; color:var(--forest); line-height:1.25; }
+  .hero p { max-width:680px; margin:0 auto; color:var(--muted); font-size:1rem; }
+
+  .stats-row {
+    display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:20px;
+  }
+  .stat-pill {
+    font-size:.78rem; color:var(--muted); background:var(--card); border:1px solid var(--line);
+    padding:5px 12px; border-radius:999px;
+  }
+  .stat-pill strong { color:var(--forest); }
+
+  .trust-row {
+    display:flex; justify-content:center; gap:8px 18px; flex-wrap:wrap;
+    margin-top:14px; font-size:.76rem; color:var(--muted);
+  }
+  .trust-row span { display:inline-flex; align-items:center; gap:5px; }
+  .trust-row span::before { content:"✓"; color:var(--sage); font-weight:700; font-size:.82rem; }
+
+  main { max-width:1160px; margin:0 auto; padding:0 22px 64px; }
+  body.no-hero .hero { display:none; }
+  body.no-hero main { padding-top:26px; }
+  body.no-hero .panel-header { margin-top:0; }
+
+  /* ---------- Toolbar & Filters ---------- */
+  .toolbar {
+    display:grid; grid-template-columns:minmax(0,1fr) 208px auto;
+    grid-auto-rows:auto; gap:10px; align-items:center;
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:14px 16px; margin:-22px 0 18px; box-shadow:var(--shadow);
+    position:relative; z-index:5;
+  }
+  .adv-filters { grid-column:1 / -1; display:flex; gap:10px; flex-wrap:wrap; }
+  .adv-filters.hidden { display:none; }
+  .adv-filters select { flex:1 1 190px; }
+  .more-btn { height:42px; padding:0 14px; font-size:.82rem; white-space:nowrap; }
+  .more-btn[aria-expanded="true"] { border-color:var(--gold); background:var(--cream-2); }
+  .search-wrap { position:relative; display:flex; align-items:center; min-width:0; }
+  .search-wrap svg.search-ico {
+    position:absolute; inset-inline-start:14px; top:50%; transform:translateY(-50%); opacity:.48; pointer-events:none;
+  }
+  .search-wrap input {
+    width:100%; padding:10px 38px 10px 40px; border:1px solid var(--line); border-radius:10px;
+    font-size:.94rem; background:var(--cream); color:var(--ink); outline:none;
+  }
+  [dir="rtl"] .search-wrap input { padding:10px 40px 10px 38px; }
+  .search-wrap input:focus, select:focus { border-color:var(--gold); }
+  .clear-btn {
+    position:absolute; inset-inline-end:8px; background:none; border:none; color:var(--muted);
+    cursor:pointer; font-size:1.1rem; line-height:1; padding:4px 7px; border-radius:6px; display:none;
+  }
+  .clear-btn.show { display:block; }
+  .clear-btn:hover { background:var(--cream-2); color:var(--ink); }
+
+  .toolbar select {
+    width:100%; padding:10px 10px; border:1px solid var(--line); border-radius:10px;
+    font-size:.86rem; background:var(--cream); color:var(--ink); outline:none; cursor:pointer;
+  }
+
+  .chips { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; align-items:center; }
+  .subchips { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:16px; align-items:center; }
+  .chip {
+    border:1px solid var(--line); background:var(--card); color:var(--muted);
+    padding:6px 14px; border-radius:999px; font-size:.8rem; cursor:pointer; font-weight:500;
+    transition:all .15s ease; display:inline-flex; align-items:center; gap:6px;
+  }
+  .chip:hover { border-color:var(--gold); color:var(--ink); }
+  .chip.active { background:var(--forest); color:#fff; border-color:var(--forest); font-weight:600; }
+  [data-theme="dark"] .chip.active { color:#121714; }
+  .chip.sub { padding:4px 11px; font-size:.75rem; }
+  .chip .badge {
+    font-size:.7rem; padding:1px 6px; border-radius:999px; background:rgba(128,128,128,.14);
+  }
+  .chip.active .badge { background:rgba(255,255,255,.22); }
+
+  /* ---------- A-Z nav ---------- */
+  .az-nav {
+    display:flex; flex-wrap:wrap; gap:4px; justify-content:center;
+    margin:0 0 22px; padding:12px; background:var(--card); border:1px solid var(--line);
+    border-radius:var(--radius);
+  }
+  .az-nav a, .az-nav span.disabled {
+    min-width:29px; height:29px; padding:0 6px; display:inline-flex; align-items:center; justify-content:center;
+    border-radius:50%; text-decoration:none; font-size:.84rem; font-weight:600;
+    font-family:'Fraunces',serif;
+  }
+  [dir="rtl"] .az-nav a, [dir="rtl"] .az-nav span.disabled { font-family:var(--font-ar); font-weight:500; }
+  .az-nav a { color:var(--forest-2); }
+  .az-nav a:hover { background:var(--gold-soft); }
+  .az-nav span.disabled { color:var(--line); cursor:default; }
+
+  .count-bar {
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
+    margin:0 0 18px; color:var(--muted); font-size:.84rem;
+  }
+  .kbd-hint { font-size:.75rem; color:var(--muted); }
+  kbd {
+    background:var(--cream-2); border:1px solid var(--line); border-radius:5px;
+    padding:1px 6px; font-size:.74rem; font-family:monospace;
+  }
+
+  /* ---------- Letter sections & Cards ---------- */
+  .letter-section { margin-bottom:34px; scroll-margin-top:92px; }
+  .letter-heading { display:flex; align-items:center; gap:14px; margin-bottom:14px; }
+  .letter-heading .big {
+    font-size:1.65rem; color:var(--gold-ink); font-weight:600; min-width:34px;
+  }
+  .letter-heading .line { flex:1; height:1px; background:var(--line); }
+
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(285px,1fr)); gap:14px; }
+  .card {
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px 18px 16px; display:flex; flex-direction:column; gap:8px;
+    transition:box-shadow .15s ease, transform .15s ease, border-color .15s ease;
+  }
+  .card:hover { box-shadow:0 16px 34px -22px rgba(36,69,58,.4); transform:translateY(-2px); border-color:var(--sage); }
+  .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  .card h3 {
+    margin:0; font-size:1.08rem; font-weight:600; color:var(--ink); cursor:pointer; line-height:1.3;
+  }
+  .card h3:hover { color:var(--forest-2); text-decoration:underline; text-underline-offset:3px; }
+  .card h3:focus-visible { outline:2px solid var(--gold); outline-offset:3px; border-radius:4px; }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+    outline:2px solid var(--gold); outline-offset:2px;
+  }
+  .card-actions { display:flex; align-items:center; gap:6px; flex-shrink:0; }
+  .star-btn {
+    background:none; border:1px solid transparent; cursor:pointer; font-size:1rem; line-height:1;
+    padding:3px 5px; border-radius:8px; color:var(--muted); transition:all .15s ease;
+  }
+  .star-btn:hover { background:var(--cream-2); color:var(--gold-ink); }
+  .star-btn.saved { color:var(--gold-ink); }
+
+  .tag {
+    flex-shrink:0; font-size:.64rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+    padding:3px 9px; border-radius:999px; white-space:nowrap;
+  }
+  [dir="rtl"] .tag { letter-spacing:0; font-size:.68rem; }
+  .tag.Vitamin { background:#fdf1dc; color:#94620e; }
+  .tag.Mineral { background:#e4ecf6; color:#2a4d7a; }
+  .tag.Herb { background:#e7efe5; color:#2f5c3f; }
+  .tag.Topic { background:#f1e7f4; color:#6a3b7a; }
+  .tag.Other { background:#efe9df; color:#6b5c3a; }
+  [data-theme="dark"] .tag.Vitamin { background:#3a2f1a; color:#f0c678; }
+  [data-theme="dark"] .tag.Mineral { background:#1d2b3b; color:#9ec2ec; }
+  [data-theme="dark"] .tag.Herb { background:#1c3024; color:#96d4aa; }
+  [data-theme="dark"] .tag.Topic { background:#302036; color:#d2a8e0; }
+  [data-theme="dark"] .tag.Other { background:#2b2820; color:#dcc79a; }
+
+  .card .latin { font-size:.8rem; color:var(--muted); font-style:italic; margin:-2px 0 0; }
+  .card .summary { font-size:.85rem; color:var(--ink); opacity:.88; margin:0; line-height:1.5; }
+  .meta-pills { display:flex; flex-wrap:wrap; gap:6px; margin-top:2px; }
+  .meta-pill {
+    font-size:.71rem; color:var(--forest-2); background:var(--cream-2);
+    border:1px solid var(--line); padding:2px 8px; border-radius:7px;
+  }
+  .meta-pill.warn { background:var(--warn-bg); border-color:var(--warn-line); color:var(--warn); }
+
+  .card-foot {
+    margin-top:auto; padding-top:8px; border-top:1px dashed var(--line);
+    display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;
+  }
+  .card .links { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .card a.lnk, .detail-btn {
+    color:var(--forest-2); text-decoration:none; font-size:.81rem; font-weight:600;
+    border:none; background:none; padding:0; cursor:pointer; border-bottom:1px solid transparent;
+  }
+  .card a.lnk:hover, .detail-btn:hover { border-color:var(--forest-2); }
+  .detail-btn { color:var(--gold-ink); }
+  .detail-btn:hover { border-color:var(--gold); }
+  .src {
+    font-size:.68rem; color:var(--muted); background:var(--cream-2); padding:2px 7px; border-radius:6px;
+  }
+
+  /* ---------- Empty & Notices ---------- */
+  .empty-state {
+    text-align:center; padding:44px 20px; background:var(--card); border:1px dashed var(--line);
+    border-radius:var(--radius); color:var(--muted);
+  }
+  .btn-primary, .btn-outline {
+    padding:9px 18px; border-radius:10px; cursor:pointer; font-size:.88rem; font-weight:600;
+    border:1px solid var(--forest); transition:all .15s ease;
+  }
+  .btn-primary { background:var(--forest); color:#fff; }
+  [data-theme="dark"] .btn-primary { color:#121714; }
+  .btn-primary:hover { background:var(--forest-2); }
+  .btn-outline { background:transparent; color:var(--forest); }
+  .btn-outline:hover { background:var(--cream-2); }
+
+  .notice {
+    background:var(--cream-2); border:1px solid var(--line); padding:14px 18px; border-radius:var(--radius);
+    font-size:.86rem; color:var(--muted); margin:24px 0;
+  }
+  .notice strong { color:var(--ink); }
+  .notice.warn { background:var(--warn-bg); border-color:var(--warn-line); color:var(--warn); }
+  .notice a { color:var(--forest-2); }
+
+  .hidden { display:none !important; }
+
+  /* ---------- Interactions & Timing Panel ---------- */
+  .panel-header {
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px; margin:-22px 0 20px; box-shadow:var(--shadow);
+  }
+  .panel-header h2 { margin:0 0 6px; font-size:1.35rem; color:var(--forest); }
+  .panel-header p { margin:0; font-size:.9rem; color:var(--muted); }
+
+  .picker-box {
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px; margin-bottom:20px;
+  }
+  .picker-title { font-size:.86rem; font-weight:600; margin:0 0 10px; color:var(--ink); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+  .pick-pills { display:flex; flex-wrap:wrap; gap:7px; }
+  .pick-pill {
+    border:1px solid var(--line); background:var(--cream); color:var(--ink);
+    padding:5px 12px; border-radius:999px; font-size:.8rem; cursor:pointer; transition:all .15s;
+  }
+  .pick-pill:hover { border-color:var(--gold); }
+  .pick-pill.selected { background:var(--forest); color:#fff; border-color:var(--forest); font-weight:600; }
+  [data-theme="dark"] .pick-pill.selected { color:#121714; }
+
+  .inter-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:14px; margin-bottom:26px; }
+  .inter-card {
+    border-radius:var(--radius); padding:16px 18px; border:1px solid var(--line); background:var(--card);
+  }
+  .inter-card.synergy { background:var(--ok-bg); border-color:var(--ok-line); }
+  .inter-card.antagonism { background:var(--warn-bg); border-color:var(--warn-line); }
+  .inter-card.caution { background:var(--danger-bg); border-color:var(--danger-line); }
+  .inter-badge {
+    display:inline-block; font-size:.7rem; font-weight:700; text-transform:uppercase;
+    padding:2px 8px; border-radius:999px; margin-bottom:8px;
+  }
+  .inter-card.synergy .inter-badge { background:var(--ok); color:#fff; }
+  .inter-card.antagonism .inter-badge { background:var(--warn); color:#fff; }
+  .inter-card.caution .inter-badge { background:var(--danger); color:#fff; }
+  .inter-card h4 { margin:0 0 6px; font-size:1rem; color:var(--ink); }
+  .inter-card p { margin:0; font-size:.86rem; color:var(--ink); opacity:.9; }
+
+  .timing-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .timing-card {
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px;
+  }
+  .timing-card h4 { margin:0 0 8px; color:var(--forest); font-size:1rem; }
+  .timing-card ul { margin:0; padding-inline-start:18px; font-size:.85rem; color:var(--muted); }
+  .timing-card li { margin-bottom:5px; }
+  .timing-card li strong { color:var(--ink); }
+
+  /* ---------- Compare RDA Table Panel ---------- */
+  .table-wrap {
+    overflow-x:auto; background:var(--card); border:1px solid var(--line);
+    border-radius:var(--radius); box-shadow:var(--shadow);
+  }
+  .ref-table { width:100%; border-collapse:collapse; font-size:.85rem; min-width:760px; }
+  .ref-table th, .ref-table td {
+    padding:11px 14px; border-bottom:1px solid var(--line); text-align:start; vertical-align:top;
+  }
+  .ref-table thead th {
+    background:var(--cream-2); color:var(--forest); font-weight:700; position:sticky; top:0; z-index:2;
+  }
+  .ref-table tbody tr:hover { background:var(--cream); }
+  .ref-table .name-link {
+    font-weight:600; color:var(--forest-2); cursor:pointer; background:none; border:none; padding:0; text-align:start; font-size:.88rem;
+  }
+  .ref-table .name-link:hover { text-decoration:underline; }
+
+  /* ---------- DSLD panel ---------- */
+  .row { display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap; }
+  .row input {
+    flex:1 1 260px; padding:11px 14px; border:1px solid var(--line); border-radius:10px;
+    background:var(--card); color:var(--ink); font-size:.94rem; outline:none;
+  }
+  .row input:focus { border-color:var(--gold); }
+  .label-card .label-meta { font-size:.8rem; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px; }
+  .label-card table { width:100%; border-collapse:collapse; font-size:.82rem; margin-top:8px; }
+  .label-card td, .label-card th { border-top:1px solid var(--line); padding:5px 6px; text-align:start; }
+  .pager { display:flex; justify-content:center; gap:10px; margin-top:20px; align-items:center; }
+
+  /* ---------- Modal ---------- */
+  body.modal-open { overflow:hidden; }
+  .modal-backdrop {
+    position:fixed; inset:0; background:rgba(15,22,18,.58); z-index:100;
+    display:flex; align-items:center; justify-content:center; padding:18px; backdrop-filter:blur(3px);
+  }
+  .modal {
+    background:var(--card); color:var(--ink); border:1px solid var(--line);
+    border-radius:20px; max-width:680px; width:100%; max-height:88vh; overflow-y:auto;
+    padding:24px 26px; box-shadow:0 24px 60px -12px rgba(0,0,0,.45); position:relative;
+  }
+  .modal-head { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:14px; }
+  .modal-head h2 { margin:0; font-size:1.5rem; color:var(--forest); line-height:1.25; }
+  .close-btn {
+    border:1px solid var(--line); background:var(--cream-2); color:var(--ink);
+    width:34px; height:34px; border-radius:50%; cursor:pointer; font-size:1.1rem; flex-shrink:0;
+  }
+  .close-btn:hover { border-color:var(--gold); }
+  .fact-grid {
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; margin:14px 0 18px;
+  }
+  .fact-box {
+    background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:10px 13px;
+  }
+  .fact-box .lbl { font-size:.71rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); font-weight:700; }
+  [dir="rtl"] .fact-box .lbl { letter-spacing:0; }
+  .fact-box .val { font-size:.9rem; font-weight:600; color:var(--ink); margin-top:3px; }
+  .modal-sec { margin-bottom:14px; }
+  .modal-sec h4 { margin:0 0 4px; font-size:.88rem; color:var(--forest); }
+  .modal-sec p { margin:0; font-size:.9rem; color:var(--ink); opacity:.92; }
+  .modal-actions {
+    display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;
+    margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+  }
+
+  /* ---------- Back to top & Footer ---------- */
+  #toTop {
+    position:fixed; bottom:24px; inset-inline-end:24px; width:44px; height:44px; border-radius:50%;
+    background:var(--forest); color:#fff; border:none; cursor:pointer; font-size:1.1rem;
+    box-shadow:0 8px 20px -6px rgba(36,69,58,.5); display:none; z-index:40;
+  }
+  [data-theme="dark"] #toTop { color:#121714; }
+
+  footer {
+    padding:36px 24px 26px; color:var(--muted); font-size:.82rem;
+    border-top:1px solid var(--line); margin-top:30px; background:var(--cream-2);
+  }
+  footer a { color:var(--forest-2); }
+  .foot-grid {
+    max-width:1160px; margin:0 auto; display:grid; gap:26px;
+    grid-template-columns:1.4fr 1fr 1.4fr;
+  }
+  .foot-brand { font-family:'Fraunces',Georgia,serif; font-size:1.02rem; font-weight:600; color:var(--forest); margin-bottom:6px; }
+  [dir="rtl"] .foot-brand { font-family:var(--font-ar); }
+  .foot-about p { margin:0; line-height:1.75; }
+  footer h4 {
+    margin:0 0 8px; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--ink); font-family:inherit; font-weight:700;
+  }
+  [dir="rtl"] footer h4 { letter-spacing:0; font-size:.8rem; }
+  .foot-links { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:6px; }
+  .foot-policy { gap:8px; }
+  .foot-policy li { line-height:1.6; font-size:.79rem; }
+  .foot-bottom {
+    max-width:1160px; margin:24px auto 0; padding-top:16px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;
+    font-size:.78rem;
+  }
+  .credit { font-weight:600; color:var(--ink); }
+  .credit a {
+    color:var(--forest-2); text-decoration:none; border-bottom:1px solid var(--gold);
+    padding-bottom:1px; font-weight:700;
+  }
+  .credit a:hover { color:var(--gold-ink); }
+  @media (max-width:820px) { .foot-grid { grid-template-columns:1fr; gap:22px; } }
+
+  @media (max-width:680px) {
+    .topbar {
+      display:grid; grid-template-columns:minmax(0,1fr) auto;
+      grid-template-areas:"brand actions" "nav nav";
+      gap:6px 10px; padding:10px 14px;
+    }
+    .brand-wrap { grid-area:brand; min-width:0; }
+    .brand { font-size:1.08rem; }
+    .top-actions { grid-area:actions; }
+    .topbar nav {
+      grid-area:nav; flex-wrap:nowrap; overflow-x:auto; gap:4px;
+      scrollbar-width:none; -ms-overflow-style:none; padding-bottom:2px;
+      -webkit-overflow-scrolling:touch;
+    }
+    .topbar nav::-webkit-scrollbar { display:none; }
+    .topbar nav button.tab-btn { flex:0 0 auto; white-space:nowrap; font-size:.8rem; padding:6px 10px; }
+    .hero { padding:34px 16px 36px; }
+    .modal { padding:18px; }
+  }
+  @media (max-width:980px) {
+    .toolbar { grid-template-columns:minmax(0,1fr) auto; }
+    .toolbar .search-wrap { grid-column:1 / -1; }
+  }
+  @media (max-width:480px) {
+    /* the credit stays visible in the footer; keep the compact header to one line */
+    .brand-credit { display:none; }
+  }
+  @media (max-width:560px) {
+    .toolbar { grid-template-columns:1fr; }
+    .toolbar .search-wrap { grid-column:auto; }
+    .chips { gap:6px; }
+    .grid { grid-template-columns:1fr; }
+    .chip, .pick-pill, .icon-btn { min-height:40px; }
+    .trust-row { font-size:.72rem; gap:6px 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    *, *::before, *::after {
+      animation-duration:.01ms !important; animation-iteration-count:1 !important;
+      transition-duration:.01ms !important;
+    }
+  }
+  @media print {
+    .topbar, .toolbar, .chips, .subchips, .az-nav, #toTop, .modal-backdrop, .star-btn, .detail-btn { display:none !important; }
+    body { background:#fff; color:#000; }
+    .card, .table-wrap { box-shadow:none; break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" id="skipLink" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="brand-wrap">
+    <div class="brand" id="brandTitle">The Nutrient <span>Glossary</span></div>
+    <a class="brand-credit" href="https://azzubair.ly" target="_blank" rel="author noopener" title="Azzubair — azzubair.ly">azzubair.ly</a>
+  </div>
+  <nav aria-label="Primary">
+    <button id="tab-topics" class="tab-btn active" data-tab="topics"></button>
+    <button id="tab-compare" class="tab-btn" data-tab="compare"></button>
+    <button id="tab-interactions" class="tab-btn" data-tab="interactions"></button>
+    <button id="tab-labels" class="tab-btn" data-tab="labels"></button>
+  </nav>
+  <div class="top-actions">
+    <button id="langBtn" class="icon-btn" title="Switch language">العربية</button>
+    <button id="themeBtn" class="icon-btn" title="Toggle theme">🌙</button>
+  </div>
+</div>
+
+<header class="hero">
+  <span class="kicker" id="heroKicker"></span>
+  <h1 id="heroTitle"></h1>
+  <p id="heroDesc"></p>
+  <div class="stats-row" id="statsRow"></div>
+  <div class="trust-row" id="trustRow"></div>
+</header>
+
+<main id="main" tabindex="-1">
+  <!-- ==================== TAB 1: GLOSSARY ==================== -->
+  <section id="panel-topics">
+    <div class="toolbar">
+      <div class="search-wrap">
+        <svg class="search-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="filter" autocomplete="off" list="nutrientDatalist" aria-label="Search nutrients">
+        <button id="clearSearch" class="clear-btn" aria-label="Clear search">×</button>
+      </div>
+      <select id="category" aria-label="Category"></select>
+      <button id="moreFiltersBtn" class="icon-btn more-btn" aria-expanded="false" aria-controls="advFilters"></button>
+      <div id="advFilters" class="adv-filters hidden">
+        <select id="sourceFilter" aria-label="Source"></select>
+        <select id="sortMode" aria-label="Sort"></select>
+      </div>
+    </div>
+    <datalist id="nutrientDatalist"></datalist>
+
+    <div class="chips" id="catChips"></div>
+    <div class="subchips hidden" id="subChips"></div>
+
+    <nav class="az-nav" id="azNav" aria-label="Alphabetical index"></nav>
+
+    <div class="count-bar">
+      <div id="count" role="status" aria-live="polite"></div>
+      <div class="kbd-hint" id="kbdHint"></div>
+    </div>
+
+    <div id="sections"></div>
+
+    <div class="notice" id="verifyNotice"></div>
+  </section>
+
+  <!-- ==================== TAB 2: COMPARE RDA & SOURCES ==================== -->
+  <section id="panel-compare" class="hidden">
+    <div class="panel-header">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;">
+        <div>
+          <h2 id="cmpTitle"></h2>
+          <p id="cmpDesc"></p>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button id="printBtn" class="btn-outline"></button>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;">
+        <input type="search" id="cmpFilter" style="flex:1 1 240px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--cream);color:var(--ink);">
+        <select id="cmpType" style="padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--cream);color:var(--ink);"></select>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="ref-table">
+        <thead>
+          <tr id="cmpHead"></tr>
+        </thead>
+        <tbody id="cmpBody"></tbody>
+      </table>
+    </div>
+    <div class="notice" id="cmpNote"></div>
+  </section>
+
+  <!-- ==================== TAB 3: INTERACTIONS & TIMING ==================== -->
+  <section id="panel-interactions" class="hidden">
+    <div class="panel-header">
+      <h2 id="intTitle"></h2>
+      <p id="intDesc"></p>
+    </div>
+
+    <div class="picker-box">
+      <div class="picker-title">
+        <span id="pickerLabel"></span>
+        <button id="clearPicks" class="btn-outline" style="padding:4px 12px;font-size:.78rem;"></button>
+      </div>
+      <div class="pick-pills" id="pickPills"></div>
+    </div>
+
+    <div class="inter-grid" id="interResults"></div>
+
+    <h3 id="timingTitle" style="color:var(--forest);margin:26px 0 12px;"></h3>
+    <div class="timing-grid" id="timingGrid"></div>
+  </section>
+
+  <!-- ==================== TAB 4: DSLD LABEL SEARCH ==================== -->
+  <section id="panel-labels" class="hidden">
+    <div class="panel-header">
+      <h2 id="dsldTitle"></h2>
+      <p id="dsldDesc"></p>
+    </div>
+    <div class="row">
+      <input type="search" id="q">
+      <button id="go" class="btn-primary"></button>
+    </div>
+    <div class="chips" id="dsldSuggestions"></div>
+    <div id="labelmsg"></div>
+    <div id="labels" class="grid"></div>
+    <div id="labelPager" class="pager hidden"></div>
+    <div class="notice" id="dsldNotice"></div>
+  </section>
+
+  <div class="notice" id="disclaimerNotice"></div>
+</main>
+
+<footer id="siteFooter">
+  <div class="foot-grid">
+    <div class="foot-about">
+      <div class="foot-brand" id="footBrand"></div>
+      <p id="footAbout"></p>
+    </div>
+    <div>
+      <h4 id="footSourcesTitle"></h4>
+      <ul class="foot-links">
+        <li><a id="lnkOds" href="https://ods.od.nih.gov/" target="_blank" rel="noopener">NIH Office of Dietary Supplements</a></li>
+        <li><a id="lnkNccih" href="https://www.nccih.nih.gov/" target="_blank" rel="noopener">NIH NCCIH</a></li>
+        <li><a id="lnkMedline" href="https://medlineplus.gov/" target="_blank" rel="noopener">MedlinePlus</a></li>
+        <li><a id="lnkDsld" href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">NIH Dietary Supplement Label Database</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 id="footPolicyTitle"></h4>
+      <ul class="foot-links foot-policy" id="footPolicy"></ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="credit">
+      <span id="footCreditLabel"></span>
+      <a href="https://azzubair.ly" target="_blank" rel="author noopener" title="Azzubair — azzubair.ly">azzubair.ly</a>
+    </div>
+    <div class="foot-rights" id="footRights"></div>
+  </div>
+</footer>
+
+<button id="toTop" title="Back to top">↑</button>
+
+<!-- ==================== DETAIL MODAL ==================== -->
+<div id="modalBackdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px;" id="modalBadges"></div>
+        <h2 id="modalTitle"></h2>
+        <div id="modalSub" style="font-size:.86rem;color:var(--muted);font-style:italic;"></div>
+      </div>
+      <button id="modalClose" class="close-btn" aria-label="Close">×</button>
+    </div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+/* ============================================================================
+   1. I18N UI DICTIONARY (EN / AR)
+   ============================================================================ */
+const UI = {
+  en: {
+    brand: 'The Nutrient <span>Glossary</span>',
+    tabs: {
+      topics: 'Glossary',
+      compare: 'RDA &amp; Sources Table',
+      interactions: 'Synergies &amp; Timing',
+      labels: 'Product Label Search'
+    },
+    tabsShort: { topics: 'Glossary', compare: 'Table', interactions: 'Interactions', labels: 'Labels' },
+    langBtn: 'العربية',
+    skip: 'Skip to content',
+    docTitle: 'The Nutrient Glossary — Independent Vitamins, Minerals & Herbs Reference',
+    metaDesc: 'An independent, bilingual (English/Arabic) reference for vitamins, minerals and herbs: adult RDA/AI, upper limits, food sources, absorption tips, drug interactions, and live NIH DSLD label search.',
+    heroKicker: 'Independent · Non‑commercial · Government‑sourced',
+    heroTitle: 'An everyday guide to vitamins, minerals &amp; herbs',
+    heroDesc: 'Evidence-based reference values, food sources, absorption tips, and direct links to the NIH Office of Dietary Supplements (ODS), NCCIH, and MedlinePlus — never to commercial product pages.',
+    searchPh: 'Search vitamin D, magnesium, turmeric…',
+    allCats: 'All categories',
+    allSources: 'All sources',
+    sortAZ: 'Sort: A–Z',
+    sortCat: 'Sort: By category',
+    cats: {
+      '': 'All',
+      Vitamin: 'Vitamins',
+      Mineral: 'Minerals',
+      Herb: 'Herbs &amp; Botanicals',
+      Topic: 'Topic Overviews',
+      Other: 'Other nutrients',
+      Saved: 'Saved ★'
+    },
+    subcats: {
+      '': 'All types',
+      'fat-soluble': 'Fat-soluble (A, D, E, K)',
+      'water-soluble': 'Water-soluble (B & C)',
+      macromineral: 'Macrominerals',
+      trace: 'Trace minerals'
+    },
+    subLabels: {
+      'fat-soluble': 'Fat-soluble',
+      'water-soluble': 'Water-soluble',
+      macromineral: 'Macromineral',
+      trace: 'Trace mineral',
+      combo: 'Combination'
+    },
+    count: (n, total) => `Showing ${n} of ${total} ${total === 1 ? 'entry' : 'entries'}`,
+    kbdHint: 'Tip: Press <kbd>/</kbd> to search · Click any title for RDA, foods &amp; tips',
+    quickGuide: 'Quick guide →',
+    saveTitle: 'Save to My List',
+    emptyMsg: 'No entries match your current search or filter.',
+    resetFilters: 'Reset filters',
+    moreFilters: 'Filters',
+    jumpTo: 'Jump to',
+    moreFiltersActive: (n) => `Filters · ${n}`,
+    a11y: {
+      primaryNav: 'Primary',
+      switchLang: 'Switch language',
+      toggleTheme: 'Toggle light or dark theme',
+      search: 'Search nutrients',
+      clearSearch: 'Clear search',
+      category: 'Filter by category',
+      source: 'Filter by source',
+      sort: 'Sort order',
+      azIndex: 'Alphabetical index',
+      backToTop: 'Back to top',
+      close: 'Close'
+    },
+    linkLabels: {
+      'Learn more': 'Learn more',
+      'Consumer': 'Consumer',
+      'Professional': 'Professional',
+      'Herb index': 'Herb index',
+      'NCCIH overview': 'NCCIH overview',
+      'ODS safety note': 'ODS safety note',
+      'Depression in depth': 'Depression in depth'
+    },
+    trust: ['No ads', 'No affiliate links', 'No product endorsements', 'Government sources only'],
+    foot: {
+      aboutTitle: 'About this reference',
+      about: 'An independent, non-commercial reference for vitamins, minerals and botanicals. There are no advertisements, affiliate links or brand partnerships anywhere on this page.',
+      sourcesTitle: 'Primary sources',
+      policyTitle: 'How each entry is built',
+      policy: [
+        'Nutrient values come from the NIH ODS / National Academies Dietary Reference Intakes for healthy adults.',
+        'Safety notes follow the official ODS fact sheets and standard pharmacology references.',
+        'Herb summaries state the strength of evidence — when evidence is weak or absent, we say so.',
+        'Every NCCIH and MedlinePlus destination was machine-checked on 15 November 2026.'
+      ],
+      creditLabel: 'Designed & maintained by',
+      rights: 'Educational use only · Not medical advice',
+      sourceLinks: ['NIH Office of Dietary Supplements', 'NIH NCCIH', 'MedlinePlus', 'NIH Dietary Supplement Label Database']
+    },
+    verifyNotice: '<strong>On verification.</strong> Every external link below was taken from the official NIH ODS index pages (<a href="https://ods.od.nih.gov/factsheets/list-VitaminsMinerals/" target="_blank" rel="noopener">list&#8209;VitaminsMinerals</a> and <a href="https://ods.od.nih.gov/factsheets/list-Botanicals/" target="_blank" rel="noopener">list&#8209;Botanicals</a>). All NCCIH and MedlinePlus destinations were re-checked on <strong>15 November 2026</strong> and point to their canonical URLs. Adult RDA/AI &amp; Upper Limit (UL) figures follow the NIH ODS / National Academies Dietary Reference Intakes for healthy adults and are for orientation only — the linked fact sheet is the authoritative source for pregnancy, paediatric and clinical guidance.',
+    disclaimer: '<strong>Educational reference only.</strong> This guide does not replace personalised advice from a physician or pharmacist, especially if you take prescription medications, are pregnant or breastfeeding, or manage a chronic condition.',
+    footer: 'Built from NIH Office of Dietary Supplements (<a href="https://ods.od.nih.gov/" target="_blank" rel="noopener">ods.od.nih.gov</a>), NIH NCCIH (<a href="https://www.nccih.nih.gov/" target="_blank" rel="noopener">nccih.nih.gov</a>), MedlinePlus (<a href="https://medlineplus.gov/" target="_blank" rel="noopener">medlineplus.gov</a>) and the NIH Dietary Supplement Label Database (<a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>). Non-commercial reference.',
+    cmpTitle: 'Vitamins & Minerals — Adult RDA/AI, Upper Limits & Food Sources',
+    cmpDesc: 'Quick side-by-side reference based on NIH ODS and National Academies tables for adults.',
+    cmpFilterPh: 'Filter nutrients or food sources…',
+    cmpAll: 'All nutrients',
+    cmpVit: 'Vitamins only',
+    cmpMin: 'Minerals only',
+    printBtn: 'Print / Save PDF',
+    cmpHeaders: ['Nutrient', 'Class', 'Adult RDA / AI', 'Upper Limit (UL)', 'Primary Role', 'Top Dietary Sources'],
+    cmpNote: '<strong>Notes on RDA vs AI &amp; UL:</strong> <em>RDA</em> (Recommended Dietary Allowance) meets needs of 97–98% of healthy individuals; <em>AI</em> (Adequate Intake) is used when evidence is insufficient for an RDA. <em>UL</em> is the highest daily intake unlikely to cause adverse effects (some ULs apply to supplements only, e.g., magnesium 350 mg, niacin 35 mg, folic acid 1,000 mcg).',
+    intTitle: 'Synergies, Antagonisms & Daily Timing Guide',
+    intDesc: 'Select ingredients you take or are researching to inspect known absorption boosters, spacing rules, and medication or lab-test cautions.',
+    pickerLabel: 'Filter by ingredient (leave empty to see every interaction):',
+    clearPicks: 'Show all',
+    badgeSynergy: 'Synergy · Boosts Absorption/Effect',
+    badgeAntag: 'Space Apart · Competes or Blocks',
+    badgeCaution: 'Safety / Medication / Lab Caution',
+    noIntMatch: 'No documented interaction between the selected items appears in this curated list — always check with a pharmacist about prescription medicines.',
+    timingTitle: 'Practical Daily Timing Blueprint',
+    dsldTitle: 'NIH Dietary Supplement Label Database (DSLD)',
+    dsldDesc: 'Search real product labels in the NIH Dietary Supplement Label Database (v9 API) and inspect active and inactive ingredients, % Daily Value, and warnings.',
+    dsldPh: 'Search ingredient or brand (e.g., Vitamin D3, Magnesium glycinate, Ashwagandha)…',
+    dsldBtn: 'Search',
+    dsldSearching: 'Searching NIH DSLD database…',
+    dsldEmpty: 'No matching supplement labels found.',
+    dsldCount: (shown, total) => `Showing ${shown} of ${total.toLocaleString()} matching labels`,
+    dsldViewDetails: 'Inspect ingredients & facts',
+    dsldFullLink: 'Open on NIH DSLD ↗',
+    dsldPrev: '← Previous',
+    dsldNext: 'Next →',
+    dsldNotice: '<strong>Verified API:</strong> Queries the public NIH DSLD v9 endpoints (<code>api.ods.od.nih.gov/dsld/v9/browse-products</code> and <code>/label/{id}</code>). You can also browse directly at <a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>.',
+    modal: {
+      rda: 'Adult RDA / AI',
+      ul: 'Upper Limit (UL)',
+      classif: 'Classification',
+      role: 'Key Roles in the Body',
+      foods: 'Best Natural Food Sources',
+      tips: 'Absorption, Timing & Cautions',
+      aliases: 'Common Forms / Aliases',
+      links: 'Official Government Fact Sheets',
+      searchDsld: 'Search product labels for this →',
+      notEst: 'Not established'
+    }
+  },
+  ar: {
+    brand: 'دليل <span>المغذيات</span>',
+    tabs: {
+      topics: 'الدليل الشامل',
+      compare: 'جدول الاحتياج والمصادر',
+      interactions: 'التآزرات والتوقيت',
+      labels: 'فحص ملصقات المنتجات'
+    },
+    tabsShort: { topics: 'الدليل', compare: 'الجدول', interactions: 'التداخلات', labels: 'الملصقات' },
+    langBtn: 'English',
+    skip: 'تخطَّ إلى المحتوى',
+    docTitle: 'دليل المغذيات — مرجع مستقل للفيتامينات والمعادن والأعشاب',
+    metaDesc: 'مرجع مستقل ثنائي اللغة للفيتامينات والمعادن والأعشاب: المدخول اليومي الموصى به، والحد الأعلى، والمصادر الغذائية، ونصائح الامتصاص، والتداخلات الدوائية، مع بحث حيّ في قاعدة ملصقات NIH DSLD.',
+    heroKicker: 'مرجع مستقل · غير تجاري · موثّق بمصادر حكومية أمريكية',
+    heroTitle: 'الدليل الموثوق للفيتامينات والمعادن والأعشاب',
+    heroDesc: 'مرجع شامل يقدّم الجرعات اليومية الموصى بها، والمصادر الغذائية، ونصائح الامتصاص والتداخلات، مع روابط مباشرة لمكتب المكملات الغذائية (NIH ODS) و NCCIH و MedlinePlus — بعيداً عن أي تسويق تجاري.',
+    searchPh: 'ابحث: فيتامين د، حديد، مغنيسيوم…',
+    allCats: 'كل التصنيفات',
+    allSources: 'كل المصادر',
+    sortAZ: 'ترتيب: أبجدي',
+    sortCat: 'ترتيب: حسب التصنيف',
+    cats: {
+      '': 'الكل',
+      Vitamin: 'الفيتامينات',
+      Mineral: 'المعادن',
+      Herb: 'الأعشاب والنباتات',
+      Topic: 'أدلة عامة',
+      Other: 'مغذيات أخرى',
+      Saved: 'المفضلة ★'
+    },
+    subcats: {
+      '': 'جميع الأنواع',
+      'fat-soluble': 'ذائبة في الدهون (A وD وE وK)',
+      'water-soluble': 'ذائبة في الماء (B وC)',
+      macromineral: 'المعادن الرئيسية',
+      trace: 'المعادن النادرة'
+    },
+    subLabels: {
+      'fat-soluble': 'ذائب في الدهون',
+      'water-soluble': 'ذائب في الماء',
+      macromineral: 'معدن رئيسي',
+      trace: 'معدن نادر',
+      combo: 'مركب شامل'
+    },
+    count: (n, total) => `عرض ${n} من أصل ${total} عنصراً`,
+    kbdHint: 'تلميح: اضغط <kbd>/</kbd> للبحث · انقر على أي عنصر لعرض الجرعة اليومية والمصادر والنصائح',
+    quickGuide: 'التفاصيل والجرعة ←',
+    saveTitle: 'حفظ في قائمتي',
+    emptyMsg: 'لا توجد عناصر مطابقة للبحث أو التصفية الحالية.',
+    resetFilters: 'إعادة الضبط',
+    moreFilters: 'خيارات التصفية',
+    jumpTo: 'انتقل إلى',
+    moreFiltersActive: (n) => `خيارات التصفية · ${n}`,
+    a11y: {
+      primaryNav: 'التنقل الرئيسي',
+      switchLang: 'تبديل اللغة',
+      toggleTheme: 'تبديل الوضع الفاتح والداكن',
+      search: 'البحث في المغذيات',
+      clearSearch: 'مسح البحث',
+      category: 'التصفية حسب التصنيف',
+      source: 'التصفية حسب المصدر',
+      sort: 'ترتيب العرض',
+      azIndex: 'الفهرس الأبجدي',
+      backToTop: 'العودة إلى الأعلى',
+      close: 'إغلاق'
+    },
+    linkLabels: {
+      'Learn more': 'اعرف المزيد',
+      'Consumer': 'نسخة المستهلك',
+      'Professional': 'نسخة المختصين',
+      'Herb index': 'فهرس الأعشاب',
+      'NCCIH overview': 'لمحة عن NCCIH',
+      'ODS safety note': 'تنبيه سلامة ODS',
+      'Depression in depth': 'الاكتئاب بالتفصيل'
+    },
+    trust: ['بلا إعلانات', 'بلا روابط عمولة', 'بلا ترويج لمنتجات', 'مصادر حكومية فقط'],
+    foot: {
+      aboutTitle: 'عن هذا المرجع',
+      about: 'مرجع مستقل غير تجاري للفيتامينات والمعادن والأعشاب. لا توجد أي إعلانات أو روابط عمولة أو شراكات تجارية في هذه الصفحة.',
+      sourcesTitle: 'المصادر الأساسية',
+      policyTitle: 'كيف تُبنى كل بطاقة',
+      policy: [
+        'قيم العناصر الغذائية مأخوذة من جداول المدخول المرجعي (DRI) لمكتب المكملات الغذائية NIH ODS والأكاديميات الوطنية للبالغين الأصحاء.',
+        'تستند ملاحظات السلامة إلى النشرات الرسمية لـ ODS والمراجع الدوائية المعتمدة.',
+        'ملخصات الأعشاب تُبيّن قوة الدليل — وإن غاب الدليل نقول ذلك صراحةً.',
+        'أُعيد التحقق آلياً من كل روابط NCCIH و MedlinePlus في 15 نوفمبر 2026، وكلها تشير إلى عناوينها الرسمية المباشرة.'
+      ],
+      creditLabel: 'تصميم وتطوير',
+      rights: 'للاستخدام التثقيفي فقط · ليس نصيحة طبية',
+      sourceLinks: ['مكتب المكملات الغذائية NIH ODS', 'المركز الوطني للصحة التكميلية NCCIH', 'MedlinePlus', 'قاعدة ملصقات المكملات NIH DSLD']
+    },
+    verifyNotice: '<strong>عن موثوقية المعلومات:</strong> جميع الروابط مأخوذة من الفهارس الرسمية لمكتب المكملات الغذائية (<a href="https://ods.od.nih.gov/factsheets/list-VitaminsMinerals/" target="_blank" rel="noopener">قائمة الفيتامينات والمعادن</a> و <a href="https://ods.od.nih.gov/factsheets/list-Botanicals/" target="_blank" rel="noopener">قائمة النباتات</a>). وقد أُعيد التحقق من كل روابط NCCIH و MedlinePlus بتاريخ <strong>15 نوفمبر 2026</strong> وتشير الآن إلى عناوينها الرسمية المباشرة. قيم المدخول المرجعي (RDA/AI) والحد الأعلى (UL) تتبع جداول المعاهد الوطنية للصحة للبالغين الأصحاء، وهي للاسترشاد فقط — النشرة الرسمية المرتبطة هي المرجع في الحمل والأطفال والحالات المرضية.',
+    disclaimer: '<strong>مرجع تثقيفي فقط:</strong> لا يغني هذا الدليل عن استشارة الطبيب أو الصيدلي، خصوصاً عند تناول أدوية بوصفة طبية، أو أثناء الحمل والرضاعة، أو وجود حالة صحية مزمنة.',
+    footer: 'مبني على بيانات مكتب المكملات الغذائية الأمريكي (<a href="https://ods.od.nih.gov/" target="_blank" rel="noopener">ods.od.nih.gov</a>)، ومركز NCCIH (<a href="https://www.nccih.nih.gov/" target="_blank" rel="noopener">nccih.nih.gov</a>)، و MedlinePlus (<a href="https://medlineplus.gov/" target="_blank" rel="noopener">medlineplus.gov</a>)، وقاعدة ملصقات المكملات (<a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>).',
+    cmpTitle: 'مقارنة الفيتامينات والمعادن — الاحتياج اليومي والحد الأعلى والمصادر',
+    cmpDesc: 'جدول مرجعي سريع للبالغين وفق جداول NIH ODS والأكاديميات الوطنية الأمريكية.',
+    cmpFilterPh: 'تصفية حسب العنصر أو المصدر الغذائي…',
+    cmpAll: 'جميع العناصر',
+    cmpVit: 'الفيتامينات فقط',
+    cmpMin: 'المعادن فقط',
+    printBtn: 'طباعة / حفظ PDF',
+    cmpHeaders: ['العنصر', 'التصنيف', 'الاحتياج اليومي (RDA/AI)', 'الحد الأعلى (UL)', 'الدور الأساسي', 'أبرز المصادر الغذائية'],
+    cmpNote: '<strong>ملاحظة حول RDA و UL:</strong> <em>RDA</em> هو المدخول اليومي الذي يغطي احتياج 97–98% من الأشخاص الأصحاء، و<em>AI</em> مدخول كافٍ يُعتمد عليه عند عدم كفاية الأدلة لتحديد RDA. <em>UL</em> هو الحد اليومي الأعلى الذي يُرجَّح ألا يسبب أضراراً (بعض الحدود تخص المكملات وحدها، مثل المغنيسيوم 350 ملغ، والنياسين 35 ملغ، وحمض الفوليك 1,000 مكغ).',
+    intTitle: 'التآزرات ودليل التوقيت اليومي',
+    intDesc: 'اختر العناصر التي تتناولها أو تبحث عنها لمعرفة التركيبات التي تعزز الامتصاص، وما ينبغي الفصل بينه، والتنبيهات الدوائية والمخبرية.',
+    pickerLabel: 'تصفية حسب العنصر (اتركها فارغة لعرض التداخلات كلها):',
+    clearPicks: 'عرض الكل',
+    badgeSynergy: 'تآزر · يعزز الامتصاص أو الفعالية',
+    badgeAntag: 'تباعد · تنافس أو تعطّل الامتصاص',
+    badgeCaution: 'تنبيه طبي / دوائي / مخبري',
+    noIntMatch: 'لا توجد تداخلات موثّقة بين العناصر المختارة ضمن هذه القائمة — راجع الصيدلي دائماً إن كنت تتناول أدوية مزمنة.',
+    timingTitle: 'دليل التوقيت اليومي العملي',
+    dsldTitle: 'قاعدة بيانات ملصقات المكملات الغذائية (NIH DSLD)',
+    dsldDesc: 'ابحث في ملصقات المنتجات المسجّلة فعلياً لدى المعاهد الوطنية للصحة (واجهة v9)، وافحص المكونات الفعالة وغير الفعالة ونسبة القيمة اليومية والتحذيرات.',
+    dsldPh: 'ابحث بالإنجليزية عن مكون أو علامة تجارية (مثل: Vitamin D3, Magnesium, Ashwagandha)…',
+    dsldBtn: 'بحث',
+    dsldSearching: 'جارٍ البحث في قاعدة NIH DSLD…',
+    dsldEmpty: 'لم يتم العثور على منتجات مطابقة.',
+    dsldCount: (shown, total) => `عرض ${shown} من أصل ${total.toLocaleString()} ملصقاً مطابقاً`,
+    dsldViewDetails: 'فحص المكونات والبيانات',
+    dsldFullLink: 'فتح في موقع NIH ↗',
+    dsldPrev: '→ السابق',
+    dsldNext: 'التالي ←',
+    dsldNotice: '<strong>واجهة برمجية موثقة:</strong> يتصل البحث مباشرة بخدمة NIH DSLD v9 (<code>api.ods.od.nih.gov/dsld/v9</code>). كما يمكنك التصفح مباشرة عبر <a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>.',
+    modal: {
+      rda: 'الاحتياج اليومي (للبالغين)',
+      ul: 'الحد الأعلى (UL)',
+      classif: 'التصنيف',
+      role: 'الوظائف الرئيسية في الجسم',
+      foods: 'أبرز المصادر الغذائية الطبيعية',
+      tips: 'الامتصاص والتوقيت والتنبيهات',
+      aliases: 'الأشكال الشائعة والمرادفات',
+      links: 'النشرات الحكومية الرسمية',
+      searchDsld: 'البحث عن منتجات تحتوي هذا العنصر ←',
+      notEst: 'غير محدد'
+    }
+  }
+};
+
+/* ============================================================================
+   2. ENRICHED NUTRIENT & BOTANICAL METADATA (keyed by exact entry name)
+   ============================================================================ */
+const DETAILS = {
+  "Vitamin A": {
+    ar: "فيتامين أ", sub: "fat-soluble", aliases: ["Retinol", "Beta-carotene", "ريتينول", "بيتا كاروتين"],
+    rda: "900 mcg RAE (M) / 700 mcg (F)", rdaAr: "900 مكغ (رجال) / 700 مكغ (نساء)",
+    ul: "3,000 mcg (preformed)", ulAr: "3,000 مكغ (من الريتينول الجاهز)",
+    role: "Essential for vision, immune integrity, epithelial tissues, and cellular differentiation.",
+    roleAr: "ضروري للرؤية وسلامة الأنسجة الطلائية والمناعة وتمايز الخلايا.",
+    foods: "Beef liver, sweet potatoes, carrots, spinach, pumpkin, eggs, fortified dairy.",
+    foodsAr: "الكبد، البطاطا الحلوة، الجزر، السبانخ، القرع، البيض، منتجات الألبان المدعمة.",
+    tips: "Take with a meal containing fat. High doses of preformed retinol can harm the liver and fetus during pregnancy; beta-carotene from food does not cause toxicity, but high-dose beta-carotene supplements are not recommended for smokers (trials showed higher lung-cancer risk).",
+    tipsAr: "يُؤخذ مع وجبة تحتوي دهوناً. الجرعات العالية من الريتينول الجاهز تضر الكبد والجنين أثناء الحمل؛ بيتا كاروتين الغذائي آمن، لكن مكملات بيتا كاروتين عالية الجرعة لا تُنصح للمدخنين، فقد أظهرت التجارب ارتفاع خطر سرطان الرئة لديهم."
+  },
+  "Thiamin (Vitamin B1)": {
+    ar: "الثيامين (فيتامين ب1)", sub: "water-soluble", aliases: ["B1", "Benfotiamine", "ثيامين"],
+    rda: "1.2 mg (M) / 1.1 mg (F)", rdaAr: "1.2 ملغ (رجال) / 1.1 ملغ (نساء)",
+    ul: "Not established", ulAr: "غير محدد",
+    role: "Coenzyme central to carbohydrate metabolism, ATP energy production, and nerve conduction.",
+    roleAr: "مرافق إنزيمي أساسي لاستقلاب الكربوهيدرات وإنتاج الطاقة الخلوية وعمل الأعصاب.",
+    foods: "Whole grains, fortified cereals, pork, legumes, sunflower seeds, trout.",
+    foodsAr: "الحبوب الكاملة والحبوب المدعمة، اللحوم، البقوليات، بذور دوار الشمس، سمك التروت.",
+    tips: "Water-soluble; excess is excreted in urine. Heavy alcohol intake and chronic diuretics increase deficiency risk.",
+    tipsAr: "ذائب في الماء ويُطرح الفائض في البول. يزيد خطر نقصه مع الإفراط في الكحول أو مدرات البول المزمنة أو سوء التغذية."
+  },
+  "Riboflavin (Vitamin B2)": {
+    ar: "الريبوفلافين (فيتامين ب2)", sub: "water-soluble", aliases: ["B2", "Riboflavin-5-phosphate", "ريبوفلافين"],
+    rda: "1.3 mg (M) / 1.1 mg (F)", rdaAr: "1.3 ملغ (رجال) / 1.1 ملغ (نساء)",
+    ul: "Not established", ulAr: "غير محدد",
+    role: "Forms FAD/FMN coenzymes for cellular respiration, antioxidant recycling, and skin/eye health.",
+    roleAr: "يدخل في إنزيمات إنتاج الطاقة الخلوية، وتجديد مضادات الأكسدة، وصحة الجلد والعينين.",
+    foods: "Milk, yogurt, eggs, lean meats, almonds, spinach, enriched grains.",
+    foodsAr: "الحليب والزبادي، البيض، اللوز، السبانخ، اللحوم الخالية من الدهون، الحبوب المدعمة.",
+    tips: "Harmlessly turns urine bright neon yellow when taken in supplements. Light degrades riboflavin in clear bottles.",
+    tipsAr: "يجعل البول أصفر فاقعاً بلا أي ضرر عند تناوله كمكمل. ويُحفظ بعيداً عن الضوء لأنه يتحلل بسرعة."
+  },
+  "Niacin (Vitamin B3)": {
+    ar: "النياسين (فيتامين ب3)", sub: "water-soluble", aliases: ["B3", "Nicotinamide", "Niacinamide", "Nicotinic acid", "نياسين", "نياسيناميد"],
+    rda: "16 mg NE (M) / 14 mg NE (F)", rdaAr: "16 ملغ (رجال) / 14 ملغ (نساء)",
+    ul: "35 mg (supplements/fortified)", ulAr: "35 ملغ (من المكملات والأغذية المدعمة)",
+    role: "Precursor to NAD+/NADP+, driving hundreds of redox reactions, DNA repair, and energy metabolism.",
+    roleAr: "أساسي لتكوين مرافقات NAD/NADP المسؤولة عن إنتاج الطاقة وإصلاح الحمض النووي.",
+    foods: "Poultry, tuna, salmon, peanuts, brown rice, fortified grains.",
+    foodsAr: "الدواجن، التونة، السلمون، الفول السوداني، الأرز البني، الحبوب المدعمة.",
+    tips: "Nicotinic acid above 30–50 mg can cause harmless skin flushing; niacinamide does not flush. High therapeutic doses require medical liver monitoring.",
+    tipsAr: "حمض النيكوتينيك بجرعات تفوق 30 ملغ قد يسبب احمراراً وسخونة مؤقتة بالجلد، بخلاف النياسيناميد. الجرعات العلاجية العالية تتطلب متابعة وظائف الكبد."
+  },
+  "Pantothenic acid (Vitamin B5)": {
+    ar: "حمض البانتوثينيك (فيتامين ب5)", sub: "water-soluble", aliases: ["B5", "Calcium pantothenate", "بانتوثينيك"],
+    rda: "5 mg (AI)", rdaAr: "5 ملغ (مدخول كافٍ)",
+    ul: "Not established", ulAr: "غير محدد",
+    role: "Component of Coenzyme A (CoA), essential for fatty acid synthesis/breakdown and energy release.",
+    roleAr: "يدخل في تركيب مرافق الإنزيم A اللازم لأيض الدهون والكربوهيدرات وإنتاج الطاقة.",
+    foods: "Shiitake mushrooms, avocado, chicken, beef, eggs, sunflower seeds, sweet potato.",
+    foodsAr: "المشروم (فطر الشيتاكي)، الأفوكادو، الدجاج، اللحوم، البيض، بذور دوار الشمس، البطاطا الحلوة.",
+    tips: "Widespread across nearly all whole foods; deficiency is very rare outside severe malnutrition.",
+    tipsAr: "متوفر في أغلب الأغذية الطبيعية، ونقصه نادر جداً."
+  },
+  "Vitamin B6": {
+    ar: "فيتامين ب6 (البيريدوكسين)", sub: "water-soluble", aliases: ["Pyridoxine", "P5P", "Pyridoxal 5-phosphate", "بيريدوكسين"],
+    rda: "1.3 mg (1.5–1.7 mg 51+ y)", rdaAr: "1.3 ملغ (1.5–1.7 ملغ فوق 51 سنة)",
+    ul: "100 mg", ulAr: "100 ملغ",
+    role: "Required for amino acid metabolism, neurotransmitter synthesis (serotonin, GABA, dopamine), and hemoglobin.",
+    roleAr: "ضروري لأيض الأحماض الأمينية وتصنيع النواقل العصبية (السيروتونين والدوبامين) وتكوين الهيموغلوبين.",
+    foods: "Chickpeas, tuna, salmon, poultry, potatoes, bananas, fortified cereals.",
+    foodsAr: "الحمص، التونة، السلمون، الدواجن، البطاطس، الموز، الحبوب المدعمة.",
+    tips: "Avoid chronic high doses (>100 mg/day), which can cause reversible or persistent sensory nerve toxicity (neuropathy).",
+    tipsAr: "تجنب الجرعات العالية المزمنة (>100 ملغ/يوم) لأنها قد تسبب اعتلالاً عصبياً وتنميلاً في الأطراف."
+  },
+  "Biotin (Vitamin B7)": {
+    ar: "البيوتين (فيتامين ب7)", sub: "water-soluble", aliases: ["B7", "Vitamin H", "بيوتين"],
+    rda: "30 mcg (AI)", rdaAr: "30 مكغ (مدخول كافٍ)",
+    ul: "Not established", ulAr: "غير محدد",
+    role: "Coenzyme for carboxylase enzymes in fatty acid, glucose, and amino acid metabolism; deficiency (rare) causes hair thinning and skin rash.",
+    roleAr: "مرافق إنزيمي لأيض الدهون والكربوهيدرات والأحماض الأمينية؛ ونقصه (النادر) يسبب تساقط الشعر والتهابات جلدية.",
+    foods: "Cooked eggs (yolk), salmon, liver, nuts, seeds, sweet potatoes.",
+    foodsAr: "صفار البيض المطبوخ، السلمون، المكسرات، البذور، البطاطا الحلوة.",
+    tips: "CRITICAL LAB CAUTION: High-dose biotin supplements can falsely distort blood tests including troponin (heart attack) and thyroid panels. Stop 48–72h before lab draws if advised by your doctor.",
+    tipsAr: "تنبيه مخبري هام: الجرعات العالية من البيوتين تعطي نتائج خاطئة في تحاليل الغدة الدرقية والقلب (التروبونين). أوقفه 48–72 ساعة قبل سحب الدم إن أوصى طبيبك بذلك، وأخبر المختبر دائماً."
+  },
+  "Folate (Vitamin B9)": {
+    ar: "الفولات (فيتامين ب9 / حمض الفوليك)", sub: "water-soluble", aliases: ["B9", "Folic acid", "L-methylfolate", "5-MTHF", "حمض الفوليك", "فولات"],
+    rda: "400 mcg DFE (600 mcg pregnancy)", rdaAr: "400 مكغ مكافئ فولات (DFE)، و600 مكغ للحامل",
+    ul: "1,000 mcg (synthetic folic acid)", ulAr: "1,000 مكغ (لحمض الفوليك الصناعي)",
+    role: "Crucial for DNA/RNA synthesis, red blood cell formation, and preventing neural tube defects in early pregnancy.",
+    roleAr: "أساسي لبناء الحمض النووي وتكوين كريات الدم الحمراء والوقاية من تشوهات الأنبوب العصبي للجنين.",
+    foods: "Dark leafy greens, beef liver, black-eyed peas, lentils, asparagus, avocado, fortified grains.",
+    foodsAr: "الورقيات الخضراء الداكنة، العدس والبقوليات، الهليون، الأفوكادو، الحبوب المدعمة.",
+    tips: "Excess folic acid (>1,000 mcg) can mask vitamin B12 deficiency anemia while nerve damage continues. Check B12 status alongside folate.",
+    tipsAr: "الإفراط في حمض الفوليك قد يخفي فقر الدم الناتج عن نقص ب12 بينما يستمر تضرر الأعصاب؛ افحص ب12 بالتزامن."
+  },
+  "Vitamin B12": {
+    ar: "فيتامين ب12 (كوبالامين)", sub: "water-soluble", aliases: ["Cobalamin", "Methylcobalamin", "Cyanocobalamin", "كوبالامين"],
+    rda: "2.4 mcg", rdaAr: "2.4 مكغ",
+    ul: "Not established", ulAr: "غير محدد",
+    role: "Maintains myelin nerve sheaths, red blood cell maturation, and DNA synthesis.",
+    roleAr: "يحافظ على غلاف الأعصاب (الميالين)، وتكوين كريات الدم الحمراء، وبناء الحمض النووي.",
+    foods: "Clams, fish, meat, poultry, eggs, dairy, fortified nutritional yeast and plant milks.",
+    foodsAr: "المحار، الأسماك، اللحوم، الدواجن، البيض، الألبان، الخميرة الغذائية وبدائل الحليب النباتية المدعمة.",
+    tips: "Vegans, adults >50, and long-term metformin or PPI (acid-blocker) users have higher risk of low B12 because absorption relies on stomach acid & intrinsic factor.",
+    tipsAr: "النباتيون تماماً، ومن تجاوزوا 50 عاماً، ومستخدمو الميتفورمين أو مثبطات حموضة المعدة أكثر عرضة لنقصه، لأن الامتصاص يعتمد على حمض المعدة والعامل الداخلي."
+  },
+  "Vitamin C": {
+    ar: "فيتامين سي (حمض الأسكوربيك)", sub: "water-soluble", aliases: ["Ascorbic acid", "حمض الأسكوربيك", "فيتامين ج"],
+    rda: "90 mg (M) / 75 mg (F) (+35 mg smokers)", rdaAr: "90 ملغ (رجال) / 75 ملغ (نساء) + 35 ملغ للمدخنين",
+    ul: "2,000 mg", ulAr: "2,000 ملغ",
+    role: "Water-soluble antioxidant; required for collagen synthesis, wound healing, immune cells, and non-heme iron absorption.",
+    roleAr: "مضاد أكسدة أساسي؛ ضروري لتصنيع الكولاجين والتئام الجروح ودعم المناعة وتعزيز امتصاص الحديد النباتي.",
+    foods: "Bell peppers, citrus fruits, kiwi, strawberries, broccoli, tomatoes.",
+    foodsAr: "الفلفل الرومي، الحمضيات، الكيوي، الفراولة، البروكلي، الطماطم.",
+    tips: "Enhances plant iron absorption when taken in the same meal. Doses above 2,000 mg often cause GI upset/diarrhea and may raise kidney stone risk in susceptible people.",
+    tipsAr: "يعزز امتصاص الحديد غير الهيمي عند تناوله في الوجبة نفسها. الجرعات الزائدة (>2,000 ملغ) قد تسبب اضطراباً معوياً أو تزيد خطر حصوات الكلى لدى المعرضين لها."
+  },
+  "Vitamin D": {
+    ar: "فيتامين د", sub: "fat-soluble", aliases: ["Cholecalciferol", "D3", "Ergocalciferol", "D2", "كوليكالسيفيرول"],
+    rda: "15 mcg / 600 IU (20 mcg / 800 IU 71+ y)", rdaAr: "15 مكغ / 600 وحدة (20 مكغ / 800 وحدة فوق 71 سنة)",
+    ul: "100 mcg (4,000 IU)", ulAr: "100 مكغ (4,000 وحدة دولية)",
+    role: "Regulates calcium & phosphorus absorption for bone mineralization, muscle function, and immune modulation.",
+    roleAr: "ينظم امتصاص الكالسيوم والفوسفور لصحة العظام والأسنان، ويدعم العضلات والمناعة.",
+    foods: "Fatty fish (salmon, mackerel, sardines), UV-exposed mushrooms, egg yolks, fortified milk/cereals (sunlight is primary source).",
+    foodsAr: "الأسماك الدهنية (السلمون والماكريل والسردين)، المشروم المعرّض للأشعة فوق البنفسجية، صفار البيض، الحليب والحبوب المدعمة. والتعرض الآمن للشمس هو المصدر الأساسي.",
+    tips: "Take with a meal containing fat for optimal absorption. Excess (>4,000 IU/day long-term without medical supervision) can cause hypercalcemia and vascular/kidney calcification.",
+    tipsAr: "يُؤخذ مع وجبة تحتوي دهوناً لأفضل امتصاص. الإفراط المزمن (أكثر من 4,000 وحدة دولية يومياً بلا إشراف طبي) يرفع كالسيوم الدم وقد يسبب تكلساً في الأوعية والكلى."
+  },
+  "Vitamin E": {
+    ar: "فيتامين هـ", sub: "fat-soluble", aliases: ["Alpha-tocopherol", "Tocopherol", "توكوفيرول"],
+    rda: "15 mg (alpha-tocopherol)", rdaAr: "15 ملغ (ألفا توكوفيرول)",
+    ul: "1,000 mg (supplemental)", ulAr: "1,000 ملغ (من المكملات)",
+    role: "Fat-soluble chain-breaking antioxidant protecting cell membranes and lipids from oxidative damage.",
+    roleAr: "مضاد أكسدة ذائب في الدهون يحمي أغشية الخلايا والدهون من التأكسد.",
+    foods: "Wheat germ oil, sunflower seeds, almonds, hazelnuts, peanut butter, spinach.",
+    foodsAr: "زيت جنين القمح، بذور دوار الشمس، اللوز، البندق، السبانخ.",
+    tips: "High-dose supplements (>400 IU/day) can increase bleeding risk, especially with anticoagulants (warfarin) or antiplatelets.",
+    tipsAr: "الجرعات العالية (>400 وحدة دولية يومياً) قد تزيد خطر النزيف، خاصة مع مميعات الدم أو مضادات الصفائح."
+  },
+  "Vitamin K": {
+    ar: "فيتامين ك", sub: "fat-soluble", aliases: ["Phylloquinone", "K1", "Menaquinone", "K2", "MK-7", "فيلوكينون"],
+    rda: "120 mcg (M) / 90 mcg (F) (AI)", rdaAr: "120 مكغ (رجال) / 90 مكغ (نساء)",
+    ul: "Not established", ulAr: "غير محدد",
+    role: "Activates blood clotting factors and osteocalcin/MGP proteins that direct calcium into bone and away from arteries.",
+    roleAr: "ضروري لتخثر الدم الطبيعي وتنشيط البروتينات التي تثبت الكالسيوم في العظام.",
+    foods: "Kale, spinach, collards, broccoli, natto (K2), fermented cheeses.",
+    foodsAr: "الكيل، السبانخ، الكولارد، البروكلي، الناتو والأجبان المخمرة (فيتامين K2).",
+    tips: "WARFARIN CAUTION: Vitamin K directly counteracts warfarin (Coumadin). Keep dietary vitamin K intake consistent and consult your doctor before supplementing.",
+    tipsAr: "تنبيه مع الوارفارين: فيتامين ك يعاكس مفعول مميع الدم الوارفارين؛ حافظ على ثبات تناوله واستشر طبيبك قبل أي مكمل."
+  },
+  "Choline": {
+    ar: "الكولين", sub: "water-soluble", aliases: ["Choline bitartrate", "Alpha-GPC", "CDP-choline", "كولين"],
+    rda: "550 mg (M) / 425 mg (F) (AI)", rdaAr: "550 ملغ (رجال) / 425 ملغ (نساء)",
+    ul: "3,500 mg", ulAr: "3,500 ملغ",
+    role: "Precursor to acetylcholine (memory/muscle neurotransmitter) and phosphatidylcholine (cell membranes, liver fat export).",
+    roleAr: "يدخل في تصنيع الناقل العصبي أستيل كولين، وفي تركيب أغشية الخلايا، وفي نقل الدهون من الكبد.",
+    foods: "Egg yolks, beef liver, fish, soybeans, chicken, wheat germ.",
+    foodsAr: "صفار البيض، الكبد، الأسماك، فول الصويا، الدجاج، جنين القمح.",
+    tips: "Most multivitamins contain very little choline; egg yolks are one of the richest everyday food sources.",
+    tipsAr: "معظم الفيتامينات المتعددة تحوي كميات ضئيلة جداً منه؛ صفار البيض من أغنى مصادره اليومية."
+  },
+  "Calcium": {
+    ar: "الكالسيوم", sub: "macromineral", aliases: ["Calcium citrate", "Calcium carbonate", "كالسيوم"],
+    rda: "1,000 mg (1,200 mg F 51+ / all 71+)", rdaAr: "1,000 ملغ (1,200 ملغ للنساء فوق 51 وللجميع فوق 71)",
+    ul: "2,500 mg (2,000 mg 51+ y)", ulAr: "2,500 ملغ (2,000 ملغ فوق 51 سنة)",
+    role: "Structural mineral of bones and teeth; vital for muscle contraction, nerve signaling, and vascular tone.",
+    roleAr: "المكوّن البنائي الرئيسي للعظام والأسنان، وضروري لانقباض العضلات ونقل الإشارات العصبية.",
+    foods: "Dairy (milk, yogurt, cheese), calcium-set tofu, sardines with bones, fortified plant milks, kale.",
+    foodsAr: "الألبان والأجبان، السردين بعظامه، التوفو المدعم، حليب النبات المدعم، الكرنب.",
+    tips: "The body absorbs no more than about 500 mg at one time. Carbonate needs stomach acid, so take it with food; citrate can be taken anytime. Separate by 2+ hours from iron and thyroid medication (levothyroxine).",
+    tipsAr: "لا يمتص الجسم أكثر من نحو 500 ملغ في المرة الواحدة. كربونات الكالسيوم تحتاج حمض المعدة فتُؤخذ مع الطعام، والسترات في أي وقت. افصل بينه وبين الحديد ودواء الغدة الدرقية ساعتين على الأقل."
+  },
+  "Iron": {
+    ar: "الحديد", sub: "trace", aliases: ["Ferrous sulfate", "Ferrous bisglycinate", "Heme iron", "حديد"],
+    rda: "8 mg (M & F 51+) / 18 mg (F 19–50)", rdaAr: "8 ملغ (رجال، ونساء فوق 51) / 18 ملغ (نساء 19–50)",
+    ul: "45 mg", ulAr: "45 ملغ",
+    role: "Core of hemoglobin & myoglobin for oxygen transport, cellular energy, and cognitive/immune function.",
+    roleAr: "أساسي في تكوين الهيموغلوبين لنقل الأكسجين في الدم، وإنتاج الطاقة، والتركيز والمناعة.",
+    foods: "Red meat, liver, oysters, lentils, beans, spinach, pumpkin seeds, fortified cereals.",
+    foodsAr: "اللحوم الحمراء، الكبد، المحار، العدس والفاصوليا، السبانخ، بذور اليقطين، الحبوب المدعمة.",
+    tips: "Only supplement if deficiency is confirmed by labs (ferritin/CBC). Take with vitamin C; avoid taking alongside coffee, tea, calcium, or zinc, which sharply reduce absorption.",
+    tipsAr: "لا تأخذ مكملات الحديد دون فحص مخبري (الفيريتين). تناوله مع فيتامين سي، وباعده ساعتين عن الشاي والقهوة والكالسيوم والزنك."
+  },
+  "Magnesium": {
+    ar: "المغنيسيوم", sub: "macromineral", aliases: ["Magnesium glycinate", "Magnesium citrate", "Magnesium oxide", "مغنيسيوم"],
+    rda: "400–420 mg (M) / 310–320 mg (F)", rdaAr: "400–420 ملغ (رجال) / 310–320 ملغ (نساء)",
+    ul: "350 mg (supplements only)", ulAr: "350 ملغ (من المكملات فقط)",
+    role: "Cofactor for 300+ enzymes: ATP energy, muscle relaxation, nerve regulation, blood pressure, and vitamin D activation.",
+    roleAr: "مرافق لأكثر من 300 إنزيم: إنتاج الطاقة، استرخاء العضلات والأعصاب، تنظيم الضغط، وتنشيط فيتامين د.",
+    foods: "Pumpkin seeds, chia seeds, almonds, spinach, black beans, edamame, whole grains, dark chocolate.",
+    foodsAr: "بذور اليقطين والشيا، اللوز، السبانخ، الفاصوليا السوداء، الحبوب الكاملة، الشوكولاتة الداكنة.",
+    tips: "Glycinate/citrate absorb far better than oxide; oxide/citrate can loosen stools. Caution in kidney impairment.",
+    tipsAr: "غليسينات وسترات المغنيسيوم أفضل امتصاصاً من الأكسيد؛ السترات والأكسيد قد يسببان ليونة البطن. يُستخدم بحذر في قصور الكلى."
+  },
+  "Zinc": {
+    ar: "الزنك", sub: "trace", aliases: ["Zinc picolinate", "Zinc gluconate", "Zinc citrate", "زنك"],
+    rda: "11 mg (M) / 8 mg (F)", rdaAr: "11 ملغ (رجال) / 8 ملغ (نساء)",
+    ul: "40 mg", ulAr: "40 ملغ",
+    role: "Supports immune defense, DNA/protein synthesis, wound healing, taste/smell, and reproductive health.",
+    roleAr: "يدعم المناعة، والتئام الجروح، وبناء البروتينات والحمض النووي، وحاسة التذوق والشم.",
+    foods: "Oysters, beef, crab, pumpkin seeds, chickpeas, cashews, dairy.",
+    foodsAr: "المحار، اللحم البقري، السلطعون، بذور اليقطين، الحمص، الكاجو، الألبان.",
+    tips: "Take with food to prevent nausea. Chronic high zinc (>40–50 mg/day) blocks copper absorption and can cause copper-deficiency anemia.",
+    tipsAr: "يُؤخذ مع الطعام لتجنب الغثيان. الجرعات العالية المزمنة (>40 ملغ/يوم) تستنزف النحاس وتسبب فقر دم."
+  },
+  "Copper": {
+    ar: "النحاس", sub: "trace", aliases: ["Copper bisglycinate", "نحاس"],
+    rda: "900 mcg", rdaAr: "900 مكغ",
+    ul: "10,000 mcg (10 mg)", ulAr: "10,000 مكغ (10 ملغ)",
+    role: "Works in iron metabolism, red blood cell formation, connective tissue cross-linking, and nerve/antioxidant enzymes.",
+    roleAr: "ضروري لاستقلاب الحديد وتكوين كريات الدم الحمراء وتقوية الأنسجة الضامة وصحة الأعصاب.",
+    foods: "Beef liver, oysters, cashews, sunflower seeds, dark chocolate, chickpeas, mushrooms.",
+    foodsAr: "الكبد، المحار، الكاجو، بذور دوار الشمس، الشوكولاتة الداكنة، الحمص، المشروم.",
+    tips: "Keep roughly 10–15 parts zinc to 1 part copper when taking zinc long-term, so copper status is not depleted.",
+    tipsAr: "يوازن الزنك؛ عند تناول الزنك طويلاً حافظ على نسبة زنك إلى نحاس قريبة من 10–15:1."
+  },
+  "Selenium": {
+    ar: "السيلينيوم", sub: "trace", aliases: ["Selenomethionine", "سيلينيوم"],
+    rda: "55 mcg", rdaAr: "55 مكغ",
+    ul: "400 mcg", ulAr: "400 مكغ",
+    role: "Integral to thyroid hormone activation (deiodinases) and glutathione peroxidase antioxidant defense.",
+    roleAr: "عنصر محوري لتنشيط هرمونات الغدة الدرقية وإنزيمات مضادات الأكسدة (الجلوتاثيون).",
+    foods: "Brazil nuts (1–2 nuts can meet the daily requirement), yellowfin tuna, sardines, eggs, poultry.",
+    foodsAr: "الجوز البرازيلي (حبة أو حبتان تغطي الاحتياج اليومي)، التونة، السردين، البيض، الدواجن.",
+    tips: "Narrow safety margin — do not eat handfuls of Brazil nuts daily alongside selenium supplements (excess causes brittle hair/nails, garlic breath).",
+    tipsAr: "هامش الأمان ضيق: لا تتناول حفنات من الجوز البرازيلي يومياً مع مكملات السيلينيوم، فالإفراط يسبب هشاشة الأظافر وتساقط الشعر ورائحة ثوم في النفس."
+  },
+  "Iodine": {
+    ar: "اليود", sub: "trace", aliases: ["Potassium iodide", "Kelp", "يود"],
+    rda: "150 mcg (220 mcg pregnancy)", rdaAr: "150 مكغ (220 مكغ للحامل)",
+    ul: "1,100 mcg", ulAr: "1,100 مكغ",
+    role: "Essential building block of thyroid hormones (T3 & T4), regulating metabolism and fetal brain development.",
+    roleAr: "المكون الأساسي لهرمونات الغدة الدرقية (T3 و T4) المنظمة للأيض ونمو دماغ الجنين.",
+    foods: "Iodized salt, cod, shrimp, seaweed (kelp/nori), dairy, eggs.",
+    foodsAr: "الملح المدعم باليود، الأسماك البحرية، الروبيان، الأعشاب البحرية، الألبان، البيض.",
+    tips: "Both too little and too much iodine (e.g. high-potency kelp pills) can disrupt thyroid function, especially in autoimmune thyroiditis.",
+    tipsAr: "النقص والإفراط (مثل مكملات عشب البحر عالية التركيز) كلاهما قد يربك وظيفة الغدة الدرقية."
+  },
+  "Potassium": {
+    ar: "البوتاسيوم", sub: "macromineral", aliases: ["Potassium citrate", "Potassium chloride", "بوتاسيوم"],
+    rda: "3,400 mg (M) / 2,600 mg (F) (AI)", rdaAr: "3,400 ملغ (رجال) / 2,600 ملغ (نساء)",
+    ul: "Not established (caution in kidney disease)", ulAr: "غير محدد (يُحذر في أمراض الكلى)",
+    role: "Primary intracellular electrolyte for heart rhythm, nerve impulses, muscle contraction, and blood pressure balance.",
+    roleAr: "الكهرل الأساسي داخل الخلايا، وهو ضروري لنظم نبض القلب وتوازن ضغط الدم وانقباض العضلات.",
+    foods: "Dried apricots, lentils, potatoes, squash, bananas, avocado, spinach, yogurt.",
+    foodsAr: "المشمش المجفف، العدس، البطاطس، القرع، الموز، الأفوكادو، السبانخ.",
+    tips: "OTC supplements are capped at 99 mg/serving for GI safety; prioritize whole foods. High-dose supplements can be dangerous with kidney disease or ACE inhibitors/ARBs.",
+    tipsAr: "تُحدد مكملات البوتاسيوم عادةً بـ 99 ملغ للجرعة الواحدة حفاظاً على سلامة المعدة؛ لذا ركّز على الغذاء. والجرعات العالية خطرة في قصور الكلى ومع بعض أدوية الضغط."
+  },
+  "Phosphorus": {
+    ar: "الفوسفور", sub: "macromineral", aliases: ["Phosphate", "فوسفور"],
+    rda: "700 mg", rdaAr: "700 ملغ",
+    ul: "4,000 mg (3,000 mg 71+ y)", ulAr: "4,000 ملغ (3,000 ملغ فوق 71 سنة)",
+    role: "Forms bone/tooth hydroxyapatite with calcium, DNA/RNA backbones, and ATP energy currency.",
+    roleAr: "يدخل مع الكالسيوم في بنية العظام والأسنان، وفي تركيب جزيئات الطاقة (ATP) والحمض النووي.",
+    foods: "Dairy, salmon, poultry, lentils, nuts, seeds, whole grains.",
+    foodsAr: "الألبان، السلمون، الدواجن، العدس، المكسرات، الحبوب الكاملة.",
+    tips: "Deficiency is rare in healthy diets; people with chronic kidney disease must strictly limit phosphate additives.",
+    tipsAr: "نقصه نادر في الغذاء الطبيعي، فيما يحتاج مرضى الكلى المزمنة إلى تقييد الفوسفات المضاف."
+  },
+  "Chromium": {
+    ar: "الكروم", sub: "trace", aliases: ["Chromium picolinate", "كروم"],
+    rda: "35 mcg (M) / 25 mcg (F) (AI)", rdaAr: "35 مكغ (رجال) / 25 مكغ (نساء)",
+    ul: "Not established", ulAr: "غير محدد",
+    role: "Plays a proposed role in potentiating insulin signaling and carbohydrate/lipid metabolism.",
+    roleAr: "دوره المقترح دعم استجابة الإنسولين وأيض السكريات والدهون، والأدلة على ذلك محدودة.",
+    foods: "Broccoli, grape juice, whole wheat, brewer's yeast, lean meats.",
+    foodsAr: "البروكلي، عصير العنب، القمح الكامل، خميرة البيرة، اللحوم الخالية من الدهون.",
+    tips: "Evidence for weight loss or blood sugar supplements is modest; monitor blood glucose if taking diabetes medications.",
+    tipsAr: "أدلة فعاليته لإنقاص الوزن محدودة؛ راقب السكر إذا كنت تتناول أدوية السكري."
+  },
+  "Manganese": {
+    ar: "المنغنيز", sub: "trace", aliases: ["Manganese gluconate", "منغنيز"],
+    rda: "2.3 mg (M) / 1.8 mg (F) (AI)", rdaAr: "2.3 ملغ (رجال) / 1.8 ملغ (نساء)",
+    ul: "11 mg", ulAr: "11 ملغ",
+    role: "Cofactor for mitochondrial superoxide dismutase (antioxidant), bone formation, and amino acid/carb metabolism.",
+    roleAr: "مرافق إنزيمي لمضادات الأكسدة داخل الميتوكوندريا، وتكوين العظام والأنسجة.",
+    foods: "Mussels, hazelnuts, pecans, brown rice, oats, chickpeas, spinach, tea.",
+    foodsAr: "بلح البحر، المكسرات، الشوفان، الأرز البني، الحمص، السبانخ، الشاي.",
+    tips: "Easily met through plant foods; excess intake can accumulate and affect the nervous system, especially in liver disease.",
+    tipsAr: "سهل التغطية من الغذاء النباتي، أما الإفراط فقد يؤدي إلى تراكمه، وخاصة لدى مرضى الكبد."
+  },
+  "Molybdenum": {
+    ar: "الموليبدنوم", sub: "trace", aliases: ["موليبدنوم"],
+    rda: "45 mcg", rdaAr: "45 مكغ",
+    ul: "2,000 mcg", ulAr: "2,000 مكغ",
+    role: "Essential cofactor for enzymes that break down sulfur amino acids, purines, and certain drugs/toxins.",
+    roleAr: "مرافق لإنزيمات تفكيك الأحماض الأمينية الكبريتية والبيورينات وبعض السموم.",
+    foods: "Black-eyed peas, lima beans, oats, whole grains, dairy, liver.",
+    foodsAr: "البقوليات، الشوفان، الحبوب الكاملة، الألبان، الكبد.",
+    tips: "Dietary deficiency is virtually unknown outside rare genetic enzyme defects or prolonged un-supplemented TPN.",
+    tipsAr: "نقصه الغذائي شبه معدوم في الأنظمة الغذائية المعتادة."
+  },
+  "Fluoride": {
+    ar: "الفلوريد", sub: "trace", aliases: ["فلوريد"],
+    rda: "4 mg (M) / 3 mg (F) (AI)", rdaAr: "4 ملغ (رجال) / 3 ملغ (نساء)",
+    ul: "10 mg", ulAr: "10 ملغ",
+    role: "Strengthens tooth enamel against acid decay and supports bone mineral density.",
+    roleAr: "يقوي مينا الأسنان ضد التسوس ويدخل في تمعدن العظام.",
+    foods: "Fluoridated drinking water, brewed black/green tea, marine fish with bones.",
+    foodsAr: "مياه الشرب المفلورة، الشاي الأسود والأخضر، الأسماك البحرية بعظامها.",
+    tips: "Excess in early childhood causes dental fluorosis; adult supplements are rarely needed when water/toothpaste are fluoridated.",
+    tipsAr: "الإفراط في الطفولة يسبب تبقع الأسنان؛ ونادراً ما يلزم كمكمل للبالغين."
+  },
+  "Boron": {
+    ar: "البورون", sub: "trace", aliases: ["بورون"],
+    rda: "No RDA/AI established", rdaAr: "لا يوجد احتياج يومي محدد",
+    ul: "20 mg", ulAr: "20 ملغ",
+    role: "Trace element studied for bone metabolism, vitamin D/steroid hormone handling, and cognitive support.",
+    roleAr: "عنصر نادر يُدرس لدوره المساعد في أيض العظام وفيتامين د.",
+    foods: "Prunes, raisins, avocados, apples, pears, legumes, nuts.",
+    foodsAr: "البرقوق المجفف، الزبيب، الأفوكادو، التفاح، البقوليات، المكسرات.",
+    tips: "Not officially classified as an essential nutrient in US DRI tables, though an upper limit of 20 mg/day is set for adults.",
+    tipsAr: "لا يُصنَّف رسمياً عنصراً أساسياً في جداول DRI الأمريكية، لكن حُدّد له حد أعلى 20 ملغ يومياً للبالغين."
+  },
+  "Multivitamin/mineral supplements": {
+    ar: "الفيتامينات والمعادن المتعددة (MVM)", sub: "combo", aliases: ["Multivitamin", "MVM", "Prenatal", "ملتي فيتامين"],
+    rda: "Varies by formulation", rdaAr: "تختلف حسب التركيبة",
+    ul: "Check each nutrient's UL", ulAr: "انتبه للحد الأعلى لكل عنصر داخل المنتج",
+    role: "Broad nutritional insurance for restricted diets, pregnancy (prenatal), older adults, or malabsorption.",
+    roleAr: "مكمل شامل لسد الفجوات الغذائية لمن يتبع نظاماً محدوداً، أو أثناء الحمل، أو لكبار السن، أو عند سوء الامتصاص.",
+    foods: "Whole-food variety remains the primary foundation.",
+    foodsAr: "التنوع الغذائي الطبيعي يبقى الأساس.",
+    tips: "Check iron presence (men & postmenopausal women rarely need extra iron) and look for independent quality seals (USP, NSF, ConsumerLab).",
+    tipsAr: "تحقق من وجود الحديد (غالباً لا يحتاجه الرجال ولا النساء بعد سن اليأس إلا لنقص مثبت)، وابحث عن شهادات الفحص المستقل (USP أو NSF)."
+  },
+  /* ---- Key Herbs enriched ---- */
+  "Ashwagandha": {
+    ar: "الأشواغاندا", aliases: ["Withania somnifera", "Indian ginseng", "أشواغاندا"],
+    role: "Adaptogenic herb studied for stress resilience, mild anxiety, and sleep quality.",
+    roleAr: "عشبة تكيفية تُدرس لتحسين المرونة أمام التوتر، وللقلق الخفيف وجودة النوم.",
+    tips: "Avoid during pregnancy; use caution in autoimmune conditions, thyroid disorders, or liver disease (rare liver injury reports exist).",
+    tipsAr: "تُتجنب أثناء الحمل، ويُحذر استخدامها مع أمراض الغدة الدرقية أو المناعة الذاتية أو الكبد، فقد سُجّلت حالات نادرة لإصابة الكبد."
+  },
+  "Black cohosh": {
+    ar: "الكوهوش الأسود", aliases: ["Actaea racemosa", "كوهوش أسود"],
+    role: "Studied primarily for menopausal hot flashes and vasomotor symptoms.",
+    roleAr: "يُدرس لتخفيف الهبات الساخنة وأعراض سن اليأس.",
+    tips: "Rare reports of liver injury; discontinue immediately if jaundice or dark urine appears. Caution in hormone-sensitive conditions.",
+    tipsAr: "سُجّلت حالات نادرة لإصابة الكبد؛ أوقفه فوراً عند ظهور اصفرار الجلد أو العينين أو تغيّر لون البول. يُحذر في الحالات الحساسة للهرمونات."
+  },
+  "Valerian": {
+    ar: "الناردين (الفاليريان)", aliases: ["Valeriana officinalis", "ناردين", "فاليريان"],
+    role: "Botanical traditionally used for sleep latency and mild nervous tension.",
+    roleAr: "نبات تقليدي يُستخدم للمساعدة على النوم وتهدئة التوتر الخفيف.",
+    tips: "Can cause additive drowsiness with alcohol, benzodiazepines, antihistamines, or sleep medications.",
+    tipsAr: "قد يضاعف النعاس مع الكحول أو المهدئات أو مضادات الهيستامين أو أدوية النوم."
+  },
+  "Berberine": {
+    ar: "البربارين", aliases: ["Berberis", "بربارين"],
+    role: "Plant alkaloid researched for blood glucose, lipid metabolism, and weight support.",
+    roleAr: "مركب نباتي تُدرس فائدته في دعم مستويات السكر والدهون في الدم.",
+    tips: "Can interact with CYP enzymes, cyclosporine, and diabetes/blood pressure medications (hypoglycemia risk). Avoid in pregnancy/breastfeeding.",
+    tipsAr: "قد يتداخل مع أدوية السكري والضغط وبعض مثبطات المناعة؛ يُمنع للحامل والمرضع."
+  },
+  "Turmeric": {
+    ar: "الكركم (الكركمين)", aliases: ["Curcuma longa", "Curcumin", "كركم", "كركمين"],
+    role: "Polyphenol-rich rhizome studied for joint inflammation and antioxidant pathways.",
+    roleAr: "جذمور غني بالكركمين يُدرس لدعم المفاصل ومسارات مضادات الأكسدة.",
+    tips: "Low natural absorption; often paired with piperine (black pepper) or lipid forms. High-dose extracts carry rare liver-injury cautions and mild blood-thinning potential.",
+    tipsAr: "امتصاصه الطبيعي منخفض، لذا يُقرن أحياناً بالفلفل الأسود (بيبيرين) أو بأشكال دهنية. المستخلصات المركزة تستدعي حذراً مع مميعات الدم، وسُجّلت معها حالات نادرة لإصابة الكبد."
+  },
+  "St. John's wort": {
+    ar: "عشبة سانت جون (القديس يوحنا)", aliases: ["Hypericum perforatum", "سانت جون"],
+    role: "Studied for mild-to-moderate depressive symptoms.",
+    roleAr: "تُدرس لأعراض الاكتئاب الخفيف إلى المتوسط.",
+    tips: "MAJOR DRUG INTERACTION: Strongly induces CYP3A4 & P-gp, dangerously lowering levels of birth control pills, blood thinners, transplant drugs, HIV meds, and causing serotonin syndrome with SSRIs.",
+    tipsAr: "تحذير دوائي شديد: تقلل فعالية أدوية كثيرة (حبوب منع الحمل، مميعات الدم، أدوية القلب والزراعة) وقد تسبب متلازمة السيروتونين مع مضادات الاكتئاب."
+  },
+  "Ginkgo": {
+    ar: "الجنكة بيلوبا", aliases: ["Ginkgo biloba", "جنكة"],
+    role: "Leaf extract studied for peripheral circulation and cognitive support.",
+    roleAr: "مستخلص يُدرس لدعم الدورة الدموية الطرفية والذاكرة.",
+    tips: "May increase bleeding risk with anticoagulants/antiplatelets (warfarin, aspirin). Never consume raw/roasted ginkgo seeds (toxic).",
+    tipsAr: "قد يزيد خطر النزيف مع مميعات الدم (الوارفارين والأسبرين). البذور النيئة سامة."
+  },
+  "Garlic": {
+    ar: "الثوم", aliases: ["Allium sativum", "Allicin", "ثوم"],
+    role: "Studied for modest blood pressure and cholesterol support.",
+    roleAr: "يُدرس لدعم ضغط الدم والكوليسترول بشكل طفيف.",
+    tips: "Concentrated supplements can increase bleeding risk before surgery or alongside blood thinners, and may reduce levels of some HIV protease inhibitors.",
+    tipsAr: "المكملات المركزة قد تزيد خطر النزيف قبل الجراحة أو مع مميعات الدم، وقد تخفض مستويات بعض أدوية فيروس نقص المناعة (مثبطات البروتياز)."
+  },
+  "Ginger": {
+    ar: "الزنجبيل", aliases: ["Zingiber officinale", "زنجبيل"],
+    role: "Well-studied for nausea (motion sickness, pregnancy-related, post-op) and mild GI/joint support.",
+    roleAr: "من الأعشاب المدروسة جيداً للغثيان (دوار الحركة، وغثيان الحمل، وبعد الجراحة)، ولدعم الهضم والمفاصل بشكل خفيف.",
+    tips: "High supplemental doses may mildly inhibit platelet aggregation; check with clinician during pregnancy or with blood thinners.",
+    tipsAr: "الجرعات المكملة العالية قد تثبط تجمع الصفائح بشكل خفيف؛ استشر الطبيب أثناء الحمل أو مع مميعات الدم."
+  },
+  "Kava": {
+    ar: "الكافا", aliases: ["Piper methysticum", "كافا"],
+    role: "Traditionally used for short-term anxiety relief.",
+    roleAr: "تُستخدم تقليدياً للقلق قصير الأمد.",
+    tips: "SAFETY WARNING: Linked to severe, sometimes fatal liver toxicity. Avoid with liver disease, alcohol, or hepatotoxic drugs.",
+    tipsAr: "تحذير أمان: ارتبطت بحالات تسمم كبدي خطيرة، وبعضها قاتل. تجنبها تماماً مع أمراض الكبد أو الكحول أو الأدوية السامة للكبد."
+  },
+  "Milk thistle": {
+    ar: "شوك الحليب (السليمارين)", aliases: ["Silybum marianum", "Silymarin", "شوك الحليب", "سليمارين"],
+    role: "Studied for liver antioxidant support; clinical evidence for liver disease remains mixed.",
+    roleAr: "يُدرس لدعم مضادات الأكسدة في الكبد، مع تباين الأدلة السريرية.",
+    tips: "May cause mild GI upset or allergic reactions in people sensitive to ragweed/Asteraceae plants.",
+    tipsAr: "قد يسبب اضطراباً معوياً خفيفاً أو حساسية لمن يتحسس من عائلة الأقحوان (النجميات)."
+  },
+  "Echinacea": {
+    ar: "الإكيناسيا (القنفذية)", aliases: ["Echinacea purpurea", "إكيناسيا"],
+    role: "Widely used for common cold prevention/duration (study results are mixed).",
+    roleAr: "تُستخدم على نطاق واسع لنزلات البرد، مع نتائج دراسات متباينة.",
+    tips: "Caution in autoimmune conditions or ragweed allergies.",
+    tipsAr: "يُحذر استخدامها مع أمراض المناعة الذاتية أو حساسية حبوب اللقاح."
+  },
+  "Elderberry": {
+    ar: "البيلسان الأسود", aliases: ["Sambucus nigra", "بيلسان"],
+    role: "Studied for early upper-respiratory viral symptoms.",
+    roleAr: "يُدرس لأعراض الجهاز التنفسي العلوي المبكرة.",
+    tips: "Raw/unripe berries, leaves, and bark contain cyanogenic glycosides and are toxic; only properly cooked or standardized commercial extracts are safe.",
+    tipsAr: "الثمار غير الناضجة والأوراق واللحاء تحتوي غليكوسيدات سيانوجينية سامة؛ لا تستخدم إلا المستخلصات التجارية المعالجة أو الثمار المطبوخة جيداً."
+  },
+  "Green tea": {
+    ar: "مستخلص الشاي الأخضر", aliases: ["Camellia sinensis", "EGCG", "شاي أخضر"],
+    role: "Rich in catechins (EGCG); studied for cardiometabolic and antioxidant support.",
+    roleAr: "غني بالكاتيكين (EGCG)؛ يُدرس لصحة القلب والأيض.",
+    tips: "Brewed tea is very safe; concentrated green tea extract pills (especially on an empty stomach) have rare reports of liver injury and contain caffeine unless decaffeinated.",
+    tipsAr: "الشاي المغلي آمن جداً؛ أما كبسولات المستخلص المركزة، وخاصة على معدة فارغة، فقد ارتبطت بحالات نادرة لإصابة الكبد، وهي تحتوي كافيين ما لم تكن منزوعة الكافيين."
+  },
+  "Rhodiola": {
+    ar: "الروديولا (الجذر الذهبي)", aliases: ["Rhodiola rosea", "روديولا"],
+    role: "Adaptogen researched for fatigue, mental stamina, and mild stress.",
+    roleAr: "عشبة تكيفية تُدرس للإجهاد الذهني والبدني.",
+    tips: "Usually taken in the morning/early afternoon as it can feel mildly stimulating.",
+    tipsAr: "تُؤخذ صباحاً عادةً لأنها قد تسبب نشاطاً يزعج النوم ليلاً."
+  },
+  "Saw palmetto": {
+    ar: "البلميط المنشاري", aliases: ["Serenoa repens", "بلميط منشاري"],
+    role: "Studied for benign prostatic hyperplasia (BPH) urinary symptoms (large trials show little benefit over placebo).",
+    roleAr: "يُدرس لأعراض تضخم البروستاتا الحميد (التجارب الكبرى أظهرت فائدة محدودة).",
+    tips: "Inform your physician before PSA testing or urologic evaluation.",
+    tipsAr: "أخبر طبيبك قبل فحص البروستاتا (PSA)."
+  },
+  "Cranberry": {
+    ar: "التوت البري (الكرانبيري)", aliases: ["Vaccinium macrocarpon", "كرانبيري"],
+    role: "Studied for reducing recurrent urinary tract infections (UTIs) in women.",
+    roleAr: "يُدرس للوقاية من تكرار التهابات المسالك البولية.",
+    tips: "Helps prevent bacterial adhesion rather than treating an active UTI. High intakes may raise urinary oxalate.",
+    tipsAr: "يفيد في منع التصاق البكتيريا، لا في علاج الالتهاب النشط الذي يحتاج مضاداً حيوياً. والإفراط قد يرفع أوكسالات البول."
+  },
+  "Flaxseed": {
+    ar: "بذور الكتان", aliases: ["Linum usitatissimum", "ALA", "بذور الكتان"],
+    role: "Source of soluble fiber, lignans, and plant omega-3 (ALA).",
+    roleAr: "مصدر للألياف والليغنان وأوميغا-3 النباتي (ALA).",
+    tips: "Grind whole seeds to absorb nutrients; drink plenty of water and separate from oral medications by 1–2 hours.",
+    tipsAr: "تُطحن البذور للاستفادة منها، وتُؤخذ مع ماء وفير، وتُفصل عن الأدوية الفموية بساعة إلى ساعتين."
+  },
+  "Chamomile": { ar: "البابونج", aliases: ["Matricaria recutita", "بابونج"], role: "Traditionally used for mild sleep, anxiety, and digestive comfort.", roleAr: "يُستخدم تقليدياً للاسترخاء والهضم والنوم الخفيف.", tips: "May trigger reactions in people allergic to ragweed/daisy family.", tipsAr: "قد يسبب حساسية لمن يتحسس من عائلة الأقحوان." },
+  "Cinnamon": { ar: "القرفة", aliases: ["Cinnamomum", "قرفة"], role: "Studied for blood sugar support (evidence remains inconclusive).", roleAr: "تُدرس لدعم سكر الدم (الأدلة غير حاسمة).", tips: "Cassia cinnamon is high in coumarin, which in heavy supplement doses can stress the liver; Ceylon cinnamon is much lower in coumarin.", tipsAr: "قرفة الكاسيا عالية الكومارين، الذي قد يرهق الكبد عند الإفراط في المكملات؛ أما قرفة سيلان فتحتوي على نسبة أقل بكثير." },
+  "Fenugreek": { ar: "الحلبة", aliases: ["Trigonella foenum-graecum", "حلبة"], role: "Studied for blood sugar control and lactation support.", roleAr: "تُدرس لسكر الدم وإدرار الحليب.", tips: "May lower blood glucose and interact with diabetes meds or warfarin; avoid concentrated doses during pregnancy.", tipsAr: "قد تخفض سكر الدم وتتداخل مع أدوية السكري والوارفارين؛ تُتجنب الجرعات المركزة أثناء الحمل." },
+  "Licorice root": { ar: "عرق السوس", aliases: ["Glycyrrhiza glabra", "عرق سوس"], role: "Used for soothing GI/throat irritation; DGL removes glycyrrhizin.", roleAr: "يُستخدم لتهدئة المعدة والحلق (النوع DGL منزوع الغليسيريزين).", tips: "Whole licorice (glycyrrhizin) raises blood pressure and drops potassium dangerously if overused.", tipsAr: "عرق السوس الكامل (الغليسيريزين) يرفع ضغط الدم ويخفض البوتاسيوم بشكل خطير عند الإفراط، وخاصة لدى مرضى الضغط." },
+  "Peppermint oil": { ar: "زيت النعناع الفلفلي", aliases: ["Mentha piperita", "نعناع"], role: "Enteric-coated capsules show benefit for IBS abdominal cramps.", roleAr: "الكبسولات المغلفة معوياً تفيد في تقلصات القولون العصبي.", tips: "Can worsen acid reflux (GERD) if not enteric-coated.", tipsAr: "قد يزيد ارتجاع المريء إذا لم يكن مغلفاً معوياً." },
+  "Soy": { ar: "الصويا (الأيزوفلافون)", aliases: ["Glycine max", "Isoflavones", "صويا"], role: "Source of phytoestrogens studied for menopausal hot flashes and cholesterol.", roleAr: "مصدر للفيتواستروجين يُدرس لأعراض سن اليأس والكوليسترول.", tips: "Whole soy foods are safe; consult an oncologist before concentrated isoflavone pills in hormone-receptor-positive breast cancer.", tipsAr: "أغذية الصويا الكاملة آمنة؛ استشر الطبيب قبل حبوب الأيزوفلافون المركزة." },
+  "Red clover": { ar: "البرسيم الأحمر", aliases: ["Trifolium pratense", "برسيم أحمر"], role: "Isoflavone-rich herb studied for menopause symptoms.", roleAr: "نبات غني بالأيزوفلافون يُدرس لأعراض سن اليأس.", tips: "Caution with hormone-sensitive conditions and anticoagulants.", tipsAr: "يُحذر مع الحالات الحساسة للهرمونات ومميعات الدم." },
+  "Lavender": { ar: "اللافندر (الخزامى)", aliases: ["Lavandula", "لافندر", "خزامى"], role: "Studied via aromatherapy and oral preparations for mild anxiety.", roleAr: "يُدرس عبر الاستنشاق أو المستخلصات الفموية للقلق الخفيف.", tips: "Essential oils should never be swallowed undiluted.", tipsAr: "الزيوت العطرية لا تُبلع مباشرة دون تخفيف أو مستحضر مخصص." },
+  "Passionflower": { ar: "زهرة الآلام", aliases: ["Passiflora incarnata", "زهرة الآلام"], role: "Traditionally used for mild anxiety and sleep.", roleAr: "تُستخدم تقليدياً للتوتر الخفيف والنوم.", tips: "Avoid combining with sedatives; avoid during pregnancy.", tipsAr: "تجنب دمجها مع المهدئات وأثناء الحمل." },
+  "Bromelain": { ar: "البروميلين", aliases: ["Pineapple enzyme", "بروميلين"], role: "Protein-digesting enzyme from pineapple studied for swelling/sinus inflammation.", roleAr: "إنزيم من الأناناس يُدرس لتخفيف التورم والالتهابات.", tips: "May increase bleeding risk with anticoagulants and increase absorption of certain antibiotics.", tipsAr: "قد يزيد خطر النزيف مع مميعات الدم، ويزيد امتصاص بعض المضادات الحيوية." },
+  "Butterbur": { ar: "البوتيربور (الأرام)", aliases: ["Petasites hybridus"], role: "Studied for migraine prevention and allergic rhinitis.", roleAr: "يُدرس للوقاية من الشقيقة وحساسية الأنف.", tips: "Use ONLY products certified free of pyrrolizidine alkaloids (PA-free): these alkaloids can cause severe liver damage.", tipsAr: "استخدم فقط المنتجات الموثقة بخلوها من قلويدات البيروليزيدين (PA-free) السامة للكبد." },
+  "Bitter orange": { ar: "النارنج (البرتقال المر)", aliases: ["Citrus aurantium", "Synephrine", "نارنج"], role: "Promoted for weight loss (contains p-synephrine).", roleAr: "يُروج له لإنقاص الوزن (يحوي السينفرين).", tips: "Can elevate heart rate and blood pressure, especially combined with caffeine; avoid in cardiovascular disease.", tipsAr: "قد يرفع ضغط الدم ونبض القلب، خاصة مع الكافيين؛ يُتجنب في أمراض القلب والأوعية." },
+  "Yohimbe": { ar: "اليوهيمبي", aliases: ["Pausinystalia yohimbe", "Yohimbine", "يوهيمبي"], role: "Promoted for erectile dysfunction and athletic fat loss.", roleAr: "يُروج له للقدرة الجنسية وحرق الدهون.", tips: "SAFETY WARNING: Frequently causes rapid heart rate, high blood pressure, anxiety, and dangerous drug interactions.", tipsAr: "تحذير: قد يسبب تسارع نبض القلب وارتفاع الضغط والقلق الشديد." },
+  "Goldenseal": { ar: "خاتم الذهب", aliases: ["Hydrastis canadensis", "Berberine"], role: "Contains berberine; traditionally used for mucosal/GI support.", roleAr: "يحوي البربارين، ويُستخدم تقليدياً لدعم الأغشية المخاطية والجهاز الهضمي.", tips: "Inhibits CYP2D6 & CYP3A4 liver enzymes, altering blood levels of many prescription drugs.", tipsAr: "يثبط إنزيمات الكبد CYP وقد يغير مستويات أدوية عديدة." },
+  "Acai": { ar: "الآساي", aliases: ["آساي"], role: "Antioxidant-rich palm berry; limited clinical proof for weight loss or anti-aging.", roleAr: "ثمار غنية بمضادات الأكسدة، دون أدلة قوية على إنقاص الوزن.", tips: "No strong clinical evidence supports weight-loss or anti-ageing claims; whole foods remain the better antioxidant source.", tipsAr: "لا توجد أدلة سريرية قوية لإنقاص الوزن أو مقاومة الشيخوخة؛ الاعتماد على الغذاء الكامل أفضل لمضادات الأكسدة." },
+  "Alfalfa": { ar: "البرسيم الحجازي (الفصفصة)", aliases: ["فصفصة"], role: "Traditionally used for cholesterol and nutrition.", roleAr: "يُستخدم تقليدياً لخفض الكوليسترول.", tips: "Raw sprouts carry bacterial contamination risks; high doses may trigger lupus flares or interact with warfarin (vitamin K content). MedlinePlus no longer hosts a standalone alfalfa monograph, so the link opens its live A–Z herbs index.", tipsAr: "قد يتداخل مع الوارفارين لاحتوائه على فيتامين ك، ويُحذر لمرضى الذئبة. لم يعد MedlinePlus يستضيف صفحة مستقلة للفصفصة، لذا يفتح الرابط فهرسه الحي للأعشاب." },
+  "Aloe vera": { ar: "الألوفيرا (الصبار)", aliases: ["صبار", "ألوفيرا"], role: "Topical gel soothes mild burns/skin; oral aloe latex is a harsh stimulant laxative.", roleAr: "الجل الموضعي يهدئ الحروق الخفيفة؛ أما خلاصة الصبار الفموية فملين قوي قد يضر.", tips: "Oral non-decolorized whole-leaf aloe extract carries safety warnings (cramps, electrolyte loss).", tipsAr: "تجنب المستخلص الفموي غير المنقى لما يسببه من تقلصات وإسهال وفقدان أملاح." },
+  "Astragalus": { ar: "القتاد (الأستراغالوس)", aliases: ["أستراغالوس"], role: "Traditional Chinese herb studied for immune and fatigue support.", roleAr: "عشبة تقليدية تُدرس لدعم المناعة.", tips: "May interact with immunosuppressant medications.", tipsAr: "قد يتعارض مع الأدوية المثبطة للمناعة." },
+  "Bee pollen": { ar: "حبوب لقاح النحل", aliases: ["لقاح النحل"], role: "Nutrient-dense bee product promoted for energy/allergies.", roleAr: "منتج نحلي يُروج له للطاقة.", tips: "Can trigger severe allergic reactions (anaphylaxis) in pollen/bee-allergic individuals; may interact with warfarin. Linked to the MedlinePlus A–Z herbs index because no standalone monograph is published.", tipsAr: "قد يسبب حساسية شديدة لمن يتحسس من حبوب اللقاح أو لسعات النحل. الرابط يفتح فهرس الأعشاب في MedlinePlus لعدم توفر صفحة مستقلة." },
+  "Bilberry": { ar: "العنبية (التوت الأزرق البري)", aliases: ["عنبية"], role: "Anthocyanin-rich berry studied for eye/vascular support.", roleAr: "ثمار غنية بالأنثوسيانين تُدرس لصحة العين والأوعية.", tips: "Leaf extracts in high doses are unsafe long-term; fruit is generally safe.", tipsAr: "ثماره آمنة عموماً، أما مستخلص الأوراق بجرعات عالية فغير آمن على المدى الطويل." },
+  "Cat's claw": { ar: "مخلب القط", aliases: ["مخلب القط"], role: "Amazonian vine studied for osteoarthritis/rheumatoid inflammation.", roleAr: "نبات يُدرس لالتهابات المفاصل.", tips: "May interact with blood pressure, blood-thinning, and immunosuppressant drugs.", tipsAr: "قد يتداخل مع أدوية الضغط والمناعة." },
+  "Chasteberry": { ar: "كف مريم", aliases: ["Vitex agnus-castus", "كف مريم"], role: "Studied for premenstrual syndrome (PMS) and cycle regularity.", roleAr: "يُدرس لمتلازمة ما قبل الحيض وتنظيم الدورة.", tips: "Affects dopamine/pituitary hormones; avoid with hormone therapy, birth control pills, or dopamine drugs.", tipsAr: "يؤثر على الهرمونات والدوبامين؛ تجنبه مع الحبوب الهرمونية." },
+  "Dandelion": { ar: "الهندباء", aliases: ["هندباء"], role: "Leaves act as mild diuretic; root traditionally used for digestion.", roleAr: "الأوراق مدرة خفيفة للبول والجذر للهضم.", tips: "Caution with diuretics, lithium, or ragweed allergies.", tipsAr: "يُحذر مع مدرات البول أو الليثيوم أو حساسية عائلة الأقحوان." },
+  "Evening primrose oil": { ar: "زيت زهرة الربيع المسائية", aliases: ["GLA", "زهرة الربيع"], role: "Source of gamma-linolenic acid (GLA) studied for eczema and breast pain.", roleAr: "مصدر لحمض GLA يُدرس للإكزيما وآلام الثدي.", tips: "Caution with blood thinners and seizure disorders.", tipsAr: "يُحذر مع مميعات الدم أو الصرع." },
+  "Feverfew": { ar: "أقحوان زهرة الحمى", aliases: ["Parthenolide"], role: "Studied for migraine prevention.", roleAr: "يُدرس للوقاية من الصداع النصفي.", tips: "Do not stop abruptly after prolonged use (rebound headaches); avoid in pregnancy.", tipsAr: "تجنب إيقافه فجأة بعد استخدام طويل، ويُمنع للحامل." },
+  "Ginseng (Asian)": { ar: "الجنسنغ الآسيوي", aliases: ["Panax ginseng", "جنسنغ"], role: "Studied for fatigue, cognition, and glucose metabolism.", roleAr: "يُدرس للنشاط والتركيز ودعم سكر الدم.", tips: "May cause insomnia, affect blood sugar, and interact with warfarin and stimulants.", tipsAr: "قد يسبب أرقاً ويتداخل مع الوارفارين وأدوية السكري." },
+  "Grape seed extract": { ar: "مستخلص بذور العنب", aliases: ["OPC", "بذور العنب"], role: "Polyphenol antioxidant studied for venous insufficiency and blood pressure.", roleAr: "مضاد أكسدة يُدرس لصحة الأوردة وضغط الدم.", tips: "May enhance effects of blood-pressure or blood-thinning drugs.", tipsAr: "قد يعزز أثر أدوية الضغط والمميعات." },
+  "Hawthorn": { ar: "الزعرور البري", aliases: ["زعرور"], role: "Studied for mild chronic heart failure support alongside standard care.", roleAr: "يُدرس لدعم قصور القلب المزمن الخفيف إلى جانب العلاج القياسي.", tips: "NEVER use for heart conditions without cardiologist supervision; interacts with digoxin and blood pressure meds.", tipsAr: "لا يُستخدم لأمراض القلب إلا بإشراف طبيب؛ يتداخل مع الديجوكسين وأدوية الضغط." },
+  "Hoodia": { ar: "الهوديا", aliases: ["هوديا"], role: "Promoted for appetite suppression without reliable human clinical evidence.", roleAr: "يُروج له لسد الشهية دون أدلة سريرية كافية.", tips: "Little reliable evidence for appetite suppression; long-term safety is unknown and some marketed products have been found adulterated.", tipsAr: "لا دليل موثوق على كبح الشهية، وسلامته على المدى الطويل غير معروفة، وقد وُجدت بعض المنتجات المباعة مغشوشة." },
+  "Horse chestnut": { ar: "كستناء الحصان", aliases: ["Aescin", "كستناء الحصان"], role: "Seed extract (standardized escin) studied for chronic venous insufficiency/leg swelling.", roleAr: "مستخلص البذور يُدرس لقصور الأوردة وتورم الساقين.", tips: "Raw seeds/bark are poisonous (esculin); only escin-standardized seed extracts without esculin are safe.", tipsAr: "البذور النيئة سامة؛ استخدم فقط المستخلصات القياسية الخالية من الإسكولين." },
+  "Mistletoe": { ar: "الهدال (الدبق)", aliases: ["هدال"], role: "Studied in Europe as complementary oncology care (injectable).", roleAr: "يُدرس في أوروبا كعلاج تكميلي مساند في الأورام، ويُعطى بالحقن تحت إشراف طبي.", tips: "Raw plant/berries are poisonous; injectable preparations require strict medical oversight.", tipsAr: "النبات النيء سام ولا يُؤخذ إلا تحت إشراف طبي متخصص." },
+  "Noni": { ar: "النوني", aliases: ["نوني"], role: "Polynesian fruit promoted for general wellness.", roleAr: "فاكهة استوائية تُروج للصحة العامة.", tips: "High potassium content (danger in kidney disease); rare reports of liver toxicity.", tipsAr: "غني بالبوتاسيوم (خطر على مرضى الكلى)، مع تقارير نادرة لإصابة الكبد." },
+  "Pomegranate": { ar: "الرمان", aliases: ["رمان"], role: "Polyphenol-rich fruit studied for cardiovascular antioxidant support.", roleAr: "غني بمضادات الأكسدة، ويُدرس لدعم صحة القلب.", tips: "Lab studies suggest the juice may inhibit CYP3A4, but human evidence is limited; check with a pharmacist if you take drugs with a narrow therapeutic index.", tipsAr: "تشير دراسات مخبرية إلى احتمال تثبيطه بعض إنزيمات الكبد، لكن الأدلة البشرية محدودة؛ راجع الصيدلي إن كنت تتناول أدوية ضيقة المجال العلاجي." },
+  "Sage": { ar: "الميرمية", aliases: ["Salvia officinalis", "ميرمية"], role: "Studied for hot flashes, sore throat, and memory.", roleAr: "تُدرس للهبات الساخنة والذاكرة والتهاب الحلق.", tips: "Common culinary amounts are safe; large concentrated oil/extract doses contain thujone (neurotoxic).", tipsAr: "الكميات الغذائية آمنة؛ الزيت المركز عالي الثوجون سام للأعصاب." },
+  "Thunder god vine": { ar: "كرمة إله الرعد", aliases: ["Tripterygium wilfordii"], role: "Studied for rheumatoid arthritis.", roleAr: "تُدرس لالتهاب المفاصل الروماتويدي.", tips: "HIGH TOXICITY RISK: Can cause severe GI, kidney, bone-density, and fertility side effects unless medically purified.", tipsAr: "خطورة سمية عالية: قد تسبب أضراراً شديدة في الجهاز الهضمي والكلى وكثافة العظام والخصوبة، ما لم تُحضَّر طبياً بشكل منقّى." },
+  /* ---- Topic Overviews ---- */
+  "Botanical dietary supplements — overview": {
+    ar: "المكملات النباتية والأعشاب — نظرة عامة",
+    role: "Explains how herbal supplements are standardized, regulated, and evaluated for safety and drug interactions.",
+    roleAr: "يشرح كيفية معايرة المكملات العشبية وتنظيمها وتقييم سلامتها وتداخلاتها الدوائية."
+  },
+  "Dietary supplements for exercise and athletic performance": {
+    ar: "مكملات الرياضة والأداء البدني",
+    role: "Evidence review covering creatine, caffeine, protein, beta-alanine, HMB, beetroot/nitrate, and safety.",
+    roleAr: "مراجعة للأدلة تشمل الكرياتين والكافيين والبروتين وبيتا ألانين وHMB والنترات (الشوندر)، مع تقييم السلامة."
+  },
+  "Dietary supplements for weight loss": {
+    ar: "مكملات إنقاص الوزن",
+    role: "Critical review of green tea extract, green coffee bean, garcinia, bitter orange, and adulteration risks.",
+    roleAr: "تقييم علمي لمستخلص الشاي الأخضر، القهوة الخضراء، الغارسينيا، ومخاطر الغش الدوائي."
+  },
+  "Dietary supplements for immune function and infectious disease": {
+    ar: "مكملات المناعة والأمراض المعدية",
+    role: "Reviews vitamins C & D, zinc, elderberry, andrographis, ginseng, NAC, and probiotics for immunity.",
+    roleAr: "يراجع دور فيتامين سي وفيتامين د والزنك والبيلسان والأندروغرافيس والجنسنغ وNAC والبروبيوتيك في المناعة."
+  },
+  "Dietary supplements during pregnancy": {
+    ar: "المكملات الغذائية أثناء الحمل",
+    role: "Stage-by-stage guidance on folate, iron, iodine, choline, vitamin D, calcium, omega-3s, and ginger.",
+    roleAr: "إرشاد مرحلي لحمض الفوليك والحديد واليود والكولين وفيتامين د والكالسيوم وأوميغا-3 والزنجبيل أثناء الحمل."
+  },
+  "Dietary supplements: what you need to know": {
+    ar: "المكملات الغذائية: ما تحتاج معرفته",
+    role: "Consumer primer on reading Supplement Facts labels, spotting quality seals, and discussing supplements with doctors.",
+    roleAr: "دليل تمهيدي لقراءة ملصق الحقائق التغذوية، والتعرّف على شهادات الجودة، ومناقشة المكملات مع الطبيب."
+  }
+};
+
+/* ============================================================================
+   3. BASE DATA (all 88 verified NIH ODS / NCCIH / MedlinePlus entries intact)
+   ============================================================================ */
+const DATA = [
+ // ---- Vitamins (ODS-confirmed) ----
+ ["Vitamin A","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/VitaminA-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional"]]],
+ ["Vitamin B6","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/VitaminB6-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional"]]],
+ ["Vitamin B12","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/VitaminB12-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional"]]],
+ ["Vitamin C","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/VitaminC-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional"]]],
+ ["Vitamin D","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/VitaminD-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional"]]],
+ ["Vitamin E","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/VitaminE-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional"]]],
+ ["Vitamin K","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/VitaminK-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional"]]],
+ ["Thiamin (Vitamin B1)","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Thiamin-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional"]]],
+ ["Riboflavin (Vitamin B2)","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Riboflavin-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Riboflavin-HealthProfessional"]]],
+ ["Niacin (Vitamin B3)","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Niacin-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional"]]],
+ ["Pantothenic acid (Vitamin B5)","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/PantothenicAcid-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/PantothenicAcid-HealthProfessional"]]],
+ ["Biotin (Vitamin B7)","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Biotin-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional"]]],
+ ["Folate (Vitamin B9)","Vitamin","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Folate-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Folate-HealthProfessional"]]],
+ ["Choline","Other","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Choline-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Choline-HealthProfessional"]]],
+ // ---- Minerals (ODS-confirmed) ----
+ ["Calcium","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Calcium-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional"]]],
+ ["Copper","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Copper-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Copper-HealthProfessional"]]],
+ ["Boron","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Boron-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Boron-HealthProfessional"]]],
+ ["Chromium","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Chromium-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Chromium-HealthProfessional"]]],
+ ["Fluoride","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Fluoride-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Fluoride-HealthProfessional"]]],
+ ["Iodine","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Iodine-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional"]]],
+ ["Iron","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Iron-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Iron-HealthProfessional"]]],
+ ["Magnesium","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Magnesium-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional"]]],
+ ["Manganese","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Manganese-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Manganese-HealthProfessional"]]],
+ ["Molybdenum","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Molybdenum-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Molybdenum-HealthProfessional"]]],
+ ["Phosphorus","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Phosphorus-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Phosphorus-HealthProfessional"]]],
+ ["Potassium","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Potassium-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional"]]],
+ ["Selenium","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Selenium-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional"]]],
+ ["Zinc","Mineral","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Zinc-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional"]]],
+ ["Multivitamin/mineral supplements","Other","","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/MVMS-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/MVMS-HealthProfessional"]]],
+ // ---- Herbs with a standalone ODS fact sheet ----
+ ["Ashwagandha","Herb","Withania somnifera","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/Ashwagandha-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional"]]],
+ ["Black cohosh","Herb","Cimicifuga racemosa","ODS",[["Professional","https://ods.od.nih.gov/factsheets/BlackCohosh-HealthProfessional"],["NCCIH overview","https://www.nccih.nih.gov/health/black-cohosh"]]],
+ ["Valerian","Herb","Valeriana officinalis","ODS",[["Professional","https://ods.od.nih.gov/factsheets/Valerian-HealthProfessional"],["NCCIH overview","https://www.nccih.nih.gov/health/valerian"]]],
+ // ---- Herbs sourced from NCCIH / MedlinePlus ----
+ ["Acai","Herb","Euterpe oleracea","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/acai"]]],
+ ["Alfalfa","Herb","","MedlinePlus",[["Herb index","https://medlineplus.gov/druginfo/herb_All.html"]]],
+ ["Aloe vera","Herb","Aloe vera, Aloe barbadensis","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/aloe-vera"]]],
+ ["Astragalus","Herb","Astragalus membranaceus","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/astragalus"]]],
+ ["Bee pollen","Herb","","MedlinePlus",[["Herb index","https://medlineplus.gov/druginfo/herb_All.html"]]],
+ ["Berberine","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/berberine-and-weight-loss-what-you-need-to-know"]]],
+ ["Bilberry","Herb","Vaccinium myrtillus","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/bilberry"]]],
+ ["Bitter orange","Herb","Citrus aurantium","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/bitter-orange"]]],
+ ["Bromelain","Herb","Ananas comosus","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/bromelain"]]],
+ ["Butterbur","Herb","Petasites hybridus","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/butterbur"]]],
+ ["Cat's claw","Herb","Uncaria tomentosa","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/cats-claw"]]],
+ ["Chamomile","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/chamomile"]]],
+ ["Chasteberry","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/chasteberry"]]],
+ ["Cinnamon","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/cinnamon"]]],
+ ["Cranberry","Herb","Vaccinium macrocarpon","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/cranberry"]]],
+ ["Dandelion","Herb","Taraxacum officinale","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/dandelion"]]],
+ ["Echinacea","Herb","Echinacea purpurea","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/echinacea"]]],
+ ["Elderberry","Herb","Sambucus nigra","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/elderberry"]]],
+ ["Evening primrose oil","Herb","Oenothera biennis","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/evening-primrose-oil"]]],
+ ["Fenugreek","Herb","Trigonella foenum-graecum","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/fenugreek"]]],
+ ["Feverfew","Herb","Tanacetum parthenium","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/feverfew"]]],
+ ["Flaxseed","Herb","Linum usitatissimum","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/flaxseed-and-flaxseed-oil"]]],
+ ["Garlic","Herb","Allium sativum","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/garlic"]]],
+ ["Ginger","Herb","Zingiber officinale","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/ginger"]]],
+ ["Ginkgo","Herb","Ginkgo biloba","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/ginkgo"]]],
+ ["Ginseng (Asian)","Herb","Panax ginseng","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/asian-ginseng"]]],
+ ["Goldenseal","Herb","Hydrastis canadensis","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/goldenseal"]]],
+ ["Grape seed extract","Herb","Vitis vinifera","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/grape-seed-extract"]]],
+ ["Green tea","Herb","Camellia sinensis","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/green-tea"]]],
+ ["Hawthorn","Herb","Crataegus spp.","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/hawthorn"]]],
+ ["Hoodia","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/hoodia"]]],
+ ["Horse chestnut","Herb","Aesculus hippocastanum","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/horse-chestnut"]]],
+ ["Kava","Herb","Piper methysticum","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/kava"],["ODS safety note","https://ods.od.nih.gov/Health_Information/kava.aspx"]]],
+ ["Lavender","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/lavender"]]],
+ ["Licorice root","Herb","Glycyrrhiza glabra","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/licorice-root"]]],
+ ["Milk thistle","Herb","Silybum marianum","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/milk-thistle"]]],
+ ["Mistletoe","Herb","Viscum album","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/european-mistletoe"]]],
+ ["Noni","Herb","Morinda citrifolia","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/noni"]]],
+ ["Passionflower","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/passionflower"]]],
+ ["Peppermint oil","Herb","Mentha × piperita","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/peppermint-oil"]]],
+ ["Pomegranate","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/pomegranate"]]],
+ ["Red clover","Herb","Trifolium pratense","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/red-clover"]]],
+ ["Rhodiola","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/rhodiola"]]],
+ ["Sage","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/sage"]]],
+ ["Saw palmetto","Herb","Serenoa repens","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/saw-palmetto"]]],
+ ["Soy","Herb","Glycine max","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/soy"]]],
+ ["St. John's wort","Herb","Hypericum perforatum","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/st-johns-wort"],["Depression in depth","https://www.nccih.nih.gov/health/st-johns-wort-and-depression-in-depth"]]],
+ ["Thunder god vine","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/thunder-god-vine"]]],
+ ["Turmeric","Herb","Curcuma longa","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/turmeric"]]],
+ ["Yohimbe","Herb","","NCCIH",[["Learn more","https://www.nccih.nih.gov/health/yohimbe"]]],
+ // ---- Topic overviews (ODS-confirmed) ----
+ ["Botanical dietary supplements — overview","Topic","How herbal supplements are regulated and studied","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/BotanicalBackground-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/BotanicalBackground-HealthProfessional"]]],
+ ["Dietary supplements for exercise and athletic performance","Topic","Creatine, caffeine, protein, HMB, beta-alanine and nitrate","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional"]]],
+ ["Dietary supplements for weight loss","Topic","Green tea extract, green coffee bean, garcinia and bitter orange","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/WeightLoss-Consumer"],["Professional","https://ods.od.nih.gov/factsheets/WeightLoss-HealthProfessional"]]],
+ ["Dietary supplements for immune function and infectious disease","Topic","Andrographis, elderberry, ginseng, tea catechins and NAC","ODS",[["Professional","https://ods.od.nih.gov/factsheets/ImmuneFunction-HealthProfessional"]]],
+ ["Dietary supplements during pregnancy","Topic","Key nutrients and ginger, by life stage","ODS",[["Professional","https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional"]]],
+ ["Dietary supplements: what you need to know","Topic","A consumer primer on supplement basics","ODS",[["Consumer","https://ods.od.nih.gov/factsheets/WYNTK-Consumer"]]],
+];
+
+/* ============================================================================
+   4. INTERACTIONS & DAILY TIMING DATA
+   ============================================================================ */
+const PICKER_ITEMS = [
+  { id:"Iron", en:"Iron", ar:"الحديد" },
+  { id:"Vitamin C", en:"Vitamin C", ar:"فيتامين سي" },
+  { id:"Calcium", en:"Calcium", ar:"الكالسيوم" },
+  { id:"Vitamin D", en:"Vitamin D", ar:"فيتامين د" },
+  { id:"Magnesium", en:"Magnesium", ar:"المغنيسيوم" },
+  { id:"Vitamin K", en:"Vitamin K", ar:"فيتامين ك" },
+  { id:"Zinc", en:"Zinc", ar:"الزنك" },
+  { id:"Copper", en:"Copper", ar:"النحاس" },
+  { id:"Folate (Vitamin B9)", en:"Folate (B9)", ar:"الفولات (ب9)" },
+  { id:"Vitamin B12", en:"Vitamin B12", ar:"فيتامين ب12" },
+  { id:"Biotin (Vitamin B7)", en:"Biotin (B7)", ar:"البيوتين (ب7)" },
+  { id:"Turmeric", en:"Turmeric", ar:"الكركم" },
+  { id:"St. John's wort", en:"St. John's wort", ar:"عشبة سانت جون" },
+  { id:"Ginkgo", en:"Ginkgo / Garlic", ar:"الجنكة / الثوم" }
+];
+
+const INTERACTIONS = [
+  {
+    type: "synergy",
+    items: ["Iron", "Vitamin C"],
+    titleEn: "Iron + Vitamin C",
+    titleAr: "الحديد + فيتامين سي",
+    descEn: "Vitamin C reduces ferric (Fe3+) to ferrous (Fe2+) iron in the gut, significantly improving absorption of non-heme (plant & supplemental) iron.",
+    descAr: "يحوّل فيتامين سي حديد التغذية غير الهيمي (النباتي والمكمل) إلى الشكل الحديدي الأسهل امتصاصاً في الأمعاء، فيرفع نسبة الاستفادة منه."
+  },
+  {
+    type: "synergy",
+    items: ["Vitamin D", "Calcium"],
+    titleEn: "Vitamin D + Calcium",
+    titleAr: "فيتامين د + الكالسيوم",
+    descEn: "Active vitamin D is required by intestinal cells to absorb dietary and supplemental calcium effectively for bone mineralization.",
+    descAr: "فيتامين د أساسي لتنشيط امتصاص الكالسيوم في الأمعاء وتثبيته في العظام."
+  },
+  {
+    type: "synergy",
+    items: ["Vitamin D", "Magnesium"],
+    titleEn: "Vitamin D + Magnesium",
+    titleAr: "فيتامين د + المغنيسيوم",
+    descEn: "All enzymes that convert vitamin D into its active hormonal form in the liver and kidneys depend on magnesium as a cofactor.",
+    descAr: "كل الإنزيمات التي تحوّل فيتامين د إلى شكله الهرموني النشط في الكبد والكلى تعتمد على المغنيسيوم كمرافق إنزيمي."
+  },
+  {
+    type: "synergy",
+    items: ["Vitamin D", "Vitamin K"],
+    titleEn: "Vitamin D + Vitamin K",
+    titleAr: "فيتامين د + فيتامين ك",
+    descEn: "Vitamin D boosts calcium absorption while vitamin K activates osteocalcin and MGP proteins that help direct calcium into bone.",
+    descAr: "فيتامين د يزيد امتصاص الكالسيوم، بينما ينشّط فيتامين ك البروتينات التي توجه الكالسيوم نحو العظام."
+  },
+  {
+    type: "antagonism",
+    items: ["Iron", "Calcium"],
+    titleEn: "Iron vs. Calcium (and Coffee/Tea)",
+    titleAr: "الحديد مقابل الكالسيوم (والشاي والقهوة)",
+    descEn: "Calcium competes with iron absorption in the small intestine; tannins in tea/coffee bind non-heme iron. Space them apart by at least 2 hours.",
+    descAr: "ينافس الكالسيوم الحديد في الامتصاص، كما تربط مركبات الشاي والقهوة الحديد وتمنع امتصاصه. افصل بينها بساعتين على الأقل."
+  },
+  {
+    type: "antagonism",
+    items: ["Zinc", "Copper"],
+    titleEn: "High-Dose Zinc vs. Copper",
+    titleAr: "الزنك عالي الجرعة مقابل النحاس",
+    descEn: "Sustained zinc intake >40–50 mg/day induces intestinal metallothionein, which traps copper and can lead to copper deficiency and anemia.",
+    descAr: "تناول الزنك بجرعات عالية لفترات طويلة (أكثر من 40 ملغ يومياً) يحفّز بروتين الميتالوثيونين في الأمعاء، فيحتجز النحاس وقد يؤدي إلى نقصه وفقر الدم."
+  },
+  {
+    type: "antagonism",
+    items: ["Iron", "Zinc"],
+    titleEn: "High-Dose Iron vs. Zinc",
+    titleAr: "الحديد عالي الجرعة مقابل الزنك",
+    descEn: "Large supplemental doses of iron taken on an empty stomach can reduce zinc absorption; take at separate meals if using therapeutic doses.",
+    descAr: "الجرعات العلاجية الكبيرة من الحديد على معدة فارغة قد تقلل امتصاص الزنك؛ افصل بينهما في وجبات مختلفة إن كنت تتناول جرعات علاجية."
+  },
+  {
+    type: "antagonism",
+    items: ["Calcium", "Magnesium"],
+    titleEn: "Large Calcium vs. Magnesium Doses",
+    titleAr: "الجرعات الكبيرة من الكالسيوم والمغنيسيوم",
+    descEn: "At typical dietary levels they coexist fine, but very high supplemental calcium (>1,000 mg at once) may compete with magnesium uptake.",
+    descAr: "في المستويات الغذائية المعتادة يتعايش الاثنان بلا مشكلة، لكن جرعة مكملة واحدة كبيرة من الكالسيوم (أكثر من 1,000 ملغ) قد تزاحم امتصاص المغنيسيوم."
+  },
+  {
+    type: "caution",
+    items: ["Folate (Vitamin B9)", "Vitamin B12"],
+    titleEn: "High Folic Acid Masking Vitamin B12 Deficiency",
+    titleAr: "حمض الفوليك العالي قد يخفي نقص فيتامين ب12",
+    descEn: "Excess synthetic folic acid (>1,000 mcg/day) can correct the blood anemia of B12 deficiency while neurological damage silently progresses.",
+    descAr: "الإفراط في حمض الفوليك الصناعي (أكثر من 1,000 مكغ يومياً) قد يصحّح فقر الدم الناتج عن نقص ب12 بينما يستمر التلف العصبي في الخفاء."
+  },
+  {
+    type: "caution",
+    items: ["Biotin (Vitamin B7)"],
+    titleEn: "Biotin Interference with Blood & Heart Lab Tests",
+    titleAr: "تأثير البيوتين على نتائج التحاليل المخبرية",
+    descEn: "High-dose biotin supplements interfere with streptavidin-biotin immunoassays, causing falsely low troponin (heart attack) or skewed thyroid results.",
+    descAr: "الجرعات العالية من البيوتين تتداخل مع مقايسات مناعية كثيرة وتعطي نتائج منخفضة زوراً للتروبونين (مؤشر النوبة القلبية)، ونتائج مضطربة لهرمونات الغدة الدرقية. أخبر المختبر قبل سحب الدم."
+  },
+  {
+    type: "caution",
+    items: ["Vitamin K"],
+    titleEn: "Vitamin K & Warfarin (Coumadin)",
+    titleAr: "فيتامين ك ومميع الدم (الوارفارين)",
+    descEn: "Sudden increases or drops in vitamin K directly alter warfarin effectiveness. Keep intake steady and consult your anticoagulation clinic.",
+    descAr: "أي تغيّر مفاجئ في كمية فيتامين ك المتناولة يغيّر فعالية الوارفارين مباشرة؛ حافظ على تناول ثابت وراجع عيادة مضادات التخثر قبل أي تغيير كبير."
+  },
+  {
+    type: "caution",
+    items: ["St. John's wort"],
+    titleEn: "St. John's Wort — Major Prescription Drug Interactions",
+    titleAr: "عشبة سانت جون — تداخلات دوائية خطيرة",
+    descEn: "Induces CYP3A4 & P-gp: can cause failure of oral contraceptives, blood thinners, immunosuppressants, heart drugs, and trigger serotonin syndrome with SSRIs.",
+    descAr: "تحفّز إنزيم CYP3A4 وناقل P-gp، فتُسرّع تكسير أدوية كثيرة في الكبد؛ قد تفشل حبوب منع الحمل ومضادات التخثر ومثبطات المناعة وأدوية القلب، وقد تسبب متلازمة السيروتونين مع مضادات الاكتئاب من نوع SSRI."
+  },
+  {
+    type: "caution",
+    items: ["Ginkgo", "Turmeric"],
+    titleEn: "Ginkgo, Garlic & Turmeric + Blood Thinners",
+    titleAr: "الجنكة والثوم والكركم + مميعات الدم",
+    descEn: "These botanicals can add antiplatelet/anticoagulant effects alongside warfarin, aspirin, clopidogrel, or DOACs — stop before surgery as advised.",
+    descAr: "قد تضيف هذه المستخلصات تأثيراً مضاداً للصفائح أو مسيلاً للدم فوق الوارفارين أو الأسبرين أو كلوبيدوغريل أو مضادات التخثر الفموية المباشرة، فيرتفع خطر النزيف. أوقفها قبل الجراحة حسب توجيه الطبيب."
+  },
+  {
+    type: "caution",
+    items: ["Calcium", "Iron", "Magnesium"],
+    titleEn: "Minerals (Calcium, Iron, Magnesium) + Thyroid Meds / Antibiotics",
+    titleAr: "المعادن + دواء الغدة الدرقية والمضادات الحيوية",
+    descEn: "Multivalent minerals bind levothyroxine and fluoroquinolone/tetracycline antibiotics in the gut. Separate by 4 hours (thyroid) or 2–4 hours (antibiotics).",
+    descAr: "ترتبط هذه المعادن في الأمعاء بالليفوثيروكسين (دواء الغدة الدرقية) ومضادات حيوية من عائلتي الكينولونات والتتراسيكلينات وتمنع امتصاصها. افصل بينها وبين دواء الغدة 4 ساعات، وبينها وبين المضاد الحيوي 2–4 ساعات."
+  }
+];
+
+const TIMING_BLUEPRINT = [
+  {
+    titleEn: "Morning · Empty Stomach or Light Meal",
+    titleAr: "الصباح · على معدة فارغة أو مع وجبة خفيفة",
+    itemsEn: [
+      "<strong>B-Complex &amp; Vitamin B12:</strong> Support energy metabolism; taking them early avoids mild sleep disturbance.",
+      "<strong>Iron (if prescribed):</strong> Best absorbed on an empty stomach with vitamin C; take with light food if it causes nausea. Keep coffee, tea and dairy 2 hours apart."
+    ],
+    itemsAr: [
+      "<strong>فيتامينات ب المركّبة وفيتامين ب12:</strong> تدعم إنتاج الطاقة؛ وتناولها صباحاً يقلّل احتمال التنبيه الليلي.",
+      "<strong>الحديد (عند وجود نقص مثبت):</strong> يُمتص أفضل على معدة فارغة مع فيتامين سي، ويُؤخذ مع طعام خفيف إن سبب غثياناً. أبعد عنه القهوة والشاي والألبان ساعتين."
+    ]
+  },
+  {
+    titleEn: "With Main Fat-Containing Meal",
+    titleAr: "مع الوجبة الرئيسية الغنية بالدهون",
+    itemsEn: [
+      "<strong>Vitamins A, D, E &amp; K:</strong> Fat-soluble; dietary fat substantially improves absorption.",
+      "<strong>Multivitamin / Zinc / Turmeric:</strong> Food buffers stomach upset (especially zinc) and aids fat-soluble compounds."
+    ],
+    itemsAr: [
+      "<strong>فيتامينات A وD وE وK:</strong> ذائبة في الدهون، والدهون الغذائية ترفع امتصاصها ارتفاعاً ملموساً.",
+      "<strong>الفيتامينات المتعددة والزنك والكركم:</strong> يخفف الطعام اضطراب المعدة (خاصة مع الزنك) ويساعد امتصاص المركبات الذائبة في الدهون."
+    ]
+  },
+  {
+    titleEn: "Separate Window · 2–4 Hours",
+    titleAr: "نافذة منفصلة · 2–4 ساعات",
+    itemsEn: [
+      "<strong>Calcium vs. Iron:</strong> Space apart by ≥2 hours.",
+      "<strong>Levothyroxine (thyroid):</strong> Take alone on an empty stomach with water first thing in the morning; wait 4 hours before calcium, iron or magnesium."
+    ],
+    itemsAr: [
+      "<strong>الكالسيوم والحديد:</strong> افصل بينهما ساعتين على الأقل.",
+      "<strong>دواء الغدة الدرقية (ليفوثيروكسين):</strong> يُؤخذ وحده على معدة فارغة بالماء أول الصباح، ثم انتظر 4 ساعات قبل الكالسيوم أو الحديد أو المغنيسيوم."
+    ]
+  },
+  {
+    titleEn: "Evening / Before Bed",
+    titleAr: "المساء / قبل النوم",
+    itemsEn: [
+      "<strong>Magnesium (Glycinate):</strong> Gentle on stomach; often taken in the evening for relaxation.",
+      "<strong>Chamomile / Valerian:</strong> Calming herbs best reserved for evening."
+    ],
+    itemsAr: [
+      "<strong>المغنيسيوم (غليسينات):</strong> لطيف على المعدة ويفضله كثيرون مساءً للاسترخاء.",
+      "<strong>البابونج والناردين:</strong> عشبتان مهدئتان يُفضّل تناولهما في المساء."
+    ]
+  }
+];
+
+/* ============================================================================
+   5. STATE & HELPERS
+   ============================================================================ */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, m => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+
+/* In RTL text, a numeric range (400–420) is treated as one neutral run and can be
+   reversed visually. Isolate it as left-to-right so numbers always read correctly. */
+/* ASCII-safe anchor ids: percent-encoded Arabic ids never match the fragment. */
+const letterId = l => "L-" + (l.codePointAt(0) || 0).toString(16);
+
+const bidiRanges = s => lang !== "ar" ? String(s ?? "") : String(s ?? "").replace(
+  /(\d[\d.,]*)\s*([–—-])\s*(\d[\d.,]*)/g,
+  (_, a, dash, b) => `\u2066${a}${dash}${b}\u2069`
+);
+
+let lang = localStorage.getItem("ng_lang") || (document.documentElement.lang === "ar" ? "ar" : "en");
+let theme = document.documentElement.getAttribute("data-theme") || localStorage.getItem("ng_theme") || "light";
+let activeTab = "topics";
+let activeCat = "";
+let activeSub = "";
+let savedSet = new Set(JSON.parse(localStorage.getItem("ng_saved") || "[]"));
+let selectedPicks = new Set();
+let dsldState = { q:"", from:0, size:18, total:0 };
+
+const ENTRIES = DATA.map(([name, cat, latin, source, links]) => {
+  const d = DETAILS[name] || {};
+  return { name, cat, latin, source, links, ...d };
+});
+const ENTRY_MAP = Object.fromEntries(ENTRIES.map(e => [e.name, e]));
+
+function savePrefs(){
+  localStorage.setItem("ng_lang", lang);
+  localStorage.setItem("ng_theme", theme);
+  localStorage.setItem("ng_saved", JSON.stringify([...savedSet]));
+}
+
+function displayName(e){
+  if(lang === "ar" && e.ar) return e.ar;
+  return e.name;
+}
+
+/* Alphabetical key — in Arabic, the definite article "ال" and diacritics are
+   ignored so the index follows the conventional Arabic dictionary order. */
+function sortKey(str){
+  let s = (str || "").trim();
+  if(lang === "ar"){
+    s = s.replace(/[\u064B-\u0652\u0640]/g, "");
+    if(s.startsWith("ال") && s.length > 3) s = s.slice(2);
+  }
+  return s;
+}
+
+/* Arabic collation is not guaranteed to be present in every engine, and
+   locale-aware sorting puts hamza forms in the wrong place. Ranking each
+   letter against the standard abjad gives one stable, correct order. */
+const AR_ALPHA = "ابتثجحخدذرزسشصضطظعغفقكلمنهوي";
+
+function arSortKey(str){
+  return sortKey(str)
+    .replace(/[أإآٱ]/g, "ا")
+    .replace(/[ىئ]/g, "ي")
+    .replace(/ة/g, "ه")
+    .replace(/ؤ/g, "و")
+    .toLowerCase();
+}
+
+function arRank(str){
+  return [...arSortKey(str)].map(ch => {
+    const i = AR_ALPHA.indexOf(ch);
+    return i === -1 ? 100 + ch.codePointAt(0) : i;
+  });
+}
+
+function cmpAr(a, b){
+  const x = arRank(a), y = arRank(b);
+  const n = Math.min(x.length, y.length);
+  for(let i = 0; i < n; i++){
+    if(x[i] !== y[i]) return x[i] - y[i];
+  }
+  return x.length - y.length;
+}
+
+function letterOf(str){
+  const clean = sortKey(str).replace(/^[^A-Za-z\u0621-\u064A]+/, "");
+  let ch = clean.charAt(0).toUpperCase();
+  if(lang === "ar"){
+    if("أإآ".includes(ch)) ch = "ا";
+    if(ch === "ة") ch = "ت";
+    if(ch === "ى") ch = "ي";
+  }
+  return ch || "#";
+}
+
+/* ============================================================================
+   6. RENDERING: LANGUAGE, THEME, STATS & CHIPS
+   ============================================================================ */
+function applyTheme(){
+  document.documentElement.setAttribute("data-theme", theme === "dark" ? "dark" : "light");
+  $("themeBtn").textContent = theme === "dark" ? "☀️" : "🌙";
+  $("themeBtn").setAttribute("title", UI[lang].a11y.toggleTheme);
+  $("themeBtn").setAttribute("aria-label", UI[lang].a11y.toggleTheme);
+}
+
+/* Desktop gets the full tab names; phones get short ones so all four fit
+   on a single row instead of an clipped horizontal scroller. */
+function applyTabLabels(){
+  const t = UI[lang];
+  const short = window.matchMedia("(max-width: 680px)").matches;
+  const L = short ? t.tabsShort : t.tabs;
+  ["topics", "compare", "interactions", "labels"].forEach(k => {
+    const btn = $("tab-" + k);
+    btn.innerHTML = L[k];
+    if(k === activeTab) btn.setAttribute("aria-current", "page");
+    else btn.removeAttribute("aria-current");
+  });
+}
+
+function applyLanguage(){
+  const t = UI[lang];
+  document.documentElement.lang = lang === "ar" ? "ar" : "en-GB";
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  $("skipLink").textContent = t.skip;
+  document.title = t.docTitle;
+  document.querySelector('meta[name="description"]').setAttribute("content", t.metaDesc);
+  document.querySelector('meta[property="og:title"]').setAttribute("content", t.docTitle);
+  document.querySelector('meta[property="og:description"]').setAttribute("content", t.metaDesc);
+  document.querySelector('meta[property="og:locale"]').setAttribute("content", lang === "ar" ? "ar_AR" : "en_GB");
+  document.querySelector('meta[property="og:locale:alternate"]').setAttribute("content", lang === "ar" ? "en_GB" : "ar_AR");
+  $("brandTitle").innerHTML = t.brand;
+  applyTabLabels();
+  $("langBtn").textContent = t.langBtn;
+  $("themeBtn").setAttribute("title", t.a11y.toggleTheme);
+  $("themeBtn").setAttribute("aria-label", t.a11y.toggleTheme);
+  $("langBtn").setAttribute("title", t.a11y.switchLang);
+  $("langBtn").setAttribute("aria-label", t.a11y.switchLang);
+  $("filter").setAttribute("aria-label", t.a11y.search);
+  $("clearSearch").setAttribute("aria-label", t.a11y.clearSearch);
+  $("category").setAttribute("aria-label", t.a11y.category);
+  $("sourceFilter").setAttribute("aria-label", t.a11y.source);
+  $("sortMode").setAttribute("aria-label", t.a11y.sort);
+  $("azNav").setAttribute("aria-label", t.a11y.azIndex);
+  $("toTop").setAttribute("title", t.a11y.backToTop);
+  $("toTop").setAttribute("aria-label", t.a11y.backToTop);
+  $("modalClose").setAttribute("aria-label", t.a11y.close);
+  document.querySelector(".topbar > nav").setAttribute("aria-label", t.a11y.primaryNav);
+
+  $("heroKicker").textContent = t.heroKicker;
+  $("heroTitle").innerHTML = t.heroTitle;
+  $("heroDesc").textContent = t.heroDesc;
+
+  const counts = {
+    Vitamin: ENTRIES.filter(e => e.cat==="Vitamin").length,
+    Mineral: ENTRIES.filter(e => e.cat==="Mineral").length,
+    Herb: ENTRIES.filter(e => e.cat==="Herb").length,
+    Other: ENTRIES.filter(e => e.cat==="Other").length,
+    Topic: ENTRIES.filter(e => e.cat==="Topic").length
+  };
+  const rdaCount = ENTRIES.filter(e => e.rda && e.sub !== "combo").length;
+  const interCount = INTERACTIONS.length;
+  $("statsRow").innerHTML = lang === "ar"
+    ? `<span class="stat-pill"><strong>${counts.Vitamin}</strong> فيتاميناً</span>
+       <span class="stat-pill"><strong>${counts.Mineral}</strong> معدناً</span>
+       <span class="stat-pill"><strong>${counts.Herb}</strong> عشبة ونبات</span>
+       <span class="stat-pill"><strong>${rdaCount}</strong> مرجع جرعة</span>
+       <span class="stat-pill"><strong>${interCount}</strong> تداخلاً موثقاً</span>`
+    : `<span class="stat-pill"><strong>${counts.Vitamin}</strong> Vitamins</span>
+       <span class="stat-pill"><strong>${counts.Mineral}</strong> Minerals</span>
+       <span class="stat-pill"><strong>${counts.Herb}</strong> Herbs &amp; Botanicals</span>
+       <span class="stat-pill"><strong>${rdaCount}</strong> DRI references</span>
+       <span class="stat-pill"><strong>${interCount}</strong> Documented interactions</span>`;
+
+  $("trustRow").innerHTML = t.trust.map(x => `<span>${esc(x)}</span>`).join("");
+
+  $("filter").placeholder = t.searchPh;
+  $("category").innerHTML = `
+    <option value="">${t.allCats}</option>
+    <option value="Vitamin">${t.cats.Vitamin}</option>
+    <option value="Mineral">${t.cats.Mineral}</option>
+    <option value="Herb">${t.cats.Herb}</option>
+    <option value="Other">${t.cats.Other}</option>
+    <option value="Topic">${t.cats.Topic}</option>
+    <option value="Saved">${t.cats.Saved}</option>
+  `;
+  $("category").value = activeCat;
+
+  const prevSrc = $("sourceFilter").value;
+  $("sourceFilter").innerHTML = `
+    <option value="">${t.allSources}</option>
+    <option value="ODS">NIH ODS</option>
+    <option value="NCCIH">NIH NCCIH</option>
+    <option value="MedlinePlus">MedlinePlus</option>
+  `;
+  $("sourceFilter").value = prevSrc;
+
+  const prevSort = $("sortMode").value || "az";
+  $("sortMode").innerHTML = `
+    <option value="az">${t.sortAZ}</option>
+    <option value="cat">${t.sortCat}</option>
+  `;
+  $("sortMode").value = prevSort;
+
+  $("kbdHint").innerHTML = t.kbdHint;
+  $("verifyNotice").innerHTML = t.verifyNotice;
+  $("disclaimerNotice").innerHTML = t.disclaimer;
+
+  // Footer
+  $("footBrand").textContent = lang === "ar" ? "دليل المغذيات" : "The Nutrient Glossary";
+  $("footAbout").textContent = t.foot.about;
+  $("footSourcesTitle").textContent = t.foot.sourcesTitle;
+  $("footPolicyTitle").textContent = t.foot.policyTitle;
+  $("footPolicy").innerHTML = t.foot.policy.map(x => `<li>${esc(x)}</li>`).join("");
+  $("footCreditLabel").textContent = t.foot.creditLabel + " ";
+  $("footRights").textContent = t.foot.rights;
+  ["lnkOds", "lnkNccih", "lnkMedline", "lnkDsld"].forEach((id, i) => {
+    $(id).textContent = t.foot.sourceLinks[i];
+  });
+
+  updateMoreFiltersLabel();
+
+  // Compare panel strings
+  $("cmpTitle").textContent = t.cmpTitle;
+  $("cmpDesc").textContent = t.cmpDesc;
+  $("cmpFilter").placeholder = t.cmpFilterPh;
+  $("printBtn").textContent = t.printBtn;
+  const prevCmpType = $("cmpType").value;
+  $("cmpType").innerHTML = `<option value="">${t.cmpAll}</option><option value="Vitamin">${t.cmpVit}</option><option value="Mineral">${t.cmpMin}</option>`;
+  $("cmpType").value = prevCmpType;
+  $("cmpHead").innerHTML = t.cmpHeaders.map(h => `<th>${h}</th>`).join("");
+  $("cmpNote").innerHTML = t.cmpNote;
+
+  // Interactions panel strings
+  $("intTitle").textContent = t.intTitle;
+  $("intDesc").textContent = t.intDesc;
+  $("pickerLabel").textContent = t.pickerLabel;
+  $("clearPicks").textContent = t.clearPicks;
+  $("timingTitle").textContent = t.timingTitle;
+
+  // DSLD panel strings
+  $("dsldTitle").textContent = t.dsldTitle;
+  $("dsldDesc").textContent = t.dsldDesc;
+  $("q").placeholder = t.dsldPh;
+  $("q").dir = "auto";
+  $("go").textContent = t.dsldBtn;
+  $("dsldNotice").innerHTML = t.dsldNotice;
+
+  renderChips();
+  renderGlossary();
+  renderCompare();
+  renderInteractions();
+  renderDsldSuggestions();
+  renderDatalist();
+}
+
+function renderChips(){
+  const t = UI[lang];
+  const counts = {
+    "": ENTRIES.length,
+    Vitamin: ENTRIES.filter(e => e.cat==="Vitamin").length,
+    Mineral: ENTRIES.filter(e => e.cat==="Mineral").length,
+    Herb: ENTRIES.filter(e => e.cat==="Herb").length,
+    Other: ENTRIES.filter(e => e.cat==="Other").length,
+    Topic: ENTRIES.filter(e => e.cat==="Topic").length,
+    Saved: savedSet.size
+  };
+  const order = ["", "Vitamin", "Mineral", "Herb", "Topic", "Other", "Saved"];
+  $("catChips").innerHTML = order.map(c => `
+    <button class="chip ${activeCat===c ? "active" : ""}" data-cat="${c}">
+      ${t.cats[c]} <span class="badge">${counts[c]}</span>
+    </button>
+  `).join("");
+
+  $("catChips").querySelectorAll(".chip").forEach(btn => {
+    btn.onclick = () => {
+      activeCat = btn.dataset.cat;
+      activeSub = "";
+      $("category").value = activeCat;
+      renderChips();
+      renderGlossary();
+    };
+  });
+
+  // Sub-chips for Vitamins / Minerals
+  if(activeCat === "Vitamin" || activeCat === "Mineral"){
+    const subs = activeCat === "Vitamin"
+      ? ["", "fat-soluble", "water-soluble"]
+      : ["", "macromineral", "trace"];
+    $("subChips").classList.remove("hidden");
+    $("subChips").innerHTML = subs.map(s => `
+      <button class="chip sub ${activeSub===s ? "active" : ""}" data-sub="${s}">${t.subcats[s]}</button>
+    `).join("");
+    $("subChips").querySelectorAll(".chip").forEach(btn => {
+      btn.onclick = () => {
+        activeSub = btn.dataset.sub;
+        renderChips();
+        renderGlossary();
+      };
+    });
+  } else {
+    $("subChips").classList.add("hidden");
+    $("subChips").innerHTML = "";
+  }
+}
+
+/* ============================================================================
+   7. GLOSSARY RENDERING
+   ============================================================================ */
+function matchesSearch(e, q){
+  if(!q) return true;
+  const hay = [
+    e.name, e.ar, e.latin, e.role, e.roleAr, e.foods, e.foodsAr,
+    ...(e.aliases || [])
+  ].filter(Boolean).join(" ").toLowerCase();
+  return hay.includes(q);
+}
+
+function renderGlossary(){
+  const t = UI[lang];
+  const q = $("filter").value.trim().toLowerCase();
+  $("clearSearch").classList.toggle("show", q.length > 0);
+  const src = $("sourceFilter").value;
+  const sortMode = $("sortMode").value || "az";
+
+  const filtered = ENTRIES.filter(e => {
+    if(activeCat === "Saved" && !savedSet.has(e.name)) return false;
+    else if(activeCat && activeCat !== "Saved" && e.cat !== activeCat) return false;
+    if(activeSub && e.sub !== activeSub) return false;
+    if(src && e.source !== src) return false;
+    if(!matchesSearch(e, q)) return false;
+    return true;
+  });
+
+  $("count").textContent = t.count(filtered.length, ENTRIES.length);
+
+  if(!filtered.length){
+    $("azNav").innerHTML = "";
+    $("sections").innerHTML = `
+      <div class="empty-state">
+        <p>${t.emptyMsg}</p>
+        <button class="btn-outline" id="resetBtn">${t.resetFilters}</button>
+      </div>`;
+    $("resetBtn").onclick = () => {
+      $("filter").value = "";
+      activeCat = ""; activeSub = "";
+      $("category").value = "";
+      $("sourceFilter").value = "";
+      renderChips();
+      renderGlossary();
+    };
+    return;
+  }
+
+  const sorted = [...filtered].sort((a, b) => lang === "ar"
+    ? cmpAr(displayName(a), displayName(b))
+    : sortKey(displayName(a)).localeCompare(sortKey(displayName(b)), "en"));
+
+  if(sortMode === "cat"){
+    $("azNav").classList.add("hidden");
+    const catOrder = ["Vitamin", "Mineral", "Other", "Herb", "Topic"];
+    const byCat = {};
+    sorted.forEach(e => (byCat[e.cat] = byCat[e.cat] || []).push(e));
+    $("sections").innerHTML = catOrder.filter(c => byCat[c]).map(c => `
+      <div class="letter-section" id="C-${c}">
+        <div class="letter-heading"><span class="big" style="font-size:1.35rem;width:auto;">${t.cats[c]}</span><span class="line"></span></div>
+        <div class="grid">${byCat[c].map(renderCard).join("")}</div>
+      </div>
+    `).join("");
+  } else {
+    $("azNav").classList.remove("hidden");
+    const byLetter = {};
+    sorted.forEach(e => {
+      const l = letterOf(displayName(e));
+      (byLetter[l] = byLetter[l] || []).push(e);
+    });
+    const letters = Object.keys(byLetter).sort((a, b) => {
+      if(lang !== "ar") return a.localeCompare(b, "en");
+      const ia = AR_ALPHA.indexOf(a), ib = AR_ALPHA.indexOf(b);
+      return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+    });
+    const alphabet = lang === "ar"
+      ? ["ا","ب","ت","ث","ج","ح","خ","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","غ","ف","ق","ك","ل","م","ن","ه","و","ي"]
+      : "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    // Include any extra initial letters (e.g. from Arabic hamza/latin) if present
+    const navLetters = [...new Set([...alphabet, ...letters])];
+    $("azNav").innerHTML = navLetters.map(l =>
+      byLetter[l]
+        ? `<a href="#${letterId(l)}" aria-label="${esc(t.jumpTo)} ${esc(l)}">${esc(l)}</a>`
+        : `<span class="disabled" aria-disabled="true">${esc(l)}</span>`
+    ).join("");
+
+    $("sections").innerHTML = letters.map(l => `
+      <div class="letter-section" id="${letterId(l)}">
+        <div class="letter-heading"><span class="big">${esc(l)}</span><span class="line"></span></div>
+        <div class="grid">${byLetter[l].map(renderCard).join("")}</div>
+      </div>
+    `).join("");
+  }
+}
+
+function renderCard(e){
+  const t = UI[lang];
+  const title = displayName(e);
+  const secondary = lang === "ar" ? e.name : (e.ar || "");
+  const subTxt = e.sub ? t.subLabels[e.sub] : "";
+  const roleTxt = lang === "ar" ? (e.roleAr || e.role || "") : (e.role || "");
+  const rdaTxt = lang === "ar" ? (e.rdaAr || e.rda) : e.rda;
+  const isSaved = savedSet.has(e.name);
+  const hasWarn = (e.tips || "").includes("WARNING") || (e.tips || "").includes("CAUTION");
+
+  return `
+  <article class="card" data-entry="${esc(e.name)}">
+    <div class="card-top">
+      <h3 class="open-modal" data-name="${esc(e.name)}" tabindex="0" role="button">${esc(title)}</h3>
+      <div class="card-actions">
+        <button class="star-btn ${isSaved ? "saved" : ""}" data-star="${esc(e.name)}" title="${esc(t.saveTitle)}" aria-label="${esc(t.saveTitle)}" aria-pressed="${isSaved}">${isSaved ? "★" : "☆"}</button>
+        <span class="tag ${esc(e.cat)}">${esc(t.cats[e.cat] || e.cat)}</span>
+      </div>
+    </div>
+    ${lang === "ar" && e.cat === "Topic" ? "" : (e.latin || secondary ? `<div class="latin">${esc([secondary, e.latin].filter(Boolean).join(" · "))}</div>` : "")}
+    ${roleTxt ? `<p class="summary">${esc(bidiRanges(roleTxt))}</p>` : ""}
+    <div class="meta-pills">
+      ${subTxt ? `<span class="meta-pill">${esc(subTxt)}</span>` : ""}
+      ${rdaTxt ? `<span class="meta-pill" dir="auto">${lang==="ar"?"الاحتياج":"RDA"}: ${esc(bidiRanges(rdaTxt))}</span>` : ""}
+      ${hasWarn ? `<span class="meta-pill warn">⚠ ${lang==="ar" ? "تنبيه هام" : "Caution"}</span>` : ""}
+    </div>
+    <div class="card-foot">
+      <div class="links">
+        ${e.links.map(([lbl, url]) => `<a class="lnk" href="${esc(url)}" target="_blank" rel="noopener">${esc(t.linkLabels[lbl] || lbl)}</a>`).join("")}
+        <span class="src">${esc(e.source)}</span>
+      </div>
+      <button class="detail-btn open-modal" data-name="${esc(e.name)}">${t.quickGuide}</button>
+    </div>
+  </article>`;
+}
+
+// Event delegation for card modal & bookmark clicks
+$("sections").addEventListener("click", ev => {
+  const star = ev.target.closest("[data-star]");
+  if(star){
+    const name = star.dataset.star;
+    const nowSaved = !savedSet.has(name);
+    if(nowSaved) savedSet.add(name);
+    else savedSet.delete(name);
+    savePrefs();
+    star.classList.toggle("saved", nowSaved);
+    star.setAttribute("aria-pressed", String(nowSaved));
+    star.textContent = nowSaved ? "★" : "☆";
+    const badge = document.querySelector('#catChips .chip[data-cat="Saved"] .badge');
+    if(badge) badge.textContent = savedSet.size;
+    if(activeCat === "Saved" && !nowSaved) renderGlossary();
+    return;
+  }
+  const opener = ev.target.closest(".open-modal");
+  if(opener){
+    openModal(opener.dataset.name);
+  }
+});
+$("sections").addEventListener("keydown", ev => {
+  if(ev.key === "Enter" || ev.key === " ") {
+    const opener = ev.target.closest(".open-modal");
+    if(opener){ ev.preventDefault(); openModal(opener.dataset.name); }
+  }
+});
+
+/* ============================================================================
+   8. DETAIL MODAL
+   ============================================================================ */
+let modalReturnFocus = null;
+
+function openModal(name){
+  const e = ENTRY_MAP[name];
+  if(!e) return;
+  const wasHidden = $("modalBackdrop").classList.contains("hidden");
+  if(wasHidden) modalReturnFocus = document.activeElement;
+  const t = UI[lang];
+  const m = t.modal;
+
+  const title = displayName(e);
+  const subName = lang === "ar" ? e.name : (e.ar || "");
+  $("modalBadges").innerHTML = `
+    <span class="tag ${esc(e.cat)}">${esc(t.cats[e.cat] || e.cat)}</span>
+    ${e.sub ? `<span class="meta-pill">${esc(t.subLabels[e.sub])}</span>` : ""}
+    <span class="src">${esc(e.source)}</span>
+  `;
+  $("modalTitle").textContent = title;
+  $("modalSub").textContent = [subName, e.cat === "Topic" ? "" : e.latin].filter(Boolean).join(" · ");
+
+  const rda = lang === "ar" ? (e.rdaAr || e.rda) : e.rda;
+  const ul = lang === "ar" ? (e.ulAr || e.ul) : e.ul;
+  const role = lang === "ar" ? (e.roleAr || e.role) : e.role;
+  const foods = lang === "ar" ? (e.foodsAr || e.foods) : e.foods;
+  const tips = lang === "ar" ? (e.tipsAr || e.tips) : e.tips;
+
+  let html = "";
+  if(rda || ul){
+    html += `<div class="fact-grid">
+      ${rda ? `<div class="fact-box"><div class="lbl">${m.rda}</div><div class="val">${esc(bidiRanges(rda))}</div></div>` : ""}
+      ${ul ? `<div class="fact-box"><div class="lbl">${m.ul}</div><div class="val">${esc(bidiRanges(ul))}</div></div>` : ""}
+    </div>`;
+  }
+  if(role) html += `<div class="modal-sec"><h4>${m.role}</h4><p>${esc(bidiRanges(role))}</p></div>`;
+  if(foods) html += `<div class="modal-sec"><h4>${m.foods}</h4><p>${esc(bidiRanges(foods))}</p></div>`;
+  if(tips) html += `<div class="modal-sec"><h4>${m.tips}</h4><p>${esc(bidiRanges(tips))}</p></div>`;
+  if(e.aliases?.length) html += `<div class="modal-sec"><h4>${m.aliases}</h4><p style="color:var(--muted);">${esc(e.aliases.join(" · "))}</p></div>`;
+
+  html += `<div class="modal-sec"><h4>${m.links}</h4><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;">
+    ${e.links.map(([lbl, url]) => `<a class="btn-outline" style="text-decoration:none;font-size:.83rem;padding:6px 14px;" href="${esc(url)}" target="_blank" rel="noopener">${esc(t.linkLabels[lbl] || lbl)} (${esc(e.source)}) ↗</a>`).join("")}
+  </div></div>`;
+
+  const isSaved = savedSet.has(e.name);
+  html += `<div class="modal-actions">
+    <button class="btn-outline" id="modalStarBtn">${isSaved ? "★ " + (lang==="ar"?"محفوظ في قائمتي":"Saved") : "☆ " + t.saveTitle}</button>
+    ${e.cat !== "Topic" ? `<button class="btn-primary" id="modalDsldBtn">${m.searchDsld}</button>` : ""}
+  </div>`;
+
+  $("modalBody").innerHTML = html;
+  $("modalBackdrop").classList.remove("hidden");
+  document.body.classList.add("modal-open");
+  if(wasHidden) $("modalClose").focus();
+
+  $("modalStarBtn").onclick = () => {
+    if(savedSet.has(e.name)) savedSet.delete(e.name);
+    else savedSet.add(e.name);
+    savePrefs();
+    renderChips();
+    renderGlossary();
+    openModal(e.name);
+  };
+  const dsldBtn = $("modalDsldBtn");
+  if(dsldBtn){
+    dsldBtn.onclick = () => {
+      closeModal();
+      showTab("labels");
+      $("q").value = e.name.replace(/\s*\(.*?\)\s*/g, "");
+      searchLabels(0);
+      $("q").focus();
+    };
+  }
+}
+
+function closeModal(){
+  if($("modalBackdrop").classList.contains("hidden")) return;
+  $("modalBackdrop").classList.add("hidden");
+  document.body.classList.remove("modal-open");
+  if(modalReturnFocus && document.contains(modalReturnFocus)){
+    modalReturnFocus.focus();
+    if(modalReturnFocus.closest(".card")) modalReturnFocus.scrollIntoView({ block:"nearest" });
+  }
+  modalReturnFocus = null;
+}
+$("modalClose").onclick = closeModal;
+$("modalBackdrop").addEventListener("click", ev => { if(ev.target === $("modalBackdrop")) closeModal(); });
+$("modalBackdrop").addEventListener("keydown", ev => {
+  if(ev.key !== "Tab") return;
+  const focusables = [...$("modalBackdrop").querySelectorAll(
+    'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])'
+  )].filter(el => el.offsetParent !== null);
+  if(!focusables.length) return;
+  const first = focusables[0], last = focusables[focusables.length - 1];
+  if(ev.shiftKey && document.activeElement === first){ ev.preventDefault(); last.focus(); }
+  else if(!ev.shiftKey && document.activeElement === last){ ev.preventDefault(); first.focus(); }
+});
+
+/* ============================================================================
+   9. COMPARE RDA & SOURCES TABLE
+   ============================================================================ */
+function renderCompare(){
+  const q = $("cmpFilter").value.trim().toLowerCase();
+  const type = $("cmpType").value;
+  const rows = ENTRIES.filter(e =>
+    (e.cat === "Vitamin" || e.cat === "Mineral") && e.sub !== "combo" &&
+    (!type || e.cat === type) &&
+    (!q || matchesSearch(e, q))
+  );
+
+  $("cmpBody").innerHTML = rows.map(e => {
+    const t = UI[lang];
+    const name = displayName(e);
+    const rda = lang === "ar" ? (e.rdaAr || e.rda || "—") : (e.rda || "—");
+    const ul = lang === "ar" ? (e.ulAr || e.ul || "—") : (e.ul || "—");
+    const role = lang === "ar" ? (e.roleAr || e.role || "") : (e.role || "");
+    const foods = lang === "ar" ? (e.foodsAr || e.foods || "") : (e.foods || "");
+    return `<tr>
+      <td><button class="name-link" data-open="${esc(e.name)}">${esc(name)}</button>${lang==="ar" ? `<div style="font-size:.75rem;color:var(--muted);">${esc(e.name)}</div>`:""}</td>
+      <td><span class="tag ${esc(e.cat)}">${esc(e.sub ? t.subLabels[e.sub] : t.cats[e.cat])}</span></td>
+      <td><strong>${esc(bidiRanges(rda))}</strong></td>
+      <td>${esc(bidiRanges(ul))}</td>
+      <td>${esc(bidiRanges(role))}</td>
+      <td>${esc(bidiRanges(foods))}</td>
+    </tr>`;
+  }).join("");
+}
+
+$("cmpBody").addEventListener("click", ev => {
+  const btn = ev.target.closest("[data-open]");
+  if(btn) openModal(btn.dataset.open);
+});
+$("cmpFilter").addEventListener("input", renderCompare);
+$("cmpType").addEventListener("change", renderCompare);
+$("printBtn").onclick = () => window.print();
+
+/* ============================================================================
+   10. INTERACTIONS & DAILY TIMING
+   ============================================================================ */
+function renderInteractions(){
+  const t = UI[lang];
+  $("pickPills").innerHTML = PICKER_ITEMS.map(p => `
+    <button class="pick-pill ${selectedPicks.has(p.id) ? "selected" : ""}" data-pick="${esc(p.id)}">
+      ${esc(lang === "ar" ? p.ar : p.en)}
+    </button>
+  `).join("");
+
+  $("pickPills").querySelectorAll(".pick-pill").forEach(btn => {
+    btn.onclick = () => {
+      const id = btn.dataset.pick;
+      if(selectedPicks.has(id)) selectedPicks.delete(id);
+      else selectedPicks.add(id);
+      renderInteractions();
+    };
+  });
+
+  const shown = selectedPicks.size === 0
+    ? INTERACTIONS
+    : INTERACTIONS.filter(rule => {
+        if(selectedPicks.size === 1) return rule.items.some(i => selectedPicks.has(i));
+        // If 2+ selected, show rules matching at least 2 selected items, OR single-item safety warnings for any selected item
+        const matchCount = rule.items.filter(i => selectedPicks.has(i)).length;
+        return matchCount >= 2 || (rule.items.length === 1 && matchCount === 1);
+      });
+
+  $("interResults").innerHTML = shown.length
+    ? shown.map(r => {
+        const badge = r.type === "synergy" ? t.badgeSynergy : (r.type === "antagonism" ? t.badgeAntag : t.badgeCaution);
+        return `<div class="inter-card ${r.type}">
+          <span class="inter-badge">${badge}</span>
+          <h4>${esc(bidiRanges(lang === "ar" ? r.titleAr : r.titleEn))}</h4>
+          <p>${esc(bidiRanges(lang === "ar" ? r.descAr : r.descEn))}</p>
+        </div>`;
+      }).join("")
+    : `<div class="empty-state" style="grid-column:1/-1;"><p>${t.noIntMatch}</p></div>`;
+
+  $("timingGrid").innerHTML = TIMING_BLUEPRINT.map(b => `
+    <div class="timing-card">
+      <h4>${esc(bidiRanges(lang === "ar" ? b.titleAr : b.titleEn))}</h4>
+      <ul>${(lang === "ar" ? b.itemsAr : b.itemsEn).map(li => `<li>${bidiRanges(li)}</li>`).join("")}</ul>
+    </div>
+  `).join("");
+}
+
+$("clearPicks").onclick = () => { selectedPicks.clear(); renderInteractions(); };
+
+/* ============================================================================
+   11. NIH DSLD v9 LIVE PRODUCT LABEL SEARCH
+   ============================================================================ */
+const DSLD_BASE = "https://api.ods.od.nih.gov/dsld/v9";
+
+function renderDsldSuggestions(){
+  const suggestions = ["Vitamin D3", "Magnesium Glycinate", "Iron", "Zinc", "Ashwagandha", "Vitamin B12"];
+  $("dsldSuggestions").innerHTML = suggestions.map(s =>
+    `<button class="chip" data-sq="${esc(s)}">${esc(s)}</button>`
+  ).join("");
+  $("dsldSuggestions").querySelectorAll(".chip").forEach(b => {
+    b.onclick = () => { $("q").value = b.dataset.sq; searchLabels(0); };
+  });
+}
+
+async function searchLabels(from = 0){
+  const t = UI[lang];
+  const q = $("q").value.trim();
+  if(!q) return;
+  dsldState = { q, from, size:18, total:0 };
+  $("labels").innerHTML = "";
+  $("labelPager").classList.add("hidden");
+  $("labelmsg").innerHTML = `<div class="notice">${t.dsldSearching}</div>`;
+
+  try {
+    const url = `${DSLD_BASE}/browse-products?method=by_keyword&q=${encodeURIComponent(q)}&size=${dsldState.size}&from=${from}`;
+    const r = await fetch(url);
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    const data = await r.json();
+    const total = data.total?.value ?? 0;
+    dsldState.total = total;
+    const hits = data.hits || [];
+    if(!hits.length){
+      $("labelmsg").innerHTML = `<div class="notice">${t.dsldEmpty}</div>`;
+      return;
+    }
+
+    $("labelmsg").innerHTML = `<div class="count-bar"><span>${t.dsldCount(hits.length, total)}</span></div>`;
+    $("labels").innerHTML = hits.map(h => {
+      const id = h._id || "";
+      const p = h._source || {};
+      const form = p.physicalState?.langualCodeDescription || "";
+      const net = p.netContents?.[0]?.display || "";
+      const srv = p.servingSizes?.[0];
+      const srvText = srv ? `${srv.minQuantity ?? ""} ${srv.unit ?? ""}`.trim() : "";
+      return `<article class="card label-card">
+        <div class="card-top">
+          <h3 dir="auto" style="cursor:default;text-align:start;">${esc(p.fullName || "Unnamed product")}</h3>
+        </div>
+        <div class="label-meta">
+          ${p.brandName ? `<span class="src" dir="auto">${esc(p.brandName)}</span>` : ""}
+          ${form ? `<span class="meta-pill" dir="ltr">${esc(form)}</span>` : ""}
+          ${net ? `<span class="meta-pill" dir="ltr">${esc(net)}</span>` : ""}
+          ${srvText ? `<span class="meta-pill" dir="ltr">${lang==="ar"?"حصة":"Serving"}: ${esc(srvText)}</span>` : ""}
+        </div>
+        <div id="ing-${esc(id)}"></div>
+        <div class="card-foot">
+          ${id ? `<button class="detail-btn" data-dsld-id="${esc(id)}">${t.dsldViewDetails}</button>` : ""}
+          ${id ? `<a class="lnk" href="https://dsld.od.nih.gov/label/${encodeURIComponent(id)}" target="_blank" rel="noopener">${t.dsldFullLink}</a>` : ""}
+        </div>
+      </article>`;
+    }).join("");
+
+    if(total > dsldState.size){
+      $("labelPager").classList.remove("hidden");
+      const page = Math.floor(from / dsldState.size) + 1;
+      const maxPage = Math.ceil(total / dsldState.size);
+      $("labelPager").innerHTML = `
+        <button class="btn-outline" id="dsldPrev" ${from <= 0 ? "disabled" : ""}>${t.dsldPrev}</button>
+        <span style="font-size:.84rem;color:var(--muted);">${page} / ${maxPage}</span>
+        <button class="btn-outline" id="dsldNext" ${from + dsldState.size >= total ? "disabled" : ""}>${t.dsldNext}</button>
+      `;
+      $("dsldPrev").onclick = () => searchLabels(Math.max(0, from - dsldState.size));
+      $("dsldNext").onclick = () => searchLabels(from + dsldState.size);
+    }
+  } catch(e){
+    $("labelmsg").innerHTML = `<div class="notice warn">Request failed (${esc(e.message)}). Search directly at <a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>.</div>`;
+  }
+}
+
+$("labels").addEventListener("click", async ev => {
+  const btn = ev.target.closest("[data-dsld-id]");
+  if(!btn) return;
+  const id = btn.dataset.dsldId;
+  const box = document.getElementById(`ing-${id}`);
+  if(!box) return;
+  if(box.dataset.loaded === "1"){
+    box.classList.toggle("hidden");
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = "…";
+  try {
+    const r = await fetch(`${DSLD_BASE}/label/${encodeURIComponent(id)}`);
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    const lbl = await r.json();
+    const rows = (lbl.ingredientRows || []).slice(0, 16).map(i => {
+      const q = i.quantity?.[0];
+      const amt = q ? `${q.quantity ?? ""} ${q.unit ?? ""}`.trim() : "—";
+      const dv = q?.dailyValueTargetGroup?.[0]?.percent;
+      const dvTxt = dv != null ? `${dv}%` : "—";
+      return `<tr><td>${esc(i.name || "")}</td><td>${esc(amt)}</td><td>${esc(dvTxt)}</td></tr>`;
+    }).join("");
+    const other = (lbl.otheringredients?.ingredients || []).map(o => o.name).filter(Boolean).join(", ");
+    const dir = (lbl.statements || []).find(s => (s.type || "").includes("Directions"))?.notes || "";
+    box.innerHTML = `
+      ${rows ? `<table><tr><th>Ingredient</th><th>Amount</th><th>%DV</th></tr>${rows}</table>` : ""}
+      ${other ? `<p style="font-size:.77rem;color:var(--muted);margin:8px 0 0;"><strong>Other ingredients:</strong> ${esc(other)}</p>` : ""}
+      ${dir ? `<p style="font-size:.77rem;color:var(--muted);margin:6px 0 0;"><strong>Directions:</strong> ${esc(dir)}</p>` : ""}
+    `;
+    box.dataset.loaded = "1";
+    btn.textContent = UI[lang].dsldViewDetails;
+  } catch(err){
+    box.innerHTML = `<div class="notice warn" style="margin:8px 0;padding:8px 10px;font-size:.78rem;">Could not load label details (${esc(err.message)}).</div>`;
+  } finally {
+    btn.disabled = false;
+  }
+});
+
+$("go").onclick = () => searchLabels(0);
+$("q").addEventListener("keydown", e => { if(e.key === "Enter") searchLabels(0); });
+
+/* ============================================================================
+   12. NAVIGATION, SHORTCUTS & INIT
+   ============================================================================ */
+function showTab(tab){
+  activeTab = tab;
+  ["topics", "compare", "interactions", "labels"].forEach(t => {
+    $(`panel-${t}`).classList.toggle("hidden", t !== tab);
+    const btn = $(`tab-${t}`);
+    btn.classList.toggle("active", t === tab);
+    if(t === tab) btn.setAttribute("aria-current", "page");
+    else btn.removeAttribute("aria-current");
+  });
+  document.body.classList.toggle("no-hero", tab !== "topics");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.onclick = () => showTab(btn.dataset.tab);
+});
+
+$("filter").addEventListener("input", renderGlossary);
+$("clearSearch").onclick = () => { $("filter").value = ""; renderGlossary(); $("filter").focus(); };
+$("category").addEventListener("change", () => {
+  activeCat = $("category").value;
+  activeSub = "";
+  renderChips();
+  renderGlossary();
+});
+$("sourceFilter").addEventListener("change", () => { renderGlossary(); updateMoreFiltersLabel(); });
+$("sortMode").addEventListener("change", () => { renderGlossary(); updateMoreFiltersLabel(); });
+
+function updateMoreFiltersLabel(){
+  const n = ($("sourceFilter").value ? 1 : 0) + (($("sortMode").value || "az") !== "az" ? 1 : 0);
+  $("moreFiltersBtn").textContent = n ? UI[lang].moreFiltersActive(n) : UI[lang].moreFilters;
+  $("moreFiltersBtn").setAttribute("aria-label", UI[lang].moreFilters);
+}
+
+$("moreFiltersBtn").onclick = () => {
+  const box = $("advFilters");
+  box.classList.toggle("hidden");
+  $("moreFiltersBtn").setAttribute("aria-expanded", String(!box.classList.contains("hidden")));
+};
+
+function renderDatalist(){
+  const opts = new Set();
+  ENTRIES.forEach(e => {
+    opts.add(e.name);
+    if(e.ar) opts.add(e.ar);
+    (e.aliases || []).forEach(a => opts.add(a));
+  });
+  $("nutrientDatalist").innerHTML = [...opts].map(v => `<option value="${esc(v)}"></option>`).join("");
+}
+
+let tabLabelTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(tabLabelTimer);
+  tabLabelTimer = setTimeout(applyTabLabels, 150);
+});
+
+$("langBtn").onclick = () => {
+  lang = lang === "en" ? "ar" : "en";
+  savePrefs();
+  applyLanguage();
+};
+
+$("themeBtn").onclick = () => {
+  theme = theme === "light" ? "dark" : "light";
+  savePrefs();
+  applyTheme();
+};
+
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape") closeModal();
+  if(e.key === "/" && !["INPUT","TEXTAREA","SELECT"].includes(document.activeElement.tagName)){
+    e.preventDefault();
+    if(activeTab === "topics") $("filter").focus();
+    else if(activeTab === "compare") $("cmpFilter").focus();
+    else if(activeTab === "labels") $("q").focus();
+  }
+});
+
+const toTop = $("toTop");
+window.addEventListener("scroll", () => { toTop.style.display = window.scrollY > 450 ? "block" : "none"; });
+toTop.onclick = () => window.scrollTo({ top:0, behavior:"smooth" });
+
+applyTheme();
+applyLanguage();
+</script>
+</body>
+</html>
