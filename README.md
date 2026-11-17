@@ -53,7 +53,7 @@ The **Export PDF** button builds a dedicated print document: cover, table of con
 an about-and-verification page, and all 88 entries with their tables, interactions and
 sources. It uses A4 pages, starts every entry on a new page, and keeps tables and
 blocks from splitting across pages, so the download is complete rather than a clipped
-screenshot of the screen layout. The full edition runs to about 117 pages in English and 116 in Arabic.
+screenshot of the screen layout. The full edition runs to about 116 pages in English and 115 in Arabic.
 
 ## Run locally
 
