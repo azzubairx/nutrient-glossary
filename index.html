@@ -623,9 +623,10 @@
     #printRoot th, #printRoot td { border:1px solid #bbb; padding:1.2mm 1.8mm; text-align:start; vertical-align:top; }
     #printRoot thead th { background:#eee7d8; }
     #printRoot tr, #printRoot .pr-block, #printRoot .pr-source { break-inside:avoid; }
-    #printRoot .pr-toc ol { margin:2mm 0 0; padding-inline-start:6mm; columns:2; column-gap:10mm; font-size:9pt; }
-    #printRoot .pr-toc li { margin:0 0 1mm; break-inside:avoid; }
-    #printRoot .pr-toc h3 { break-after:avoid; }
+    #printRoot .pr-toc h2 { margin:0 0 1.5mm; }
+    #printRoot .pr-toc ol { margin:0.8mm 0 0; padding-inline-start:5.5mm; columns:2; column-gap:8mm; font-size:8.3pt; line-height:1.34; }
+    #printRoot .pr-toc li { margin:0; break-inside:avoid; }
+    #printRoot .pr-toc h3 { margin:1.8mm 0 0.4mm; font-size:9.6pt; break-after:avoid; }
     #printRoot .pr-list { margin:1mm 0 2mm; padding-inline-start:5mm; }
     #printRoot .pr-list li { margin:0 0 1mm; break-inside:avoid; }
     #printRoot .pr-source { margin:0 0 1.2mm; font-size:7.8pt; overflow-wrap:anywhere; }
@@ -988,7 +989,7 @@ const UI = {
       generated: 'Generated',
       contents: 'Contents',
       about: 'About this edition',
-      aboutBody: 'This edition reproduces every entry on the website: reference intakes by age and sex, upper limits, food sources, absorption factors, documented interactions, deficiency and excess symptoms, source conflicts, citations and verification dates.',
+      aboutBody: 'This edition reproduces every entry from the website with the fields that apply to it: reference intakes by age and sex, upper limits, food sources, absorption factors, documented interactions, deficiency and excess symptoms, and the source behind each claim.',
       verification: 'Verification and review',
       sources: 'Sources',
       entries: 'entries',
@@ -1160,7 +1161,7 @@ const UI = {
       generated: 'تاريخ الإنشاء',
       contents: 'المحتويات',
       about: 'عن هذه النسخة',
-      aboutBody: 'تعيد هذه النسخة إنتاج كل مدخل في الموقع: المدخول المرجعي حسب العمر والجنس، والحد الأعلى، والمصادر الغذائية، وعوامل الامتصاص، والتفاعلات الموثقة، وأعراض النقص والزيادة، وتعاريض المصادر، والإحالات وتواريخ التحقق.',
+      aboutBody: 'تعيد هذه النسخة إنتاج كل مدخل من الموقع مع الحقول التي تنطبق عليه: المدخول المرجعي حسب العمر والجنس، والحد الأعلى، والمصادر الغذائية، وعوامل الامتصاص، والتفاعلات الموثقة، وأعراض النقص والزيادة، ومصدر كل معلومة.',
       verification: 'التحقق والمراجعة',
       sources: 'المصادر',
       entries: 'مدخلًا',
