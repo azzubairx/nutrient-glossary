@@ -593,7 +593,7 @@
     body > *:not(#printRoot) { display:none !important; }
     #printRoot {
       display:block !important; color:#111; background:#fff;
-      font-size:9.3pt; line-height:1.52;
+      font-size:9.2pt; line-height:1.48;
       -webkit-print-color-adjust:exact; print-color-adjust:exact;
     }
     #printRoot *, #printRoot *::before, #printRoot *::after { box-shadow:none !important; }
@@ -604,9 +604,9 @@
     #printRoot .pr-entry.pr-first { break-before:auto; }
     #printRoot h1 { font-size:26pt; line-height:1.15; margin:0 0 6mm; }
     #printRoot h2 { font-size:16pt; line-height:1.25; margin:0 0 3mm; color:#24453a; break-after:avoid; }
-    #printRoot h3 { font-size:10.5pt; margin:4mm 0 1.5mm; color:#24453a; break-after:avoid; }
-    #printRoot h4 { font-size:9.6pt; margin:3mm 0 1mm; break-after:avoid; }
-    #printRoot p { margin:0 0 2mm; }
+    #printRoot h3 { font-size:10.4pt; margin:3.2mm 0 1.2mm; color:#24453a; break-after:avoid; }
+    #printRoot h4 { font-size:9.5pt; margin:2.4mm 0 0.8mm; break-after:avoid; }
+    #printRoot p { margin:0 0 1.6mm; }
     #printRoot a { color:#24453a; text-decoration:none; }
     #printRoot .pr-muted { color:#555; }
     #printRoot .pr-rule { border-top:1px solid #bbb; margin:4mm 0; }
@@ -629,7 +629,9 @@
     #printRoot .pr-list { margin:1mm 0 2mm; padding-inline-start:5mm; }
     #printRoot .pr-list li { margin:0 0 1mm; break-inside:avoid; }
     #printRoot .pr-source { margin:0 0 1.2mm; font-size:7.8pt; overflow-wrap:anywhere; }
-    #printRoot .pr-footer-note { margin-top:5mm; border-top:1px solid #bbb; padding-top:2mm; font-size:7.6pt; color:#555; }
+    #printRoot .pr-footer-note { margin-top:4mm; border-top:1px solid #bbb; padding-top:1.8mm; font-size:7.6pt; color:#555; }
+    #printRoot .pr-footer-note { break-before:avoid; }
+    #printRoot .pr-block:has(+ .pr-footer-note) { break-after:avoid; break-inside:avoid; }
     #printRoot .pr-sev { font-weight:700; }
     #printRoot .pr-avoid { break-inside:avoid; }
     #printRoot .pr-pagebreak { break-before:page; }
@@ -653,7 +655,7 @@
   </nav>
   <div class="top-actions">
     <button id="langBtn" class="icon-btn" title="Switch language">العربية</button>
-    <button id="themeBtn" class="icon-btn" title="Toggle theme">🌙</button>
+    <button id="themeBtn" class="icon-btn" title="Toggle theme" aria-label="Toggle theme"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg></button>
   </div>
 </div>
 
@@ -905,17 +907,17 @@ const UI = {
       sourcesTitle: 'Primary sources',
       policyTitle: 'How each entry is built',
       policy: [
-        'Nutrient values come from the NIH ODS / National Academies Dietary Reference Intakes for healthy adults.',
+        'Nutrient values follow the NIH ODS / National Academies Dietary Reference Intakes for every life stage.',
         'Safety notes follow the official ODS fact sheets and standard pharmacology references.',
-        'Herb summaries state the strength of evidence — when evidence is weak or absent, we say so.',
-        'Every NCCIH and MedlinePlus destination was machine-checked on 15 November 2026.'
+        'Herb summaries say how strong the evidence is; where it is thin, the entry says so.',
+        'All ODS, NCCIH and MedlinePlus links were checked on 17 November 2026 and are re-checked quarterly.'
       ],
       creditLabel: 'Designed & maintained by',
       rights: 'Educational use only · Not medical advice',
       sourceLinks: ['NIH Office of Dietary Supplements', 'NIH NCCIH', 'MedlinePlus', 'NIH Dietary Supplement Label Database']
     },
-    verifyNotice: '<strong>On verification.</strong> Every external link below was taken from the official NIH ODS index pages (<a href="https://ods.od.nih.gov/factsheets/list-VitaminsMinerals/" target="_blank" rel="noopener">list&#8209;VitaminsMinerals</a> and <a href="https://ods.od.nih.gov/factsheets/list-Botanicals/" target="_blank" rel="noopener">list&#8209;Botanicals</a>). All NCCIH and MedlinePlus destinations were re-checked on <strong>15 November 2026</strong> and point to their canonical URLs. Adult RDA/AI &amp; Upper Limit (UL) figures follow the NIH ODS / National Academies Dietary Reference Intakes for healthy adults and are for orientation only — the linked fact sheet is the authoritative source for pregnancy, paediatric and clinical guidance.',
-    disclaimer: '<strong>Educational reference only.</strong> This guide does not replace personalised advice from a physician or pharmacist, especially if you take prescription medications, are pregnant or breastfeeding, or manage a chronic condition.',
+    verifyNotice: '<strong>Where the numbers come from.</strong> Every nutrient figure links to an NIH ODS fact sheet, and every herb page to NCCIH or MedlinePlus. Links were checked on <strong>17 November 2026</strong>. Values follow the National Academies Dietary Reference Intakes for each life stage; for pregnancy, children and clinical care, the linked fact sheet is the reference.',
+    disclaimer: '<strong>Educational reference only.</strong> This guide does not replace personalised advice from a doctor, pharmacist or registered dietitian — especially if you take prescription medicines, are pregnant or breastfeeding, or manage a chronic condition.',
     footer: 'Built from NIH Office of Dietary Supplements (<a href="https://ods.od.nih.gov/" target="_blank" rel="noopener">ods.od.nih.gov</a>), NIH NCCIH (<a href="https://www.nccih.nih.gov/" target="_blank" rel="noopener">nccih.nih.gov</a>), MedlinePlus (<a href="https://medlineplus.gov/" target="_blank" rel="noopener">medlineplus.gov</a>) and the NIH Dietary Supplement Label Database (<a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>). Non-commercial reference.',
     cmpTitle: 'Vitamins & Minerals — Adult RDA/AI, Upper Limits & Food Sources',
     cmpDesc: 'Quick side-by-side reference based on NIH ODS and National Academies tables for adults.',
@@ -967,14 +969,13 @@ const UI = {
       drugs: 'Known Drug & Herb Interactions',
       deficiency: 'Deficiency Symptoms',
       excess: 'Excess / Toxicity Symptoms',
+      safety: 'Safety & Cautions',
       conflicts: 'Source Conflicts',
-      unverified: 'Not Verified',
+      unverified: 'Open Questions',
       sources: 'Sources & Access Dates',
       verified: 'Last verified',
       nextReview: 'Next review',
       accessed: 'Accessed',
-      noInteractions: 'No specific drug interaction was verified for this entry in the cited source.',
-      sourceNote: 'Source links are secondary verification references, not a prerequisite for understanding the content.',
       disclaimerShort: 'Educational reference only — not medical advice.',
       severity: { high: 'High risk', moderate: 'Moderate', info: 'Information' },
       printNote: 'This PDF edition contains all 88 entries with their DRI tables, safety notes, sources and verification dates.'
@@ -987,7 +988,7 @@ const UI = {
       generated: 'Generated',
       contents: 'Contents',
       about: 'About this edition',
-      aboutBody: 'This edition reproduces every entry on the website: reference intakes by age and sex, upper limits, food sources, absorption factors, documented interactions, deficiency and excess symptoms, source conflicts, unverified items, citations and verification dates.',
+      aboutBody: 'This edition reproduces every entry on the website: reference intakes by age and sex, upper limits, food sources, absorption factors, documented interactions, deficiency and excess symptoms, source conflicts, citations and verification dates.',
       verification: 'Verification and review',
       sources: 'Sources',
       entries: 'entries',
@@ -1011,7 +1012,7 @@ const UI = {
     metaDesc: 'مرجع مستقل ثنائي اللغة للفيتامينات والمعادن والأعشاب: المدخول اليومي الموصى به، والحد الأعلى، والمصادر الغذائية، ونصائح الامتصاص، والتداخلات الدوائية، مع بحث حيّ في قاعدة ملصقات NIH DSLD.',
     heroKicker: 'مرجع مستقل · غير تجاري · موثّق بمصادر حكومية أمريكية',
     heroTitle: 'الدليل الموثوق للفيتامينات والمعادن والأعشاب',
-    heroDesc: 'مرجع شامل يقدّم الجرعات اليومية الموصى بها، والمصادر الغذائية، ونصائح الامتصاص والتداخلات، مع روابط مباشرة لمكتب المكملات الغذائية (NIH ODS) و NCCIH و MedlinePlus — بعيداً عن أي تسويق تجاري.',
+    heroDesc: 'مرجع شامل يقدّم الجرعات اليومية الموصى بها، والمصادر الغذائية، ونصائح الامتصاص والتداخلات، مع روابط مباشرة لمكتب المكملات الغذائية (NIH ODS) و NCCIH و MedlinePlus — بعيدًا عن أي تسويق تجاري.',
     searchPh: 'ابحث: فيتامين د، حديد، مغنيسيوم…',
     allCats: 'كل التصنيفات',
     allSources: 'كل المصادر',
@@ -1040,7 +1041,7 @@ const UI = {
       trace: 'معدن نادر',
       combo: 'مركب شامل'
     },
-    count: (n, total) => `عرض ${n} من أصل ${total} عنصراً`,
+    count: (n, total) => `عرض ${n} من أصل ${total} عنصرًا`,
     kbdHint: 'تلميح: اضغط <kbd>/</kbd> للبحث · انقر على أي عنصر لعرض الجرعة اليومية والمصادر والنصائح',
     quickGuide: 'التفاصيل والجرعة ←',
     saveTitle: 'حفظ في قائمتي',
@@ -1078,17 +1079,17 @@ const UI = {
       sourcesTitle: 'المصادر الأساسية',
       policyTitle: 'كيف تُبنى كل بطاقة',
       policy: [
-        'قيم العناصر الغذائية مأخوذة من جداول المدخول المرجعي (DRI) لمكتب المكملات الغذائية NIH ODS والأكاديميات الوطنية للبالغين الأصحاء.',
+        'تتبع قيم العناصر جداول المدخول المرجعي (DRI) لمكتب المكملات الغذائية NIH ODS والأكاديميات الوطنية لجميع مراحل العمر.',
         'تستند ملاحظات السلامة إلى النشرات الرسمية لـ ODS والمراجع الدوائية المعتمدة.',
-        'ملخصات الأعشاب تُبيّن قوة الدليل — وإن غاب الدليل نقول ذلك صراحةً.',
-        'أُعيد التحقق آلياً من كل روابط NCCIH و MedlinePlus في 15 نوفمبر 2026، وكلها تشير إلى عناوينها الرسمية المباشرة.'
+        'توضح ملخصات الأعشاب قوة الدليل؛ وحين يكون الدليل ضعيفًا يذكر المدخل ذلك.',
+        'فُحصت روابط ODS وNCCIH وMedlinePlus في 17 نوفمبر 2026، وتُعاد مراجعتها كل ثلاثة أشهر.'
       ],
       creditLabel: 'تصميم وتطوير',
       rights: 'للاستخدام التثقيفي فقط · ليس نصيحة طبية',
       sourceLinks: ['مكتب المكملات الغذائية NIH ODS', 'المركز الوطني للصحة التكميلية NCCIH', 'MedlinePlus', 'قاعدة ملصقات المكملات NIH DSLD']
     },
-    verifyNotice: '<strong>عن موثوقية المعلومات:</strong> جميع الروابط مأخوذة من الفهارس الرسمية لمكتب المكملات الغذائية (<a href="https://ods.od.nih.gov/factsheets/list-VitaminsMinerals/" target="_blank" rel="noopener">قائمة الفيتامينات والمعادن</a> و <a href="https://ods.od.nih.gov/factsheets/list-Botanicals/" target="_blank" rel="noopener">قائمة النباتات</a>). وقد أُعيد التحقق من كل روابط NCCIH و MedlinePlus بتاريخ <strong>15 نوفمبر 2026</strong> وتشير الآن إلى عناوينها الرسمية المباشرة. قيم المدخول المرجعي (RDA/AI) والحد الأعلى (UL) تتبع جداول المعاهد الوطنية للصحة للبالغين الأصحاء، وهي للاسترشاد فقط — النشرة الرسمية المرتبطة هي المرجع في الحمل والأطفال والحالات المرضية.',
-    disclaimer: '<strong>مرجع تثقيفي فقط:</strong> لا يغني هذا الدليل عن استشارة الطبيب أو الصيدلي، خصوصاً عند تناول أدوية بوصفة طبية، أو أثناء الحمل والرضاعة، أو وجود حالة صحية مزمنة.',
+    verifyNotice: '<strong>من أين تأتي الأرقام.</strong> كل قيمة غذائية مرتبطة بصحيفة من مكتب المكملات الغذائية (NIH ODS)، وكل صفحة عشب بمصدر من NCCIH أو MedlinePlus. فُحصت الروابط في <strong>17 نوفمبر 2026</strong>. وتتبع القيم جداول المدخول المرجعي للأكاديميات الوطنية لكل مرحلة عمرية؛ وعند الحمل أو الأطفال أو الرعاية السريرية تبقى النشرة المرتبطة هي المرجع.',
+    disclaimer: '<strong>مرجع تثقيفي فقط:</strong> لا يغني هذا الدليل عن استشارة طبيب أو صيدلي أو أخصائي تغذية مسجل، خصوصًا عند تناول أدوية بوصفة طبية، أو أثناء الحمل والرضاعة، أو وجود حالة صحية مزمنة.',
     footer: 'مبني على بيانات مكتب المكملات الغذائية الأمريكي (<a href="https://ods.od.nih.gov/" target="_blank" rel="noopener">ods.od.nih.gov</a>)، ومركز NCCIH (<a href="https://www.nccih.nih.gov/" target="_blank" rel="noopener">nccih.nih.gov</a>)، و MedlinePlus (<a href="https://medlineplus.gov/" target="_blank" rel="noopener">medlineplus.gov</a>)، وقاعدة ملصقات المكملات (<a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>).',
     cmpTitle: 'مقارنة الفيتامينات والمعادن — الاحتياج اليومي والحد الأعلى والمصادر',
     cmpDesc: 'جدول مرجعي سريع للبالغين وفق جداول NIH ODS والأكاديميات الوطنية الأمريكية.',
@@ -1098,7 +1099,7 @@ const UI = {
     cmpMin: 'المعادن فقط',
     printBtn: 'تصدير نسخة PDF كاملة',
     cmpHeaders: ['العنصر', 'التصنيف', 'الاحتياج اليومي (RDA/AI)', 'الحد الأعلى (UL)', 'الدور الأساسي', 'أبرز المصادر الغذائية'],
-    cmpNote: '<strong>ملاحظة حول RDA و UL:</strong> <em>RDA</em> هو المدخول اليومي الذي يغطي احتياج 97–98% من الأشخاص الأصحاء، و<em>AI</em> مدخول كافٍ يُعتمد عليه عند عدم كفاية الأدلة لتحديد RDA. <em>UL</em> هو الحد اليومي الأعلى الذي يُرجَّح ألا يسبب أضراراً (بعض الحدود تخص المكملات وحدها، مثل المغنيسيوم 350 ملغ، والنياسين 35 ملغ، وحمض الفوليك 1,000 مكغ).',
+    cmpNote: '<strong>ملاحظة حول RDA و UL:</strong> <em>RDA</em> هو المدخول اليومي الذي يغطي احتياج 97–98% من الأشخاص الأصحاء، و<em>AI</em> مدخول كافٍ يُعتمد عليه عند عدم كفاية الأدلة لتحديد RDA. <em>UL</em> هو الحد اليومي الأعلى الذي يُرجَّح ألا يسبب أضرارًا (بعض الحدود تخص المكملات وحدها، مثل المغنيسيوم 350 ملغ، والنياسين 35 ملغ، وحمض الفوليك 1,000 مكغ).',
     intTitle: 'التآزرات ودليل التوقيت اليومي',
     intDesc: 'اختر العناصر التي تتناولها أو تبحث عنها لمعرفة التركيبات التي تعزز الامتصاص، وما ينبغي الفصل بينه، والتنبيهات الدوائية والمخبرية.',
     pickerLabel: 'تصفية حسب العنصر (اتركها فارغة لعرض التداخلات كلها):',
@@ -1106,22 +1107,22 @@ const UI = {
     badgeSynergy: 'تآزر · يعزز الامتصاص أو الفعالية',
     badgeAntag: 'تباعد · تنافس أو تعطّل الامتصاص',
     badgeCaution: 'تنبيه طبي / دوائي / مخبري',
-    noIntMatch: 'لا توجد تداخلات موثّقة بين العناصر المختارة ضمن هذه القائمة — راجع الصيدلي دائماً إن كنت تتناول أدوية مزمنة.',
+    noIntMatch: 'لا توجد تداخلات موثّقة بين العناصر المختارة ضمن هذه القائمة — راجع الصيدلي دائمًا إن كنت تتناول أدوية مزمنة.',
     timingTitle: 'دليل التوقيت اليومي العملي',
     dsldTitle: 'قاعدة بيانات ملصقات المكملات الغذائية (NIH DSLD)',
-    dsldDesc: 'ابحث في ملصقات المنتجات المسجّلة فعلياً لدى المعاهد الوطنية للصحة (واجهة v9)، وافحص المكونات الفعالة وغير الفعالة ونسبة القيمة اليومية والتحذيرات.',
+    dsldDesc: 'ابحث في ملصقات المنتجات المسجّلة فعليًا لدى المعاهد الوطنية للصحة (واجهة v9)، وافحص المكونات الفعالة وغير الفعالة ونسبة القيمة اليومية والتحذيرات.',
     dsldPh: 'ابحث بالإنجليزية عن مكون أو علامة تجارية (مثل: Vitamin D3, Magnesium, Ashwagandha)…',
     dsldBtn: 'بحث',
     dsldSearching: 'جارٍ البحث في قاعدة NIH DSLD…',
     dsldEmpty: 'لم يتم العثور على منتجات مطابقة.',
-    dsldCount: (shown, total) => `عرض ${shown} من أصل ${total.toLocaleString()} ملصقاً مطابقاً`,
+    dsldCount: (shown, total) => `عرض ${shown} من أصل ${total.toLocaleString()} ملصقًا مطابقًا`,
     dsldViewDetails: 'فحص المكونات والبيانات',
     dsldFullLink: 'فتح في موقع NIH ↗',
     dsldPrev: '→ السابق',
     dsldNext: 'التالي ←',
     dsldNotice: '<strong>واجهة برمجية موثقة:</strong> يتصل البحث مباشرة بخدمة NIH DSLD v9 (<code>api.ods.od.nih.gov/dsld/v9</code>). كما يمكنك التصفح مباشرة عبر <a href="https://dsld.od.nih.gov/" target="_blank" rel="noopener">dsld.od.nih.gov</a>.',
     modal: {
-      rda: 'الاحتياج اليومي (للبالغين)',
+      rda: 'الاحتياج اليومي (RDA/AI)',
       ul: 'الحد الأعلى (UL)',
       classif: 'التصنيف',
       role: 'الوظائف الرئيسية في الجسم',
@@ -1140,14 +1141,13 @@ const UI = {
       drugs: 'التفاعلات الدوائية والعشبية المعروفة',
       deficiency: 'أعراض النقص',
       excess: 'أعراض الزيادة والتسمم',
+      safety: 'السلامة والتنبيهات',
       conflicts: 'تعارض المصادر',
-      unverified: 'ما لم يتم التحقق منه',
+      unverified: 'مسائل لم تُحسم',
       sources: 'المصادر وتواريخ الاطلاع',
       verified: 'آخر تحقق',
       nextReview: 'المراجعة التالية',
       accessed: 'تاريخ الاطلاع',
-      noInteractions: 'لم يتم التحقق من تفاعل دوائي محدد لهذا المدخل في المصدر المستشهد به.',
-      sourceNote: 'روابط المصادر مراجع تحقق ثانوية، وليست شرطاً لفهم المحتوى.',
       disclaimerShort: 'مرجع تثقيفي فقط — ليس نصيحة طبية.',
       severity: { high: 'خطر مرتفع', moderate: 'متوسط', info: 'معلومة' },
       printNote: 'تضم نسخة الـPDF هذه المدخلات الثمانية والثمانين كاملة مع جداول الاحتياج والتنبيهات والمصادر وتواريخ التحقق.'
@@ -1160,10 +1160,10 @@ const UI = {
       generated: 'تاريخ الإنشاء',
       contents: 'المحتويات',
       about: 'عن هذه النسخة',
-      aboutBody: 'تعيد هذه النسخة إنتاج كل مدخل في الموقع: المدخول المرجعي حسب العمر والجنس، والحد الأعلى، والمصادر الغذائية، وعوامل الامتصاص، والتفاعلات الموثقة، وأعراض النقص والزيادة، وتعاريض المصادر، وما لم يتم التحقق منه، والإحالات وتواريخ التحقق.',
+      aboutBody: 'تعيد هذه النسخة إنتاج كل مدخل في الموقع: المدخول المرجعي حسب العمر والجنس، والحد الأعلى، والمصادر الغذائية، وعوامل الامتصاص، والتفاعلات الموثقة، وأعراض النقص والزيادة، وتعاريض المصادر، والإحالات وتواريخ التحقق.',
       verification: 'التحقق والمراجعة',
       sources: 'المصادر',
-      entries: 'مدخلاً',
+      entries: 'مدخلًا',
       langNote: 'أُعدت هذه النسخة باللغة العربية، وتتوفر نسخة إنجليزية كاملة من الصفحة نفسها.',
       coverDisclaimer: 'مرجع تثقيفي فقط. لا تغني هذه الوثيقة عن استشارة فردية من طبيب أو صيدلي أو أخصائي تغذية مسجل، وليست وصفة طبية.',
       tocHint: 'يبدأ كل مدخل في صفحة جديدة، وتُحفظ الجداول وكتل التفاعلات كاملة دون تقسيم.'
@@ -1184,7 +1184,7 @@ const DETAILS = {
     foods: "Beef liver, sweet potatoes, carrots, spinach, pumpkin, eggs, fortified dairy.",
     foodsAr: "الكبد، البطاطا الحلوة، الجزر، السبانخ، القرع، البيض، منتجات الألبان المدعمة.",
     tips: "Take with a meal containing fat. High doses of preformed retinol can harm the liver and fetus during pregnancy; beta-carotene from food does not cause toxicity, but high-dose beta-carotene supplements are not recommended for smokers (trials showed higher lung-cancer risk).",
-    tipsAr: "يُؤخذ مع وجبة تحتوي دهوناً. الجرعات العالية من الريتينول الجاهز تضر الكبد والجنين أثناء الحمل؛ بيتا كاروتين الغذائي آمن، لكن مكملات بيتا كاروتين عالية الجرعة لا تُنصح للمدخنين، فقد أظهرت التجارب ارتفاع خطر سرطان الرئة لديهم."
+    tipsAr: "يُؤخذ مع وجبة تحتوي دهونًا. الجرعات العالية من الريتينول الجاهز تضر الكبد والجنين أثناء الحمل؛ بيتا كاروتين الغذائي آمن، لكن مكملات بيتا كاروتين عالية الجرعة لا تُنصح للمدخنين، فقد أظهرت التجارب ارتفاع خطر سرطان الرئة لديهم."
   },
   "Thiamin (Vitamin B1)": {
     ar: "الثيامين (فيتامين ب1)", sub: "water-soluble", aliases: ["B1", "Benfotiamine", "ثيامين"],
@@ -1206,7 +1206,7 @@ const DETAILS = {
     foods: "Milk, yogurt, eggs, lean meats, almonds, spinach, enriched grains.",
     foodsAr: "الحليب والزبادي، البيض، اللوز، السبانخ، اللحوم الخالية من الدهون، الحبوب المدعمة.",
     tips: "Harmlessly turns urine bright neon yellow when taken in supplements. Light degrades riboflavin in clear bottles.",
-    tipsAr: "يجعل البول أصفر فاقعاً بلا أي ضرر عند تناوله كمكمل. ويُحفظ بعيداً عن الضوء لأنه يتحلل بسرعة."
+    tipsAr: "يجعل البول أصفر فاقعًا بلا أي ضرر عند تناوله كمكمل. ويُحفظ بعيدًا عن الضوء لأنه يتحلل بسرعة."
   },
   "Niacin (Vitamin B3)": {
     ar: "النياسين (فيتامين ب3)", sub: "water-soluble", aliases: ["B3", "Nicotinamide", "Niacinamide", "Nicotinic acid", "نياسين", "نياسيناميد"],
@@ -1217,7 +1217,7 @@ const DETAILS = {
     foods: "Poultry, tuna, salmon, peanuts, brown rice, fortified grains.",
     foodsAr: "الدواجن، التونة، السلمون، الفول السوداني، الأرز البني، الحبوب المدعمة.",
     tips: "Nicotinic acid above 30–50 mg can cause harmless skin flushing; niacinamide does not flush. High therapeutic doses require medical liver monitoring.",
-    tipsAr: "حمض النيكوتينيك بجرعات تفوق 30 ملغ قد يسبب احمراراً وسخونة مؤقتة بالجلد، بخلاف النياسيناميد. الجرعات العلاجية العالية تتطلب متابعة وظائف الكبد."
+    tipsAr: "حمض النيكوتينيك بجرعات تفوق 30 ملغ قد يسبب احمرارًا وسخونة مؤقتة بالجلد، بخلاف النياسيناميد. الجرعات العلاجية العالية تتطلب متابعة وظائف الكبد."
   },
   "Pantothenic acid (Vitamin B5)": {
     ar: "حمض البانتوثينيك (فيتامين ب5)", sub: "water-soluble", aliases: ["B5", "Calcium pantothenate", "بانتوثينيك"],
@@ -1228,7 +1228,7 @@ const DETAILS = {
     foods: "Shiitake mushrooms, avocado, chicken, beef, eggs, sunflower seeds, sweet potato.",
     foodsAr: "المشروم (فطر الشيتاكي)، الأفوكادو، الدجاج، اللحوم، البيض، بذور دوار الشمس، البطاطا الحلوة.",
     tips: "Widespread across nearly all whole foods; deficiency is very rare outside severe malnutrition.",
-    tipsAr: "متوفر في أغلب الأغذية الطبيعية، ونقصه نادر جداً."
+    tipsAr: "متوفر في أغلب الأغذية الطبيعية، ونقصه نادر جدًا."
   },
   "Vitamin B6": {
     ar: "فيتامين ب6 (البيريدوكسين)", sub: "water-soluble", aliases: ["Pyridoxine", "P5P", "Pyridoxal 5-phosphate", "بيريدوكسين"],
@@ -1239,7 +1239,7 @@ const DETAILS = {
     foods: "Chickpeas, tuna, salmon, poultry, potatoes, bananas, fortified cereals.",
     foodsAr: "الحمص، التونة، السلمون، الدواجن، البطاطس، الموز، الحبوب المدعمة.",
     tips: "Avoid chronic high doses (>100 mg/day), which can cause reversible or persistent sensory nerve toxicity (neuropathy).",
-    tipsAr: "تجنب الجرعات العالية المزمنة (>100 ملغ/يوم) لأنها قد تسبب اعتلالاً عصبياً وتنميلاً في الأطراف."
+    tipsAr: "تجنب الجرعات العالية المزمنة (>100 ملغ/يوم) لأنها قد تسبب اعتلالًا عصبيًا وتنميلًا في الأطراف."
   },
   "Biotin (Vitamin B7)": {
     ar: "البيوتين (فيتامين ب7)", sub: "water-soluble", aliases: ["B7", "Vitamin H", "بيوتين"],
@@ -1250,7 +1250,7 @@ const DETAILS = {
     foods: "Cooked eggs (yolk), salmon, liver, nuts, seeds, sweet potatoes.",
     foodsAr: "صفار البيض المطبوخ، السلمون، المكسرات، البذور، البطاطا الحلوة.",
     tips: "CRITICAL LAB CAUTION: High-dose biotin supplements can falsely distort blood tests including troponin (heart attack) and thyroid panels. Stop 48–72h before lab draws if advised by your doctor.",
-    tipsAr: "تنبيه مخبري هام: الجرعات العالية من البيوتين تعطي نتائج خاطئة في تحاليل الغدة الدرقية والقلب (التروبونين). أوقفه 48–72 ساعة قبل سحب الدم إن أوصى طبيبك بذلك، وأخبر المختبر دائماً."
+    tipsAr: "تنبيه مخبري هام: الجرعات العالية من البيوتين تعطي نتائج خاطئة في تحاليل الغدة الدرقية والقلب (التروبونين). أوقفه 48–72 ساعة قبل سحب الدم إن أوصى طبيبك بذلك، وأخبر المختبر دائمًا."
   },
   "Folate (Vitamin B9)": {
     ar: "الفولات (فيتامين ب9 / حمض الفوليك)", sub: "water-soluble", aliases: ["B9", "Folic acid", "L-methylfolate", "5-MTHF", "حمض الفوليك", "فولات"],
@@ -1272,7 +1272,7 @@ const DETAILS = {
     foods: "Clams, fish, meat, poultry, eggs, dairy, fortified nutritional yeast and plant milks.",
     foodsAr: "المحار، الأسماك، اللحوم، الدواجن، البيض، الألبان، الخميرة الغذائية وبدائل الحليب النباتية المدعمة.",
     tips: "Vegans, adults >50, and long-term metformin or PPI (acid-blocker) users have higher risk of low B12 because absorption relies on stomach acid & intrinsic factor.",
-    tipsAr: "النباتيون تماماً، ومن تجاوزوا 50 عاماً، ومستخدمو الميتفورمين أو مثبطات حموضة المعدة أكثر عرضة لنقصه، لأن الامتصاص يعتمد على حمض المعدة والعامل الداخلي."
+    tipsAr: "النباتيون تمامًا، ومن تجاوزوا 50 عامًا، ومستخدمو الميتفورمين أو مثبطات حموضة المعدة أكثر عرضة لنقصه، لأن الامتصاص يعتمد على حمض المعدة والعامل الداخلي."
   },
   "Vitamin C": {
     ar: "فيتامين سي (حمض الأسكوربيك)", sub: "water-soluble", aliases: ["Ascorbic acid", "حمض الأسكوربيك", "فيتامين ج"],
@@ -1283,7 +1283,7 @@ const DETAILS = {
     foods: "Bell peppers, citrus fruits, kiwi, strawberries, broccoli, tomatoes.",
     foodsAr: "الفلفل الرومي، الحمضيات، الكيوي، الفراولة، البروكلي، الطماطم.",
     tips: "Enhances plant iron absorption when taken in the same meal. Doses above 2,000 mg often cause GI upset/diarrhea and may raise kidney stone risk in susceptible people.",
-    tipsAr: "يعزز امتصاص الحديد غير الهيمي عند تناوله في الوجبة نفسها. الجرعات الزائدة (>2,000 ملغ) قد تسبب اضطراباً معوياً أو تزيد خطر حصوات الكلى لدى المعرضين لها."
+    tipsAr: "يعزز امتصاص الحديد غير الهيمي عند تناوله في الوجبة نفسها. الجرعات الزائدة (>2,000 ملغ) قد تسبب اضطرابًا معويًا أو تزيد خطر حصوات الكلى لدى المعرضين لها."
   },
   "Vitamin D": {
     ar: "فيتامين د", sub: "fat-soluble", aliases: ["Cholecalciferol", "D3", "Ergocalciferol", "D2", "كوليكالسيفيرول"],
@@ -1294,7 +1294,7 @@ const DETAILS = {
     foods: "Fatty fish (salmon, mackerel, sardines), UV-exposed mushrooms, egg yolks, fortified milk/cereals (sunlight is primary source).",
     foodsAr: "الأسماك الدهنية (السلمون والماكريل والسردين)، المشروم المعرّض للأشعة فوق البنفسجية، صفار البيض، الحليب والحبوب المدعمة. والتعرض الآمن للشمس هو المصدر الأساسي.",
     tips: "Take with a meal containing fat for optimal absorption. Excess (>4,000 IU/day long-term without medical supervision) can cause hypercalcemia and vascular/kidney calcification.",
-    tipsAr: "يُؤخذ مع وجبة تحتوي دهوناً لأفضل امتصاص. الإفراط المزمن (أكثر من 4,000 وحدة دولية يومياً بلا إشراف طبي) يرفع كالسيوم الدم وقد يسبب تكلساً في الأوعية والكلى."
+    tipsAr: "يُؤخذ مع وجبة تحتوي دهونًا لأفضل امتصاص. الإفراط المزمن (أكثر من 4,000 وحدة دولية يوميًا بلا إشراف طبي) يرفع كالسيوم الدم وقد يسبب تكلسًا في الأوعية والكلى."
   },
   "Vitamin E": {
     ar: "فيتامين هـ", sub: "fat-soluble", aliases: ["Alpha-tocopherol", "Tocopherol", "توكوفيرول"],
@@ -1305,7 +1305,7 @@ const DETAILS = {
     foods: "Wheat germ oil, sunflower seeds, almonds, hazelnuts, peanut butter, spinach.",
     foodsAr: "زيت جنين القمح، بذور دوار الشمس، اللوز، البندق، السبانخ.",
     tips: "High-dose supplements (>400 IU/day) can increase bleeding risk, especially with anticoagulants (warfarin) or antiplatelets.",
-    tipsAr: "الجرعات العالية (>400 وحدة دولية يومياً) قد تزيد خطر النزيف، خاصة مع مميعات الدم أو مضادات الصفائح."
+    tipsAr: "الجرعات العالية (>400 وحدة دولية يوميًا) قد تزيد خطر النزيف، خاصة مع مميعات الدم أو مضادات الصفائح."
   },
   "Vitamin K": {
     ar: "فيتامين ك", sub: "fat-soluble", aliases: ["Phylloquinone", "K1", "Menaquinone", "K2", "MK-7", "فيلوكينون"],
@@ -1327,7 +1327,7 @@ const DETAILS = {
     foods: "Egg yolks, beef liver, fish, soybeans, chicken, wheat germ.",
     foodsAr: "صفار البيض، الكبد، الأسماك، فول الصويا، الدجاج، جنين القمح.",
     tips: "Most multivitamins contain very little choline; egg yolks are one of the richest everyday food sources.",
-    tipsAr: "معظم الفيتامينات المتعددة تحوي كميات ضئيلة جداً منه؛ صفار البيض من أغنى مصادره اليومية."
+    tipsAr: "معظم الفيتامينات المتعددة تحوي كميات ضئيلة جدًا منه؛ صفار البيض من أغنى مصادره اليومية."
   },
   "Calcium": {
     ar: "الكالسيوم", sub: "macromineral", aliases: ["Calcium citrate", "Calcium carbonate", "كالسيوم"],
@@ -1360,7 +1360,7 @@ const DETAILS = {
     foods: "Pumpkin seeds, chia seeds, almonds, spinach, black beans, edamame, whole grains, dark chocolate.",
     foodsAr: "بذور اليقطين والشيا، اللوز، السبانخ، الفاصوليا السوداء، الحبوب الكاملة، الشوكولاتة الداكنة.",
     tips: "Glycinate/citrate absorb far better than oxide; oxide/citrate can loosen stools. Caution in kidney impairment.",
-    tipsAr: "غليسينات وسترات المغنيسيوم أفضل امتصاصاً من الأكسيد؛ السترات والأكسيد قد يسببان ليونة البطن. يُستخدم بحذر في قصور الكلى."
+    tipsAr: "غليسينات وسترات المغنيسيوم أفضل امتصاصًا من الأكسيد؛ السترات والأكسيد قد يسببان ليونة البطن. يُستخدم بحذر في قصور الكلى."
   },
   "Zinc": {
     ar: "الزنك", sub: "trace", aliases: ["Zinc picolinate", "Zinc gluconate", "Zinc citrate", "زنك"],
@@ -1382,7 +1382,7 @@ const DETAILS = {
     foods: "Beef liver, oysters, cashews, sunflower seeds, dark chocolate, chickpeas, mushrooms.",
     foodsAr: "الكبد، المحار، الكاجو، بذور دوار الشمس، الشوكولاتة الداكنة، الحمص، المشروم.",
     tips: "Keep roughly 10–15 parts zinc to 1 part copper when taking zinc long-term, so copper status is not depleted.",
-    tipsAr: "يوازن الزنك؛ عند تناول الزنك طويلاً حافظ على نسبة زنك إلى نحاس قريبة من 10–15:1."
+    tipsAr: "يوازن الزنك؛ عند تناول الزنك طويلًا حافظ على نسبة زنك إلى نحاس قريبة من 10–15:1."
   },
   "Selenium": {
     ar: "السيلينيوم", sub: "trace", aliases: ["Selenomethionine", "سيلينيوم"],
@@ -1393,7 +1393,7 @@ const DETAILS = {
     foods: "Brazil nuts (1–2 nuts can meet the daily requirement), yellowfin tuna, sardines, eggs, poultry.",
     foodsAr: "الجوز البرازيلي (حبة أو حبتان تغطي الاحتياج اليومي)، التونة، السردين، البيض، الدواجن.",
     tips: "Narrow safety margin — do not eat handfuls of Brazil nuts daily alongside selenium supplements (excess causes brittle hair/nails, garlic breath).",
-    tipsAr: "هامش الأمان ضيق: لا تتناول حفنات من الجوز البرازيلي يومياً مع مكملات السيلينيوم، فالإفراط يسبب هشاشة الأظافر وتساقط الشعر ورائحة ثوم في النفس."
+    tipsAr: "هامش الأمان ضيق: لا تتناول حفنات من الجوز البرازيلي يوميًا مع مكملات السيلينيوم، فالإفراط يسبب هشاشة الأظافر وتساقط الشعر ورائحة ثوم في النفس."
   },
   "Iodine": {
     ar: "اليود", sub: "trace", aliases: ["Potassium iodide", "Kelp", "يود"],
@@ -1415,7 +1415,7 @@ const DETAILS = {
     foods: "Dried apricots, lentils, potatoes, squash, bananas, avocado, spinach, yogurt.",
     foodsAr: "المشمش المجفف، العدس، البطاطس، القرع، الموز، الأفوكادو، السبانخ.",
     tips: "OTC supplements are capped at 99 mg/serving for GI safety; prioritize whole foods. High-dose supplements can be dangerous with kidney disease or ACE inhibitors/ARBs.",
-    tipsAr: "تُحدد مكملات البوتاسيوم عادةً بـ 99 ملغ للجرعة الواحدة حفاظاً على سلامة المعدة؛ لذا ركّز على الغذاء. والجرعات العالية خطرة في قصور الكلى ومع بعض أدوية الضغط."
+    tipsAr: "تُحدد مكملات البوتاسيوم عادةً بـ 99 ملغ للجرعة الواحدة حفاظًا على سلامة المعدة؛ لذا ركّز على الغذاء. والجرعات العالية خطرة في قصور الكلى ومع بعض أدوية الضغط."
   },
   "Phosphorus": {
     ar: "الفوسفور", sub: "macromineral", aliases: ["Phosphate", "فوسفور"],
@@ -1470,7 +1470,7 @@ const DETAILS = {
     foods: "Fluoridated drinking water, brewed black/green tea, marine fish with bones.",
     foodsAr: "مياه الشرب المفلورة، الشاي الأسود والأخضر، الأسماك البحرية بعظامها.",
     tips: "Excess in early childhood causes dental fluorosis; adult supplements are rarely needed when water/toothpaste are fluoridated.",
-    tipsAr: "الإفراط في الطفولة يسبب تبقع الأسنان؛ ونادراً ما يلزم كمكمل للبالغين."
+    tipsAr: "الإفراط في الطفولة يسبب تبقع الأسنان؛ ونادرًا ما يلزم كمكمل للبالغين."
   },
   "Boron": {
     ar: "البورون", sub: "trace", aliases: ["بورون"],
@@ -1481,18 +1481,18 @@ const DETAILS = {
     foods: "Prunes, raisins, avocados, apples, pears, legumes, nuts.",
     foodsAr: "البرقوق المجفف، الزبيب، الأفوكادو، التفاح، البقوليات، المكسرات.",
     tips: "Not officially classified as an essential nutrient in US DRI tables, though an upper limit of 20 mg/day is set for adults.",
-    tipsAr: "لا يُصنَّف رسمياً عنصراً أساسياً في جداول DRI الأمريكية، لكن حُدّد له حد أعلى 20 ملغ يومياً للبالغين."
+    tipsAr: "لا يُصنَّف رسميًا عنصرًا أساسيًا في جداول DRI الأمريكية، لكن حُدّد له حد أعلى 20 ملغ يوميًا للبالغين."
   },
   "Multivitamin/mineral supplements": {
     ar: "الفيتامينات والمعادن المتعددة (MVM)", sub: "combo", aliases: ["Multivitamin", "MVM", "Prenatal", "ملتي فيتامين"],
     rda: "Varies by formulation", rdaAr: "تختلف حسب التركيبة",
     ul: "Check each nutrient's UL", ulAr: "انتبه للحد الأعلى لكل عنصر داخل المنتج",
     role: "Broad nutritional insurance for restricted diets, pregnancy (prenatal), older adults, or malabsorption.",
-    roleAr: "مكمل شامل لسد الفجوات الغذائية لمن يتبع نظاماً محدوداً، أو أثناء الحمل، أو لكبار السن، أو عند سوء الامتصاص.",
+    roleAr: "مكمل شامل لسد الفجوات الغذائية لمن يتبع نظامًا محدودًا، أو أثناء الحمل، أو لكبار السن، أو عند سوء الامتصاص.",
     foods: "Whole-food variety remains the primary foundation.",
     foodsAr: "التنوع الغذائي الطبيعي يبقى الأساس.",
     tips: "Check iron presence (men & postmenopausal women rarely need extra iron) and look for independent quality seals (USP, NSF, ConsumerLab).",
-    tipsAr: "تحقق من وجود الحديد (غالباً لا يحتاجه الرجال ولا النساء بعد سن اليأس إلا لنقص مثبت)، وابحث عن شهادات الفحص المستقل (USP أو NSF)."
+    tipsAr: "تحقق من وجود الحديد (غالبًا لا يحتاجه الرجال ولا النساء بعد سن اليأس إلا لنقص مثبت)، وابحث عن شهادات الفحص المستقل (USP أو NSF)."
   },
   /* ---- Key Herbs enriched ---- */
   "Ashwagandha": {
@@ -1507,7 +1507,7 @@ const DETAILS = {
     role: "Studied primarily for menopausal hot flashes and vasomotor symptoms.",
     roleAr: "يُدرس لتخفيف الهبات الساخنة وأعراض سن اليأس.",
     tips: "Rare reports of liver injury; discontinue immediately if jaundice or dark urine appears. Caution in hormone-sensitive conditions.",
-    tipsAr: "سُجّلت حالات نادرة لإصابة الكبد؛ أوقفه فوراً عند ظهور اصفرار الجلد أو العينين أو تغيّر لون البول. يُحذر في الحالات الحساسة للهرمونات."
+    tipsAr: "سُجّلت حالات نادرة لإصابة الكبد؛ أوقفه فورًا عند ظهور اصفرار الجلد أو العينين أو تغيّر لون البول. يُحذر في الحالات الحساسة للهرمونات."
   },
   "Valerian": {
     ar: "الناردين (الفاليريان)", aliases: ["Valeriana officinalis", "ناردين", "فاليريان"],
@@ -1528,7 +1528,7 @@ const DETAILS = {
     role: "Polyphenol-rich rhizome studied for joint inflammation and antioxidant pathways.",
     roleAr: "جذمور غني بالكركمين يُدرس لدعم المفاصل ومسارات مضادات الأكسدة.",
     tips: "Low natural absorption; often paired with piperine (black pepper) or lipid forms. High-dose extracts carry rare liver-injury cautions and mild blood-thinning potential.",
-    tipsAr: "امتصاصه الطبيعي منخفض، لذا يُقرن أحياناً بالفلفل الأسود (بيبيرين) أو بأشكال دهنية. المستخلصات المركزة تستدعي حذراً مع مميعات الدم، وسُجّلت معها حالات نادرة لإصابة الكبد."
+    tipsAr: "امتصاصه الطبيعي منخفض، لذا يُقرن أحيانًا بالفلفل الأسود (بيبيرين) أو بأشكال دهنية. المستخلصات المركزة تستدعي حذرًا مع مميعات الدم، وسُجّلت معها حالات نادرة لإصابة الكبد."
   },
   "St. John's wort": {
     ar: "عشبة سانت جون (القديس يوحنا)", aliases: ["Hypericum perforatum", "سانت جون"],
@@ -1554,23 +1554,23 @@ const DETAILS = {
   "Ginger": {
     ar: "الزنجبيل", aliases: ["Zingiber officinale", "زنجبيل"],
     role: "Well-studied for nausea (motion sickness, pregnancy-related, post-op) and mild GI/joint support.",
-    roleAr: "من الأعشاب المدروسة جيداً للغثيان (دوار الحركة، وغثيان الحمل، وبعد الجراحة)، ولدعم الهضم والمفاصل بشكل خفيف.",
+    roleAr: "من الأعشاب المدروسة جيدًا للغثيان (دوار الحركة، وغثيان الحمل، وبعد الجراحة)، ولدعم الهضم والمفاصل بشكل خفيف.",
     tips: "High supplemental doses may mildly inhibit platelet aggregation; check with clinician during pregnancy or with blood thinners.",
     tipsAr: "الجرعات المكملة العالية قد تثبط تجمع الصفائح بشكل خفيف؛ استشر الطبيب أثناء الحمل أو مع مميعات الدم."
   },
   "Kava": {
     ar: "الكافا", aliases: ["Piper methysticum", "كافا"],
     role: "Traditionally used for short-term anxiety relief.",
-    roleAr: "تُستخدم تقليدياً للقلق قصير الأمد.",
+    roleAr: "تُستخدم تقليديًا للقلق قصير الأمد.",
     tips: "SAFETY WARNING: Linked to severe, sometimes fatal liver toxicity. Avoid with liver disease, alcohol, or hepatotoxic drugs.",
-    tipsAr: "تحذير أمان: ارتبطت بحالات تسمم كبدي خطيرة، وبعضها قاتل. تجنبها تماماً مع أمراض الكبد أو الكحول أو الأدوية السامة للكبد."
+    tipsAr: "تحذير أمان: ارتبطت بحالات تسمم كبدي خطيرة، وبعضها قاتل. تجنبها تمامًا مع أمراض الكبد أو الكحول أو الأدوية السامة للكبد."
   },
   "Milk thistle": {
     ar: "شوك الحليب (السليمارين)", aliases: ["Silybum marianum", "Silymarin", "شوك الحليب", "سليمارين"],
     role: "Studied for liver antioxidant support; clinical evidence for liver disease remains mixed.",
     roleAr: "يُدرس لدعم مضادات الأكسدة في الكبد، مع تباين الأدلة السريرية.",
     tips: "May cause mild GI upset or allergic reactions in people sensitive to ragweed/Asteraceae plants.",
-    tipsAr: "قد يسبب اضطراباً معوياً خفيفاً أو حساسية لمن يتحسس من عائلة الأقحوان (النجميات)."
+    tipsAr: "قد يسبب اضطرابًا معويًا خفيفًا أو حساسية لمن يتحسس من عائلة الأقحوان (النجميات)."
   },
   "Echinacea": {
     ar: "الإكيناسيا (القنفذية)", aliases: ["Echinacea purpurea", "إكيناسيا"],
@@ -1584,21 +1584,21 @@ const DETAILS = {
     role: "Studied for early upper-respiratory viral symptoms.",
     roleAr: "يُدرس لأعراض الجهاز التنفسي العلوي المبكرة.",
     tips: "Raw/unripe berries, leaves, and bark contain cyanogenic glycosides and are toxic; only properly cooked or standardized commercial extracts are safe.",
-    tipsAr: "الثمار غير الناضجة والأوراق واللحاء تحتوي غليكوسيدات سيانوجينية سامة؛ لا تستخدم إلا المستخلصات التجارية المعالجة أو الثمار المطبوخة جيداً."
+    tipsAr: "الثمار غير الناضجة والأوراق واللحاء تحتوي غليكوسيدات سيانوجينية سامة؛ لا تستخدم إلا المستخلصات التجارية المعالجة أو الثمار المطبوخة جيدًا."
   },
   "Green tea": {
     ar: "مستخلص الشاي الأخضر", aliases: ["Camellia sinensis", "EGCG", "شاي أخضر"],
     role: "Rich in catechins (EGCG); studied for cardiometabolic and antioxidant support.",
     roleAr: "غني بالكاتيكين (EGCG)؛ يُدرس لصحة القلب والأيض.",
     tips: "Brewed tea is very safe; concentrated green tea extract pills (especially on an empty stomach) have rare reports of liver injury and contain caffeine unless decaffeinated.",
-    tipsAr: "الشاي المغلي آمن جداً؛ أما كبسولات المستخلص المركزة، وخاصة على معدة فارغة، فقد ارتبطت بحالات نادرة لإصابة الكبد، وهي تحتوي كافيين ما لم تكن منزوعة الكافيين."
+    tipsAr: "الشاي المغلي آمن جدًا؛ أما كبسولات المستخلص المركزة، وخاصة على معدة فارغة، فقد ارتبطت بحالات نادرة لإصابة الكبد، وهي تحتوي كافيين ما لم تكن منزوعة الكافيين."
   },
   "Rhodiola": {
     ar: "الروديولا (الجذر الذهبي)", aliases: ["Rhodiola rosea", "روديولا"],
     role: "Adaptogen researched for fatigue, mental stamina, and mild stress.",
     roleAr: "عشبة تكيفية تُدرس للإجهاد الذهني والبدني.",
     tips: "Usually taken in the morning/early afternoon as it can feel mildly stimulating.",
-    tipsAr: "تُؤخذ صباحاً عادةً لأنها قد تسبب نشاطاً يزعج النوم ليلاً."
+    tipsAr: "تُؤخذ صباحًا عادةً لأنها قد تسبب نشاطًا يزعج النوم ليلًا."
   },
   "Saw palmetto": {
     ar: "البلميط المنشاري", aliases: ["Serenoa repens", "بلميط منشاري"],
@@ -1612,7 +1612,7 @@ const DETAILS = {
     role: "Studied for reducing recurrent urinary tract infections (UTIs) in women.",
     roleAr: "يُدرس للوقاية من تكرار التهابات المسالك البولية.",
     tips: "Helps prevent bacterial adhesion rather than treating an active UTI. High intakes may raise urinary oxalate.",
-    tipsAr: "يفيد في منع التصاق البكتيريا، لا في علاج الالتهاب النشط الذي يحتاج مضاداً حيوياً. والإفراط قد يرفع أوكسالات البول."
+    tipsAr: "يفيد في منع التصاق البكتيريا، لا في علاج الالتهاب النشط الذي يحتاج مضادًا حيويًا. والإفراط قد يرفع أوكسالات البول."
   },
   "Flaxseed": {
     ar: "بذور الكتان", aliases: ["Linum usitatissimum", "ALA", "بذور الكتان"],
@@ -1621,32 +1621,32 @@ const DETAILS = {
     tips: "Grind whole seeds to absorb nutrients; drink plenty of water and separate from oral medications by 1–2 hours.",
     tipsAr: "تُطحن البذور للاستفادة منها، وتُؤخذ مع ماء وفير، وتُفصل عن الأدوية الفموية بساعة إلى ساعتين."
   },
-  "Chamomile": { ar: "البابونج", aliases: ["Matricaria recutita", "بابونج"], role: "Traditionally used for mild sleep, anxiety, and digestive comfort.", roleAr: "يُستخدم تقليدياً للاسترخاء والهضم والنوم الخفيف.", tips: "May trigger reactions in people allergic to ragweed/daisy family.", tipsAr: "قد يسبب حساسية لمن يتحسس من عائلة الأقحوان." },
+  "Chamomile": { ar: "البابونج", aliases: ["Matricaria recutita", "بابونج"], role: "Traditionally used for mild sleep, anxiety, and digestive comfort.", roleAr: "يُستخدم تقليديًا للاسترخاء والهضم والنوم الخفيف.", tips: "May trigger reactions in people allergic to ragweed/daisy family.", tipsAr: "قد يسبب حساسية لمن يتحسس من عائلة الأقحوان." },
   "Cinnamon": { ar: "القرفة", aliases: ["Cinnamomum", "قرفة"], role: "Studied for blood sugar support (evidence remains inconclusive).", roleAr: "تُدرس لدعم سكر الدم (الأدلة غير حاسمة).", tips: "Cassia cinnamon is high in coumarin, which in heavy supplement doses can stress the liver; Ceylon cinnamon is much lower in coumarin.", tipsAr: "قرفة الكاسيا عالية الكومارين، الذي قد يرهق الكبد عند الإفراط في المكملات؛ أما قرفة سيلان فتحتوي على نسبة أقل بكثير." },
   "Fenugreek": { ar: "الحلبة", aliases: ["Trigonella foenum-graecum", "حلبة"], role: "Studied for blood sugar control and lactation support.", roleAr: "تُدرس لسكر الدم وإدرار الحليب.", tips: "May lower blood glucose and interact with diabetes meds or warfarin; avoid concentrated doses during pregnancy.", tipsAr: "قد تخفض سكر الدم وتتداخل مع أدوية السكري والوارفارين؛ تُتجنب الجرعات المركزة أثناء الحمل." },
   "Licorice root": { ar: "عرق السوس", aliases: ["Glycyrrhiza glabra", "عرق سوس"], role: "Used for soothing GI/throat irritation; DGL removes glycyrrhizin.", roleAr: "يُستخدم لتهدئة المعدة والحلق (النوع DGL منزوع الغليسيريزين).", tips: "Whole licorice (glycyrrhizin) raises blood pressure and drops potassium dangerously if overused.", tipsAr: "عرق السوس الكامل (الغليسيريزين) يرفع ضغط الدم ويخفض البوتاسيوم بشكل خطير عند الإفراط، وخاصة لدى مرضى الضغط." },
-  "Peppermint oil": { ar: "زيت النعناع الفلفلي", aliases: ["Mentha piperita", "نعناع"], role: "Enteric-coated capsules show benefit for IBS abdominal cramps.", roleAr: "الكبسولات المغلفة معوياً تفيد في تقلصات القولون العصبي.", tips: "Can worsen acid reflux (GERD) if not enteric-coated.", tipsAr: "قد يزيد ارتجاع المريء إذا لم يكن مغلفاً معوياً." },
+  "Peppermint oil": { ar: "زيت النعناع الفلفلي", aliases: ["Mentha piperita", "نعناع"], role: "Enteric-coated capsules show benefit for IBS abdominal cramps.", roleAr: "الكبسولات المغلفة معويًا تفيد في تقلصات القولون العصبي.", tips: "Can worsen acid reflux (GERD) if not enteric-coated.", tipsAr: "قد يزيد ارتجاع المريء إذا لم يكن مغلفًا معويًا." },
   "Soy": { ar: "الصويا (الأيزوفلافون)", aliases: ["Glycine max", "Isoflavones", "صويا"], role: "Source of phytoestrogens studied for menopausal hot flashes and cholesterol.", roleAr: "مصدر للفيتواستروجين يُدرس لأعراض سن اليأس والكوليسترول.", tips: "Whole soy foods are safe; consult an oncologist before concentrated isoflavone pills in hormone-receptor-positive breast cancer.", tipsAr: "أغذية الصويا الكاملة آمنة؛ استشر الطبيب قبل حبوب الأيزوفلافون المركزة." },
   "Red clover": { ar: "البرسيم الأحمر", aliases: ["Trifolium pratense", "برسيم أحمر"], role: "Isoflavone-rich herb studied for menopause symptoms.", roleAr: "نبات غني بالأيزوفلافون يُدرس لأعراض سن اليأس.", tips: "Caution with hormone-sensitive conditions and anticoagulants.", tipsAr: "يُحذر مع الحالات الحساسة للهرمونات ومميعات الدم." },
   "Lavender": { ar: "اللافندر (الخزامى)", aliases: ["Lavandula", "لافندر", "خزامى"], role: "Studied via aromatherapy and oral preparations for mild anxiety.", roleAr: "يُدرس عبر الاستنشاق أو المستخلصات الفموية للقلق الخفيف.", tips: "Essential oils should never be swallowed undiluted.", tipsAr: "الزيوت العطرية لا تُبلع مباشرة دون تخفيف أو مستحضر مخصص." },
-  "Passionflower": { ar: "زهرة الآلام", aliases: ["Passiflora incarnata", "زهرة الآلام"], role: "Traditionally used for mild anxiety and sleep.", roleAr: "تُستخدم تقليدياً للتوتر الخفيف والنوم.", tips: "Avoid combining with sedatives; avoid during pregnancy.", tipsAr: "تجنب دمجها مع المهدئات وأثناء الحمل." },
+  "Passionflower": { ar: "زهرة الآلام", aliases: ["Passiflora incarnata", "زهرة الآلام"], role: "Traditionally used for mild anxiety and sleep.", roleAr: "تُستخدم تقليديًا للتوتر الخفيف والنوم.", tips: "Avoid combining with sedatives; avoid during pregnancy.", tipsAr: "تجنب دمجها مع المهدئات وأثناء الحمل." },
   "Bromelain": { ar: "البروميلين", aliases: ["Pineapple enzyme", "بروميلين"], role: "Protein-digesting enzyme from pineapple studied for swelling/sinus inflammation.", roleAr: "إنزيم من الأناناس يُدرس لتخفيف التورم والالتهابات.", tips: "May increase bleeding risk with anticoagulants and increase absorption of certain antibiotics.", tipsAr: "قد يزيد خطر النزيف مع مميعات الدم، ويزيد امتصاص بعض المضادات الحيوية." },
   "Butterbur": { ar: "البوتيربور (الأرام)", aliases: ["Petasites hybridus"], role: "Studied for migraine prevention and allergic rhinitis.", roleAr: "يُدرس للوقاية من الشقيقة وحساسية الأنف.", tips: "Use ONLY products certified free of pyrrolizidine alkaloids (PA-free): these alkaloids can cause severe liver damage.", tipsAr: "استخدم فقط المنتجات الموثقة بخلوها من قلويدات البيروليزيدين (PA-free) السامة للكبد." },
   "Bitter orange": { ar: "النارنج (البرتقال المر)", aliases: ["Citrus aurantium", "Synephrine", "نارنج"], role: "Promoted for weight loss (contains p-synephrine).", roleAr: "يُروج له لإنقاص الوزن (يحوي السينفرين).", tips: "Can elevate heart rate and blood pressure, especially combined with caffeine; avoid in cardiovascular disease.", tipsAr: "قد يرفع ضغط الدم ونبض القلب، خاصة مع الكافيين؛ يُتجنب في أمراض القلب والأوعية." },
   "Yohimbe": { ar: "اليوهيمبي", aliases: ["Pausinystalia yohimbe", "Yohimbine", "يوهيمبي"], role: "Promoted for erectile dysfunction and athletic fat loss.", roleAr: "يُروج له للقدرة الجنسية وحرق الدهون.", tips: "SAFETY WARNING: Frequently causes rapid heart rate, high blood pressure, anxiety, and dangerous drug interactions.", tipsAr: "تحذير: قد يسبب تسارع نبض القلب وارتفاع الضغط والقلق الشديد." },
-  "Goldenseal": { ar: "خاتم الذهب", aliases: ["Hydrastis canadensis", "Berberine"], role: "Contains berberine; traditionally used for mucosal/GI support.", roleAr: "يحوي البربارين، ويُستخدم تقليدياً لدعم الأغشية المخاطية والجهاز الهضمي.", tips: "Inhibits CYP2D6 & CYP3A4 liver enzymes, altering blood levels of many prescription drugs.", tipsAr: "يثبط إنزيمات الكبد CYP وقد يغير مستويات أدوية عديدة." },
+  "Goldenseal": { ar: "خاتم الذهب", aliases: ["Hydrastis canadensis", "Berberine"], role: "Contains berberine; traditionally used for mucosal/GI support.", roleAr: "يحوي البربارين، ويُستخدم تقليديًا لدعم الأغشية المخاطية والجهاز الهضمي.", tips: "Inhibits CYP2D6 & CYP3A4 liver enzymes, altering blood levels of many prescription drugs.", tipsAr: "يثبط إنزيمات الكبد CYP وقد يغير مستويات أدوية عديدة." },
   "Acai": { ar: "الآساي", aliases: ["آساي"], role: "Antioxidant-rich palm berry; limited clinical proof for weight loss or anti-aging.", roleAr: "ثمار غنية بمضادات الأكسدة، دون أدلة قوية على إنقاص الوزن.", tips: "No strong clinical evidence supports weight-loss or anti-ageing claims; whole foods remain the better antioxidant source.", tipsAr: "لا توجد أدلة سريرية قوية لإنقاص الوزن أو مقاومة الشيخوخة؛ الاعتماد على الغذاء الكامل أفضل لمضادات الأكسدة." },
-  "Alfalfa": { ar: "البرسيم الحجازي (الفصفصة)", aliases: ["فصفصة"], role: "Traditionally used for cholesterol and nutrition.", roleAr: "يُستخدم تقليدياً لخفض الكوليسترول.", tips: "Raw sprouts carry bacterial contamination risks; high doses may trigger lupus flares or interact with warfarin (vitamin K content). MedlinePlus no longer hosts a standalone alfalfa monograph, so the link opens its live A–Z herbs index.", tipsAr: "قد يتداخل مع الوارفارين لاحتوائه على فيتامين ك، ويُحذر لمرضى الذئبة. لم يعد MedlinePlus يستضيف صفحة مستقلة للفصفصة، لذا يفتح الرابط فهرسه الحي للأعشاب." },
+  "Alfalfa": { ar: "البرسيم الحجازي (الفصفصة)", aliases: ["فصفصة"], role: "Traditionally used for cholesterol and nutrition.", roleAr: "يُستخدم تقليديًا لخفض الكوليسترول.", tips: "Raw sprouts carry bacterial contamination risks; high doses may trigger lupus flares or interact with warfarin (vitamin K content). MedlinePlus no longer hosts a standalone alfalfa monograph, so the link opens its live A–Z herbs index.", tipsAr: "قد يتداخل مع الوارفارين لاحتوائه على فيتامين ك، ويُحذر لمرضى الذئبة. لم يعد MedlinePlus يستضيف صفحة مستقلة للفصفصة، لذا يفتح الرابط فهرسه الحي للأعشاب." },
   "Aloe vera": { ar: "الألوفيرا (الصبار)", aliases: ["صبار", "ألوفيرا"], role: "Topical gel soothes mild burns/skin; oral aloe latex is a harsh stimulant laxative.", roleAr: "الجل الموضعي يهدئ الحروق الخفيفة؛ أما خلاصة الصبار الفموية فملين قوي قد يضر.", tips: "Oral non-decolorized whole-leaf aloe extract carries safety warnings (cramps, electrolyte loss).", tipsAr: "تجنب المستخلص الفموي غير المنقى لما يسببه من تقلصات وإسهال وفقدان أملاح." },
   "Astragalus": { ar: "القتاد (الأستراغالوس)", aliases: ["أستراغالوس"], role: "Traditional Chinese herb studied for immune and fatigue support.", roleAr: "عشبة تقليدية تُدرس لدعم المناعة.", tips: "May interact with immunosuppressant medications.", tipsAr: "قد يتعارض مع الأدوية المثبطة للمناعة." },
   "Bee pollen": { ar: "حبوب لقاح النحل", aliases: ["لقاح النحل"], role: "Nutrient-dense bee product promoted for energy/allergies.", roleAr: "منتج نحلي يُروج له للطاقة.", tips: "Can trigger severe allergic reactions (anaphylaxis) in pollen/bee-allergic individuals; may interact with warfarin. Linked to the MedlinePlus A–Z herbs index because no standalone monograph is published.", tipsAr: "قد يسبب حساسية شديدة لمن يتحسس من حبوب اللقاح أو لسعات النحل. الرابط يفتح فهرس الأعشاب في MedlinePlus لعدم توفر صفحة مستقلة." },
-  "Bilberry": { ar: "العنبية (التوت الأزرق البري)", aliases: ["عنبية"], role: "Anthocyanin-rich berry studied for eye/vascular support.", roleAr: "ثمار غنية بالأنثوسيانين تُدرس لصحة العين والأوعية.", tips: "Leaf extracts in high doses are unsafe long-term; fruit is generally safe.", tipsAr: "ثماره آمنة عموماً، أما مستخلص الأوراق بجرعات عالية فغير آمن على المدى الطويل." },
+  "Bilberry": { ar: "العنبية (التوت الأزرق البري)", aliases: ["عنبية"], role: "Anthocyanin-rich berry studied for eye/vascular support.", roleAr: "ثمار غنية بالأنثوسيانين تُدرس لصحة العين والأوعية.", tips: "Leaf extracts in high doses are unsafe long-term; fruit is generally safe.", tipsAr: "ثماره آمنة عمومًا، أما مستخلص الأوراق بجرعات عالية فغير آمن على المدى الطويل." },
   "Cat's claw": { ar: "مخلب القط", aliases: ["مخلب القط"], role: "Amazonian vine studied for osteoarthritis/rheumatoid inflammation.", roleAr: "نبات يُدرس لالتهابات المفاصل.", tips: "May interact with blood pressure, blood-thinning, and immunosuppressant drugs.", tipsAr: "قد يتداخل مع أدوية الضغط والمناعة." },
   "Chasteberry": { ar: "كف مريم", aliases: ["Vitex agnus-castus", "كف مريم"], role: "Studied for premenstrual syndrome (PMS) and cycle regularity.", roleAr: "يُدرس لمتلازمة ما قبل الحيض وتنظيم الدورة.", tips: "Affects dopamine/pituitary hormones; avoid with hormone therapy, birth control pills, or dopamine drugs.", tipsAr: "يؤثر على الهرمونات والدوبامين؛ تجنبه مع الحبوب الهرمونية." },
   "Dandelion": { ar: "الهندباء", aliases: ["هندباء"], role: "Leaves act as mild diuretic; root traditionally used for digestion.", roleAr: "الأوراق مدرة خفيفة للبول والجذر للهضم.", tips: "Caution with diuretics, lithium, or ragweed allergies.", tipsAr: "يُحذر مع مدرات البول أو الليثيوم أو حساسية عائلة الأقحوان." },
   "Evening primrose oil": { ar: "زيت زهرة الربيع المسائية", aliases: ["GLA", "زهرة الربيع"], role: "Source of gamma-linolenic acid (GLA) studied for eczema and breast pain.", roleAr: "مصدر لحمض GLA يُدرس للإكزيما وآلام الثدي.", tips: "Caution with blood thinners and seizure disorders.", tipsAr: "يُحذر مع مميعات الدم أو الصرع." },
   "Feverfew": { ar: "أقحوان زهرة الحمى", aliases: ["Parthenolide"], role: "Studied for migraine prevention.", roleAr: "يُدرس للوقاية من الصداع النصفي.", tips: "Do not stop abruptly after prolonged use (rebound headaches); avoid in pregnancy.", tipsAr: "تجنب إيقافه فجأة بعد استخدام طويل، ويُمنع للحامل." },
-  "Ginseng (Asian)": { ar: "الجنسنغ الآسيوي", aliases: ["Panax ginseng", "جنسنغ"], role: "Studied for fatigue, cognition, and glucose metabolism.", roleAr: "يُدرس للنشاط والتركيز ودعم سكر الدم.", tips: "May cause insomnia, affect blood sugar, and interact with warfarin and stimulants.", tipsAr: "قد يسبب أرقاً ويتداخل مع الوارفارين وأدوية السكري." },
+  "Ginseng (Asian)": { ar: "الجنسنغ الآسيوي", aliases: ["Panax ginseng", "جنسنغ"], role: "Studied for fatigue, cognition, and glucose metabolism.", roleAr: "يُدرس للنشاط والتركيز ودعم سكر الدم.", tips: "May cause insomnia, affect blood sugar, and interact with warfarin and stimulants.", tipsAr: "قد يسبب أرقًا ويتداخل مع الوارفارين وأدوية السكري." },
   "Grape seed extract": { ar: "مستخلص بذور العنب", aliases: ["OPC", "بذور العنب"], role: "Polyphenol antioxidant studied for venous insufficiency and blood pressure.", roleAr: "مضاد أكسدة يُدرس لصحة الأوردة وضغط الدم.", tips: "May enhance effects of blood-pressure or blood-thinning drugs.", tipsAr: "قد يعزز أثر أدوية الضغط والمميعات." },
   "Hawthorn": { ar: "الزعرور البري", aliases: ["زعرور"], role: "Studied for mild chronic heart failure support alongside standard care.", roleAr: "يُدرس لدعم قصور القلب المزمن الخفيف إلى جانب العلاج القياسي.", tips: "NEVER use for heart conditions without cardiologist supervision; interacts with digoxin and blood pressure meds.", tipsAr: "لا يُستخدم لأمراض القلب إلا بإشراف طبيب؛ يتداخل مع الديجوكسين وأدوية الضغط." },
   "Hoodia": { ar: "الهوديا", aliases: ["هوديا"], role: "Promoted for appetite suppression without reliable human clinical evidence.", roleAr: "يُروج له لسد الشهية دون أدلة سريرية كافية.", tips: "Little reliable evidence for appetite suppression; long-term safety is unknown and some marketed products have been found adulterated.", tipsAr: "لا دليل موثوق على كبح الشهية، وسلامته على المدى الطويل غير معروفة، وقد وُجدت بعض المنتجات المباعة مغشوشة." },
@@ -1655,7 +1655,7 @@ const DETAILS = {
   "Noni": { ar: "النوني", aliases: ["نوني"], role: "Polynesian fruit promoted for general wellness.", roleAr: "فاكهة استوائية تُروج للصحة العامة.", tips: "High potassium content (danger in kidney disease); rare reports of liver toxicity.", tipsAr: "غني بالبوتاسيوم (خطر على مرضى الكلى)، مع تقارير نادرة لإصابة الكبد." },
   "Pomegranate": { ar: "الرمان", aliases: ["رمان"], role: "Polyphenol-rich fruit studied for cardiovascular antioxidant support.", roleAr: "غني بمضادات الأكسدة، ويُدرس لدعم صحة القلب.", tips: "Lab studies suggest the juice may inhibit CYP3A4, but human evidence is limited; check with a pharmacist if you take drugs with a narrow therapeutic index.", tipsAr: "تشير دراسات مخبرية إلى احتمال تثبيطه بعض إنزيمات الكبد، لكن الأدلة البشرية محدودة؛ راجع الصيدلي إن كنت تتناول أدوية ضيقة المجال العلاجي." },
   "Sage": { ar: "الميرمية", aliases: ["Salvia officinalis", "ميرمية"], role: "Studied for hot flashes, sore throat, and memory.", roleAr: "تُدرس للهبات الساخنة والذاكرة والتهاب الحلق.", tips: "Common culinary amounts are safe; large concentrated oil/extract doses contain thujone (neurotoxic).", tipsAr: "الكميات الغذائية آمنة؛ الزيت المركز عالي الثوجون سام للأعصاب." },
-  "Thunder god vine": { ar: "كرمة إله الرعد", aliases: ["Tripterygium wilfordii"], role: "Studied for rheumatoid arthritis.", roleAr: "تُدرس لالتهاب المفاصل الروماتويدي.", tips: "HIGH TOXICITY RISK: Can cause severe GI, kidney, bone-density, and fertility side effects unless medically purified.", tipsAr: "خطورة سمية عالية: قد تسبب أضراراً شديدة في الجهاز الهضمي والكلى وكثافة العظام والخصوبة، ما لم تُحضَّر طبياً بشكل منقّى." },
+  "Thunder god vine": { ar: "كرمة إله الرعد", aliases: ["Tripterygium wilfordii"], role: "Studied for rheumatoid arthritis.", roleAr: "تُدرس لالتهاب المفاصل الروماتويدي.", tips: "HIGH TOXICITY RISK: Can cause severe GI, kidney, bone-density, and fertility side effects unless medically purified.", tipsAr: "خطورة سمية عالية: قد تسبب أضرارًا شديدة في الجهاز الهضمي والكلى وكثافة العظام والخصوبة، ما لم تُحضَّر طبيًا بشكل منقّى." },
   /* ---- Topic Overviews ---- */
   "Botanical dietary supplements — overview": {
     ar: "المكملات النباتية والأعشاب — نظرة عامة",
@@ -1815,7 +1815,7 @@ const INTERACTIONS = [
     titleEn: "Iron + Vitamin C",
     titleAr: "الحديد + فيتامين سي",
     descEn: "Vitamin C reduces ferric (Fe3+) to ferrous (Fe2+) iron in the gut, significantly improving absorption of non-heme (plant & supplemental) iron.",
-    descAr: "يحوّل فيتامين سي حديد التغذية غير الهيمي (النباتي والمكمل) إلى الشكل الحديدي الأسهل امتصاصاً في الأمعاء، فيرفع نسبة الاستفادة منه."
+    descAr: "يحوّل فيتامين سي حديد التغذية غير الهيمي (النباتي والمكمل) إلى الشكل الحديدي الأسهل امتصاصًا في الأمعاء، فيرفع نسبة الاستفادة منه."
   },
   {
     type: "synergy",
@@ -1855,7 +1855,7 @@ const INTERACTIONS = [
     titleEn: "High-Dose Zinc vs. Copper",
     titleAr: "الزنك عالي الجرعة مقابل النحاس",
     descEn: "Sustained zinc intake >40–50 mg/day induces intestinal metallothionein, which traps copper and can lead to copper deficiency and anemia.",
-    descAr: "تناول الزنك بجرعات عالية لفترات طويلة (أكثر من 40 ملغ يومياً) يحفّز بروتين الميتالوثيونين في الأمعاء، فيحتجز النحاس وقد يؤدي إلى نقصه وفقر الدم."
+    descAr: "تناول الزنك بجرعات عالية لفترات طويلة (أكثر من 40 ملغ يوميًا) يحفّز بروتين الميتالوثيونين في الأمعاء، فيحتجز النحاس وقد يؤدي إلى نقصه وفقر الدم."
   },
   {
     type: "antagonism",
@@ -1879,7 +1879,7 @@ const INTERACTIONS = [
     titleEn: "High Folic Acid Masking Vitamin B12 Deficiency",
     titleAr: "حمض الفوليك العالي قد يخفي نقص فيتامين ب12",
     descEn: "Excess synthetic folic acid (>1,000 mcg/day) can correct the blood anemia of B12 deficiency while neurological damage silently progresses.",
-    descAr: "الإفراط في حمض الفوليك الصناعي (أكثر من 1,000 مكغ يومياً) قد يصحّح فقر الدم الناتج عن نقص ب12 بينما يستمر التلف العصبي في الخفاء."
+    descAr: "الإفراط في حمض الفوليك الصناعي (أكثر من 1,000 مكغ يوميًا) قد يصحّح فقر الدم الناتج عن نقص ب12 بينما يستمر التلف العصبي في الخفاء."
   },
   {
     type: "caution",
@@ -1887,7 +1887,7 @@ const INTERACTIONS = [
     titleEn: "Biotin Interference with Blood & Heart Lab Tests",
     titleAr: "تأثير البيوتين على نتائج التحاليل المخبرية",
     descEn: "High-dose biotin supplements interfere with streptavidin-biotin immunoassays, causing falsely low troponin (heart attack) or skewed thyroid results.",
-    descAr: "الجرعات العالية من البيوتين تتداخل مع مقايسات مناعية كثيرة وتعطي نتائج منخفضة زوراً للتروبونين (مؤشر النوبة القلبية)، ونتائج مضطربة لهرمونات الغدة الدرقية. أخبر المختبر قبل سحب الدم."
+    descAr: "الجرعات العالية من البيوتين تتداخل مع مقايسات مناعية كثيرة وتعطي نتائج منخفضة زورًا للتروبونين (مؤشر النوبة القلبية)، ونتائج مضطربة لهرمونات الغدة الدرقية. أخبر المختبر قبل سحب الدم."
   },
   {
     type: "caution",
@@ -1911,7 +1911,7 @@ const INTERACTIONS = [
     titleEn: "Ginkgo, Garlic & Turmeric + Blood Thinners",
     titleAr: "الجنكة والثوم والكركم + مميعات الدم",
     descEn: "These botanicals can add antiplatelet/anticoagulant effects alongside warfarin, aspirin, clopidogrel, or DOACs — stop before surgery as advised.",
-    descAr: "قد تضيف هذه المستخلصات تأثيراً مضاداً للصفائح أو مسيلاً للدم فوق الوارفارين أو الأسبرين أو كلوبيدوغريل أو مضادات التخثر الفموية المباشرة، فيرتفع خطر النزيف. أوقفها قبل الجراحة حسب توجيه الطبيب."
+    descAr: "قد تضيف هذه المستخلصات تأثيرًا مضادًا للصفائح أو مسيلًا للدم فوق الوارفارين أو الأسبرين أو كلوبيدوغريل أو مضادات التخثر الفموية المباشرة، فيرتفع خطر النزيف. أوقفها قبل الجراحة حسب توجيه الطبيب."
   },
   {
     type: "caution",
@@ -1932,8 +1932,8 @@ const TIMING_BLUEPRINT = [
       "<strong>Iron (if prescribed):</strong> Best absorbed on an empty stomach with vitamin C; take with light food if it causes nausea. Keep coffee, tea and dairy 2 hours apart."
     ],
     itemsAr: [
-      "<strong>فيتامينات ب المركّبة وفيتامين ب12:</strong> تدعم إنتاج الطاقة؛ وتناولها صباحاً يقلّل احتمال التنبيه الليلي.",
-      "<strong>الحديد (عند وجود نقص مثبت):</strong> يُمتص أفضل على معدة فارغة مع فيتامين سي، ويُؤخذ مع طعام خفيف إن سبب غثياناً. أبعد عنه القهوة والشاي والألبان ساعتين."
+      "<strong>فيتامينات ب المركّبة وفيتامين ب12:</strong> تدعم إنتاج الطاقة؛ وتناولها صباحًا يقلّل احتمال التنبيه الليلي.",
+      "<strong>الحديد (عند وجود نقص مثبت):</strong> يُمتص أفضل على معدة فارغة مع فيتامين سي، ويُؤخذ مع طعام خفيف إن سبب غثيانًا. أبعد عنه القهوة والشاي والألبان ساعتين."
     ]
   },
   {
@@ -1944,7 +1944,7 @@ const TIMING_BLUEPRINT = [
       "<strong>Multivitamin / Zinc / Turmeric:</strong> Food buffers stomach upset (especially zinc) and aids fat-soluble compounds."
     ],
     itemsAr: [
-      "<strong>فيتامينات A وD وE وK:</strong> ذائبة في الدهون، والدهون الغذائية ترفع امتصاصها ارتفاعاً ملموساً.",
+      "<strong>فيتامينات A وD وE وK:</strong> ذائبة في الدهون، والدهون الغذائية ترفع امتصاصها ارتفاعًا ملموسًا.",
       "<strong>الفيتامينات المتعددة والزنك والكركم:</strong> يخفف الطعام اضطراب المعدة (خاصة مع الزنك) ويساعد امتصاص المركبات الذائبة في الدهون."
     ]
   },
@@ -2040,9 +2040,9 @@ function verificationNotice(t){
   const accessed = fmtDate(meta.accessed || "2026-11-17");
   const next = fmtDate(meta.nextReview || "2027-11-17");
   if(lang === "ar"){
-    return `<strong>التحقق والمراجعة:</strong> روجعت المدخلات الثمانية والثمانون مقابل مصادر مكتب المكملات الغذائية التابع للمعهد الوطني للصحة، والمركز الوطني للصحة التكميلية والتكاملية، وميدلاين بلس بتاريخ <strong>${esc(accessed)}</strong>. ويعرض كل مدخل تاريخ تحققه وتاريخ مراجعته التالية (<strong>${esc(next)}</strong>). وتُفحص الروابط كل ثلاثة أشهر، وتُراجع القيم مقابل منشورات الأكاديميات الوطنية للمدخول المرجعي عند كل مراجعة. قيم البالغين للاسترشاد فقط، والنشرة الرسمية المرتبطة هي المرجع في الحمل والأطفال والحالات المرضية.`;
+    return `<strong>التحقق والمراجعة:</strong> آخر مراجعة للمدخلات الثمانية والثمانين كانت في <strong>${esc(accessed)}</strong> مقابل مصادر NIH ODS وNCCIH وMedlinePlus، والمراجعة التالية في <strong>${esc(next)}</strong>. ويُعاد فحص الروابط كل ثلاثة أشهر.`;
   }
-  return `<strong>Verification and review.</strong> All 88 entries were checked against NIH ODS, NIH NCCIH and MedlinePlus on <strong>${esc(accessed)}</strong>. Each entry shows its own verification date and next review date (<strong>${esc(next)}</strong>). Links are re-checked quarterly, and values are re-checked against the National Academies Dietary Reference Intakes at each review. Adult values are for orientation only; the linked official fact sheet is authoritative for pregnancy, children and clinical care.`;
+  return `<strong>Verification and review.</strong> The 88 entries were last reviewed on <strong>${esc(accessed)}</strong> against NIH ODS, NCCIH and MedlinePlus; the next review is due <strong>${esc(next)}</strong>. Links are checked quarterly.`;
 }
 
 function disclaimerNotice(t){
@@ -2109,7 +2109,9 @@ function letterOf(str){
    ============================================================================ */
 function applyTheme(){
   document.documentElement.setAttribute("data-theme", theme === "dark" ? "dark" : "light");
-  $("themeBtn").textContent = theme === "dark" ? "☀️" : "🌙";
+  const moon = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>`;
+  const sun = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>`;
+  $("themeBtn").innerHTML = theme === "dark" ? sun : moon;
   $("themeBtn").setAttribute("title", UI[lang].a11y.toggleTheme);
   $("themeBtn").setAttribute("aria-label", UI[lang].a11y.toggleTheme);
 }
@@ -2172,11 +2174,11 @@ function applyLanguage(){
   const rdaCount = ENTRIES.filter(e => e.rda && e.sub !== "combo").length;
   const interCount = INTERACTIONS.length;
   $("statsRow").innerHTML = lang === "ar"
-    ? `<span class="stat-pill"><strong>${counts.Vitamin}</strong> فيتاميناً</span>
-       <span class="stat-pill"><strong>${counts.Mineral}</strong> معدناً</span>
+    ? `<span class="stat-pill"><strong>${counts.Vitamin}</strong> فيتامينًا</span>
+       <span class="stat-pill"><strong>${counts.Mineral}</strong> معدنًا</span>
        <span class="stat-pill"><strong>${counts.Herb}</strong> عشبة ونبات</span>
        <span class="stat-pill"><strong>${rdaCount}</strong> مرجع جرعة</span>
-       <span class="stat-pill"><strong>${interCount}</strong> تداخلاً موثقاً</span>`
+       <span class="stat-pill"><strong>${interCount}</strong> تداخلًا موثقًا</span>`
     : `<span class="stat-pill"><strong>${counts.Vitamin}</strong> Vitamins</span>
        <span class="stat-pill"><strong>${counts.Mineral}</strong> Minerals</span>
        <span class="stat-pill"><strong>${counts.Herb}</strong> Herbs &amp; Botanicals</span>
@@ -2431,11 +2433,11 @@ function renderCard(e){
     </div>
     ${lang === "ar" && e.cat === "Topic" ? "" : (e.latin || secondary ? `<div class="latin">${esc([secondary, e.latin].filter(Boolean).join(" · "))}</div>` : "")}
     ${roleTxt ? `<p class="summary">${esc(bidiRanges(roleTxt))}</p>` : ""}
-    <div class="meta-pills">
+    ${(subTxt || rdaTxt || hasWarn) ? `<div class="meta-pills">
       ${subTxt ? `<span class="meta-pill">${esc(subTxt)}</span>` : ""}
       ${rdaTxt ? `<span class="meta-pill" dir="auto">${lang==="ar"?"الاحتياج":"RDA"}: ${esc(bidiRanges(rdaTxt))}</span>` : ""}
       ${hasWarn ? `<span class="meta-pill warn">⚠ ${lang==="ar" ? "تنبيه هام" : "Caution"}</span>` : ""}
-    </div>
+    </div>` : ""}
     <div class="card-foot">
       <div class="links">
         ${e.links.map(([lbl, url]) => `<a class="lnk" href="${esc(url)}" target="_blank" rel="noopener">${esc(t.linkLabels[lbl] || lbl)}</a>`).join("")}
@@ -2539,11 +2541,9 @@ function openModal(name){
     html += `<div class="modal-sec"><h4>${m.drugs}</h4><ul class="ng-list">${x.drugs.map(d =>
       `<li><span class="sev ${esc(d.sev || "info")}">${esc(m.severity[d.sev] || m.severity.info)}</span>${esc(bidiRanges(L(d)))}
         ${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener" aria-label="${esc(m.sources)}">↗</a>` : ""}</li>`).join("")}</ul></div>`;
-  } else if(x.category === "Herb"){
-    html += `<div class="modal-sec"><h4>${m.drugs}</h4><p>${m.noInteractions}</p></div>`;
   }
   if(x.deficiency) html += `<div class="modal-sec"><h4>${m.deficiency}</h4><p>${esc(bidiRanges(L(x.deficiency)))}</p></div>`;
-  if(x.excess) html += `<div class="modal-sec"><h4>${m.excess}</h4><p>${esc(bidiRanges(L(x.excess)))}</p></div>`;
+  if(x.excess) html += `<div class="modal-sec"><h4>${e.cat === "Herb" ? m.safety : m.excess}</h4><p>${esc(bidiRanges(L(x.excess)))}</p></div>`;
   if(x.ulNote) html += `<div class="modal-sec"><h4>${m.ulNote}</h4><p>${esc(bidiRanges(L(x.ulNote)))}</p></div>`;
   if(x.conflicts?.length){
     html += `<div class="modal-sec modal-sec--warn"><h4>${m.conflicts}</h4><ul class="ng-list">${x.conflicts.map(c => `<li>${esc(bidiRanges(L(c)))}</li>`).join("")}</ul></div>`;
@@ -2557,7 +2557,6 @@ function openModal(name){
   if(x.sources?.length){
     html += `<div class="modal-sec"><h4>${m.sources}</h4>
       ${x.sources.map(s => `<span class="ng-src"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a> · ${m.accessed} ${esc(fmtDate(s.accessed))}</span>`).join("")}
-      <p class="ng-meta">${esc(m.sourceNote)}</p>
     </div>`;
   }
   if(x.verified){
@@ -2713,11 +2712,11 @@ function buildPrintDocument(){
         <div class="pr-kicker">${esc(t.cats[e.cat] || e.cat)}${x.classification ? " · " + esc(L(x.classification)) : ""}</div>
         <h2>${esc(displayName(e))}</h2>
         <div class="pr-entry-meta">${esc(alt)}${e.latin ? " · " + esc(e.latin) : ""}${e.source ? " · " + esc(e.source) : ""}</div>
-      </div>
-      <div class="pr-facts">
-        <div class="pr-fact"><div class="lbl">${esc(m.rda)}</div><div class="val">${esc(bidiRanges(rda || "—"))}</div></div>
-        <div class="pr-fact"><div class="lbl">${esc(m.ul)}</div><div class="val">${esc(bidiRanges(ul || "—"))}</div></div>
       </div>`;
+    const facts = [];
+    if(rda) facts.push(`<div class="pr-fact"><div class="lbl">${esc(m.rda)}</div><div class="val">${esc(bidiRanges(rda))}</div></div>`);
+    if(ul) facts.push(`<div class="pr-fact"><div class="lbl">${esc(m.ul)}</div><div class="val">${esc(bidiRanges(ul))}</div></div>`);
+    if(facts.length) html += `<div class="pr-facts">${facts.join("")}</div>`;
     html += section(m.role, role ? `<p>${esc(bidiRanges(role))}</p>` : "");
     if(x.dri) html += section(m.dri, tableHTML(x.dri));
     if(x.ulTable) html += section(m.ulTable, tableHTML(x.ulTable));
@@ -2734,11 +2733,9 @@ function buildPrintDocument(){
       html += section(m.drugs, `<ul class="pr-list">${x.drugs.map(d =>
         `<li><span class="pr-sev">${esc(m.severity[d.sev] || m.severity.info)}:</span> ${esc(bidiRanges(L(d)))}</li>`).join("")}</ul>` +
         (drugSrc ? `<p class="pr-source"><a href="${esc(drugSrc)}">${esc(drugSource?.label || m.sources)}</a> · ${esc(m.accessed)} ${esc(fmtDate(drugAccessed))}</p>` : ""));
-    } else if(x.category === "Herb"){
-      html += section(m.drugs, `<p>${esc(m.noInteractions)}</p>`);
     }
     html += section(m.deficiency, x.deficiency ? `<p>${esc(bidiRanges(L(x.deficiency)))}</p>` : "");
-    html += section(m.excess, x.excess ? `<p>${esc(bidiRanges(L(x.excess)))}</p>` : "");
+    html += section(e.cat === "Herb" ? m.safety : m.excess, x.excess ? `<p>${esc(bidiRanges(L(x.excess)))}</p>` : "");
     html += section(m.ulNote, x.ulNote ? `<p>${esc(bidiRanges(L(x.ulNote)))}</p>` : "");
     if(x.conflicts?.length) html += section(m.conflicts, `<ul class="pr-list">${x.conflicts.map(c => `<li>${esc(bidiRanges(L(c)))}</li>`).join("")}</ul>`);
     if(x.unverified?.length) html += section(m.unverified, `<ul class="pr-list">${x.unverified.map(c => `<li>${esc(bidiRanges(L(c)))}</li>`).join("")}</ul>`);
@@ -2748,7 +2745,7 @@ function buildPrintDocument(){
       html += section(m.sources, x.sources.map(s =>
         `<p class="pr-source"><a href="${esc(s.url)}">${esc(s.label)}</a> · ${esc(m.accessed)} ${esc(fmtDate(s.accessed))}</p>`).join(""));
     }
-    html += `<p class="pr-footer-note">${esc(m.verified)}: ${esc(fmtDate(x.verified || meta.accessed))} · ${esc(m.nextReview)}: ${esc(fmtDate(x.nextReview || meta.nextReview))} · ${esc(m.sourceNote)}</p>`;
+    html += `<p class="pr-footer-note">${esc(m.verified)}: ${esc(fmtDate(x.verified || meta.accessed))} · ${esc(m.nextReview)}: ${esc(fmtDate(x.nextReview || meta.nextReview))}</p>`;
     html += `</section>`;
     return html;
   };

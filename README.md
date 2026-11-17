@@ -13,7 +13,8 @@ herbs and supplement topics.
   70+ years, including pregnancy and lactation where the source reports them
 - Food sources, absorption enhancers and inhibitors, deficiency and excess symptoms
 - Documented drug and herb interactions, tagged by severity
-- Herbs state plainly that no RDA or UL applies, with cited safety notes instead
+- Herbs carry cited safety notes and documented interactions instead of nutrient
+  values; a field that does not apply is simply left out
 - A live search of real product labels in the NIH Dietary Supplement Label Database
   (DSLD v9 API)
 - Full right-to-left Arabic layout, dark / light themes, no tracking scripts
@@ -32,9 +33,12 @@ Each figure and claim links to a named government source with its access date:
 - NIH Dietary Supplement Label Database (DSLD)
 
 Where sources disagree, the entry states the conflict explicitly and does not pick a
-side without evidence. Where a fact could not be verified, the entry says so rather
-than guessing or deleting the field. The page is an educational reference only and
-does not replace advice from a physician or dietitian.
+side without evidence. Fields that do not apply to an entry are left out rather than
+filled with placeholder text, so a herb monograph shows safety notes while a vitamin
+shows reference intakes. Genuine open questions — such as whether high-dose antioxidant
+supplements interfere with chemotherapy or radiotherapy — appear under a separate
+heading. The page is an educational reference only and does not replace advice from a
+physician or dietitian.
 
 ## Tech
 
@@ -49,7 +53,7 @@ The **Export PDF** button builds a dedicated print document: cover, table of con
 an about-and-verification page, and all 88 entries with their tables, interactions and
 sources. It uses A4 pages, starts every entry on a new page, and keeps tables and
 blocks from splitting across pages, so the download is complete rather than a clipped
-screenshot of the screen layout. The full edition is around 120 pages in each language.
+screenshot of the screen layout. The full edition runs to about 117 pages in English and 116 in Arabic.
 
 ## Run locally
 

@@ -13,11 +13,11 @@ window.NG_DATA = {
   },
   "disclaimer": {
    "en": "This reference is educational only. It does not replace advice from a physician, pharmacist or registered dietitian, and it is not a prescription. Do not start, stop or change any medicine or supplement based on this page.",
-   "ar": "هذا المرجع تعليمي فقط، ولا يغني عن استشارة طبيب أو صيدلي أو أخصائي تغذية مسجل، وليس وصفة طبية. لا تبدأ أو توقف أو تغيّر أي دواء أو مكمل اعتماداً على هذه الصفحة."
+   "ar": "هذا المرجع تعليمي فقط، ولا يغني عن استشارة طبيب أو صيدلي أو أخصائي تغذية مسجل، وليس وصفة طبية. لا تبدأ أو توقف أو تغيّر أي دواء أو مكمل اعتمادًا على هذه الصفحة."
   },
   "sourceNote": {
-   "en": "Every value and claim is attributed to its source with a URL and access date. Source links are secondary verification references, not a prerequisite for understanding the content.",
-   "ar": "كل قيمة وكل ادعاء منسوب إلى مصدره مع رابطه وتاريخ الاطلاع عليه. وروابط المصادر مراجع تحقق ثانوية، وليست شرطاً لفهم المحتوى."
+   "en": "Each value and claim is attributed to a named source with its URL and access date, so a figure can be checked when needed.",
+   "ar": "كل قيمة وادعاء منسوب إلى مصدر مسمّى مع رابطه وتاريخ الاطلاع، ليُراجع الرقم عند الحاجة."
   },
   "conflictNote": {
    "en": "Where sources disagree, the disagreement is stated in the entry and no side is preferred without evidence.",
@@ -517,7 +517,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -589,12 +589,7 @@ window.NG_DATA = {
     "ar": "اعتلال أعصاب حسية (sensory neuropathy) مع الجرعات العالية المطولة؛ الحد الأعلى 100 ملغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Vitamin B6 — NIH ODS consumer fact sheet",
@@ -1022,7 +1017,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -1080,12 +1075,7 @@ window.NG_DATA = {
     "ar": "لا يوجد حد أعلى، ولا تُعرف له سمية."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Vitamin B12 — NIH ODS consumer fact sheet",
@@ -1352,10 +1342,6 @@ window.NG_DATA = {
     {
      "en": "The clinical relevance of high-dose antioxidant supplementation during chemotherapy or radiotherapy is not established in the cited source.",
      "ar": "لم يثبت في المصدر المستشهد به المعنى السريري لجرعات مضادات الأكسدة العالية أثناء العلاج الكيميائي أو الإشعاعي."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
     }
    ],
    "sources": [
@@ -1759,7 +1745,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -1823,7 +1809,7 @@ window.NG_DATA = {
    "conflicts": [
     {
      "en": "The official RDA is 15 mcg (600 IU) for adults 19–70, while the Endocrine Society suggests higher intakes for adults at risk of deficiency. These are different scopes (population RDA vs clinical practice); this site reports the official DRI and does not prefer either.",
-     "ar": "الاحتياج الرسمي 15 مكغ (600 وحدة دولية) للبالغين 19–70 سنة، بينما تقترح جمعية الغدد الصماء (Endocrine Society) مدخولاً أعلى للبالغين المعرضين للنقص. النطاقان مختلفان (احتياج سكاني مقابل ممارسة سريرية)؛ يعرض الموقع القيمة الرسمية دون ترجيح."
+     "ar": "الاحتياج الرسمي 15 مكغ (600 وحدة دولية) للبالغين 19–70 سنة، بينما تقترح جمعية الغدد الصماء (Endocrine Society) مدخولًا أعلى للبالغين المعرضين للنقص. النطاقان مختلفان (احتياج سكاني مقابل ممارسة سريرية)؛ يعرض الموقع القيمة الرسمية دون ترجيح."
     }
    ],
    "unverified": [],
@@ -2316,7 +2302,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -2771,7 +2757,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -3087,15 +3073,10 @@ window.NG_DATA = {
    },
    "excess": {
     "en": "No UL. Excess is excreted in urine; rapid intravenous doses can rarely cause anaphylaxis.",
-    "ar": "لا يوجد حد أعلى. يُطرح الفائض في البول، وقد تسبب الجرعات الوريدية السريعة تفاعلاً تحسسياً نادراً."
+    "ar": "لا يوجد حد أعلى. يُطرح الفائض في البول، وقد تسبب الجرعات الوريدية السريعة تفاعلًا تحسسيًا نادرًا."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Thiamin (Vitamin B1) — NIH ODS consumer fact sheet",
@@ -3372,16 +3353,7 @@ window.NG_DATA = {
     "ar": "لا يوجد حد أعلى، ولم تُسجّل حالات تسمم من التناول الفموي."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "Specific drug interactions were not listed in the cited ODS fact sheet; check the source before combining with prescription medicines.",
-     "ar": "لم تُدرج تفاعلات دوائية محددة في صحيفة ODS المستشهد بها؛ راجع المصدر قبل الجمع مع أدوية موصوفة."
-    },
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Riboflavin (Vitamin B2) — NIH ODS consumer fact sheet",
@@ -3680,16 +3652,7 @@ window.NG_DATA = {
     "ar": "احمرار الجلد والحكة والغثيان وتلف الكبد بجرعات عالية. الحد الأعلى 35 ملغ ينطبق على الأشكال الصناعية."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Niacin (Vitamin B3) — NIH ODS consumer fact sheet",
@@ -3708,7 +3671,7 @@ window.NG_DATA = {
    "nextReview": "2027-11-17",
    "ulNote": {
     "en": "Synthetic nicotinic acid or niacinamide; flushing is more likely with nicotinic acid.",
-    "ar": "الأشكال الصناعية من حمض النيكوتينيك أو النياسيناميد؛ واحمرار الجلد أكثر احتمالاً مع حمض النيكوتينيك."
+    "ar": "الأشكال الصناعية من حمض النيكوتينيك أو النياسيناميد؛ واحمرار الجلد أكثر احتمالًا مع حمض النيكوتينيك."
    },
    "rda": {
     "en": "16 mg NE (M) / 14 mg NE (F)",
@@ -4095,7 +4058,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -4127,27 +4090,14 @@ window.NG_DATA = {
    "drugs": [],
    "deficiency": {
     "en": "Rare: burning-feet syndrome, fatigue and GI upset, mainly in severe malnutrition.",
-    "ar": "نادر: متلازمة القدمين المحروقتين (burning-feet syndrome) والإرهاق واضطراب الهضم، غالباً مع سوء التغذية الشديد."
+    "ar": "نادر: متلازمة القدمين المحروقتين (burning-feet syndrome) والإرهاق واضطراب الهضم، غالبًا مع سوء التغذية الشديد."
    },
    "excess": {
     "en": "No UL; very high doses may cause mild diarrhoea.",
-    "ar": "لا يوجد حد أعلى؛ قد تسبب الجرعات العالية جداً إسهالاً خفيفاً."
+    "ar": "لا يوجد حد أعلى؛ قد تسبب الجرعات العالية جدًا إسهالًا خفيفًا."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "Specific drug interactions were not listed in the cited ODS fact sheet.",
-     "ar": "لم تُدرج تفاعلات دوائية محددة في صحيفة ODS المستشهد بها."
-    },
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Pantothenic acid (Vitamin B5) — NIH ODS consumer fact sheet",
@@ -4402,7 +4352,7 @@ window.NG_DATA = {
     },
     {
      "en": "High-dose biotin interferes with streptavidin–biotin immunoassays, causing falsely low troponin and skewed thyroid results.",
-     "ar": "تتداخل جرعات البيوتين العالية مع المقايسات المناعية (immunoassays) وتعطي تروبونين منخفضاً زوراً ونتائج درقية مضطربة.",
+     "ar": "تتداخل جرعات البيوتين العالية مع المقايسات المناعية (immunoassays) وتعطي تروبونين منخفضًا زورًا ونتائج درقية مضطربة.",
      "sev": "high",
      "src": "ods-prof",
      "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional"
@@ -4417,12 +4367,7 @@ window.NG_DATA = {
     "ar": "لا يوجد حد أعلى، ولم تُسجّل حالات تسمم."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Biotin (Vitamin B7) — NIH ODS consumer fact sheet",
@@ -4702,12 +4647,7 @@ window.NG_DATA = {
     "ar": "يخفي نقص فيتامين ب12 وقد يفاقم التلف العصبي؛ الحد الأعلى 1,000 مكغ من حمض الفوليك."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Folate (Vitamin B9) — NIH ODS consumer fact sheet",
@@ -5113,7 +5053,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -5146,27 +5086,14 @@ window.NG_DATA = {
    "drugs": [],
    "deficiency": {
     "en": "Liver and muscle damage; rare, mainly with long-term parenteral nutrition.",
-    "ar": "تلف الكبد والعضلات؛ نادر، وغالباً مع التغذية الوريدية طويلة الأمد."
+    "ar": "تلف الكبد والعضلات؛ نادر، وغالبًا مع التغذية الوريدية طويلة الأمد."
    },
    "excess": {
     "en": "Fishy body odour, sweating, salivation and hypotension. UL 3,500 mg.",
     "ar": "رائحة جسم كريهة وتعرق وإفراز لعاب وانخفاض ضغط الدم. الحد الأعلى 3,500 ملغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific drug interaction is stated in the cited ODS fact sheet; check the source before combining with prescription medicines.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي تفاعل دوائي محدد؛ راجع المصدر قبل الجمع مع أدوية موصوفة."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Choline — NIH ODS consumer fact sheet",
@@ -5568,7 +5495,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -6118,7 +6045,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -6152,7 +6079,7 @@ window.NG_DATA = {
    "drugs": [
     {
      "en": "Zinc supplements can induce copper deficiency.",
-     "ar": "قد تسبب مكملات الزنك نقصاً في النحاس.",
+     "ar": "قد تسبب مكملات الزنك نقصًا في النحاس.",
      "sev": "moderate",
      "src": "ods-prof",
      "url": "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional"
@@ -6174,12 +6101,7 @@ window.NG_DATA = {
     "ar": "تلف الكبد واضطراب الهضم. الحد الأعلى 10,000 مكغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Copper — NIH ODS consumer fact sheet",
@@ -6581,7 +6503,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -6618,20 +6540,7 @@ window.NG_DATA = {
     "ar": "اضطراب الهضم والتهاب الجلد؛ وتأثيرات تناسلية ونمائية في دراسات الحيوان. الحد الأعلى 20 ملغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "Absorption enhancers, inhibitors and specific drug interactions were not verified in the cited ODS fact sheet.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص أو تفاعلات دوائية محددة في صحيفة ODS المستشهد بها."
-    },
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Boron — NIH ODS consumer fact sheet",
@@ -6844,7 +6753,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -6887,23 +6796,10 @@ window.NG_DATA = {
    },
    "excess": {
     "en": "No UL; kidney and liver damage reported with very high doses.",
-    "ar": "لا يوجد حد أعلى؛ سُجّل تلف كلوي وكبدي مع جرعات عالية جداً."
+    "ar": "لا يوجد حد أعلى؛ سُجّل تلف كلوي وكبدي مع جرعات عالية جدًا."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "Absorption enhancers and inhibitors were not verified in the cited ODS fact sheet.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص في صحيفة ODS المستشهد بها."
-    },
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Chromium — NIH ODS consumer fact sheet",
@@ -7179,19 +7075,14 @@ window.NG_DATA = {
    ],
    "deficiency": {
     "en": "Dental caries; fluoride is not essential but reduces caries risk.",
-    "ar": "تسوس الأسنان؛ الفلوريد ليس مغذياً أساسياً لكنه يقلل خطر التسوس."
+    "ar": "تسوس الأسنان؛ الفلوريد ليس مغذيًا أساسيًا لكنه يقلل خطر التسوس."
    },
    "excess": {
     "en": "Dental fluorosis (mottled enamel) and skeletal fluorosis. UL 10 mg.",
     "ar": "تسمم الأسنان بالفلوريد (dental fluorosis) وتسمم العظام (skeletal fluorosis). الحد الأعلى 10 ملغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Fluoride — NIH ODS consumer fact sheet",
@@ -7615,7 +7506,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -7657,7 +7548,7 @@ window.NG_DATA = {
     },
     {
      "en": "Iodinated contrast media can cause thyroid dysfunction.",
-     "ar": "قد تسبب وسائط التباين المحتوية على اليود اضطراباً في الغدة الدرقية.",
+     "ar": "قد تسبب وسائط التباين المحتوية على اليود اضطرابًا في الغدة الدرقية.",
      "sev": "moderate",
      "src": "ods-prof",
      "url": "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional"
@@ -7672,12 +7563,7 @@ window.NG_DATA = {
     "ar": "اضطراب وظيفة الغدة الدرقية (فرط أو قصور) وتضخمها. الحد الأعلى 1,100 مكغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Iodine — NIH ODS consumer fact sheet",
@@ -8079,7 +7965,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -8586,7 +8472,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -8644,12 +8530,7 @@ window.NG_DATA = {
     "ar": "إسهال وانخفاض ضغط الدم وكبت تنفسي. الحد الأعلى 350 ملغ ينطبق على المغنيسيوم من المكملات فقط."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Magnesium — NIH ODS consumer fact sheet",
@@ -9143,7 +9024,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -9192,12 +9073,7 @@ window.NG_DATA = {
     "ar": "التسمم بالمنغنيز (manganism) المسبب لسمية عصبية تشبه باركنسون. الحد الأعلى 11 ملغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Manganese — NIH ODS consumer fact sheet",
@@ -9621,7 +9497,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -9658,20 +9534,7 @@ window.NG_DATA = {
     "ar": "متلازمة تشبه النقرس (gout). الحد الأعلى 2,000 مكغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "Specific drug interactions were not listed in the cited ODS fact sheet.",
-     "ar": "لم تُدرج تفاعلات دوائية محددة في صحيفة ODS المستشهد بها."
-    },
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Molybdenum — NIH ODS consumer fact sheet",
@@ -10073,7 +9936,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -10122,12 +9985,7 @@ window.NG_DATA = {
     "ar": "فرط فوسفات الدم (hyperphosphataemia) وتكلس الأوعية. الحد الأعلى 4,000 ملغ (3,500 ملغ في الحمل)."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Phosphorus — NIH ODS consumer fact sheet",
@@ -10577,7 +10435,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -10624,16 +10482,7 @@ window.NG_DATA = {
     "ar": "فرط بوتاسيوم الدم (hyperkalaemia): اضطرابات نظم القلب وتوقف القلب. لا يوجد حد أعلى للبالغين الأصحاء."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Potassium — NIH ODS consumer fact sheet",
@@ -10906,20 +10755,7 @@ window.NG_DATA = {
     "ar": "التسمم بالسيلينيوم (selenosis): تساقط الشعر والأظافر ورائحة فم تشبه الثوم واعتلال أعصاب. الحد الأعلى 400 مكغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "Specific drug interactions were not listed in the cited ODS fact sheet.",
-     "ar": "لم تُدرج تفاعلات دوائية محددة في صحيفة ODS المستشهد بها."
-    },
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Selenium — NIH ODS consumer fact sheet",
@@ -11365,7 +11201,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -11408,7 +11244,7 @@ window.NG_DATA = {
     },
     {
      "en": "Long-term high-dose zinc causes copper deficiency.",
-     "ar": "تسبب جرعات الزنك العالية طويلة الأمد نقصاً في النحاس.",
+     "ar": "تسبب جرعات الزنك العالية طويلة الأمد نقصًا في النحاس.",
      "sev": "moderate",
      "src": "ods-prof",
      "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional"
@@ -11423,12 +11259,7 @@ window.NG_DATA = {
     "ar": "غثيان ونقص النحاس وضعف المناعة. الحد الأعلى 40 ملغ."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Zinc — NIH ODS consumer fact sheet",
@@ -11830,7 +11661,7 @@ window.NG_DATA = {
     },
     "note": {
      "en": "The UL is the highest daily intake unlikely to cause adverse health effects in almost all people; it applies to total intake from food, water and supplements unless the ODS sheet states otherwise. An asterisk in a UL cell means the source could not establish a UL from the available data.",
-     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثاراً ضارة لدى جميع الأشخاص تقريباً؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
+     "ar": "الحد الأعلى هو أعلى مدخول يومي يُرجَّح ألا يسبب آثارًا ضارة لدى جميع الأشخاص تقريبًا؛ وينطبق على مجموع المدخول من الغذاء والماء والمكملات ما لم تذكر صحيفة مكتب المكملات الغذائية خلاف ذلك. وتشير العلامة (*) في خلية الحد الأعلى إلى أن المصدر لم يتمكن من تحديد حد أعلى من البيانات المتاحة."
     }
    }
   },
@@ -11851,8 +11682,8 @@ window.NG_DATA = {
     "ar": "مغذٍ شبيه بالفيتامين / مجموعة مكملات"
    },
    "role": {
-    "en": "Broad nutritional insurance for restricted diets, pregnancy (prenatal), older adults, or malabsorption.",
-    "ar": "مكمل شامل لسد الفجوات الغذائية لمن يتبع نظاماً محدوداً، أو أثناء الحمل، أو لكبار السن، أو عند سوء الامتصاص."
+    "en": "A broad supplement used to fill gaps when diet is restricted, during pregnancy, in older age or when absorption is poor. No single RDA or UL applies to the product as a whole; each nutrient in the formula is measured against its own limit.",
+    "ar": "مكمل شامل يُستخدم لسد الفجوات عندما يكون النظام الغذائي محدودًا، أو أثناء الحمل، أو في الكبر، أو عند سوء الامتصاص. ولا تنطبق على المنتج ككل جرعة موصى بها أو حد أعلى واحد؛ بل يُقاس كل عنصر في التركيبة مقابل حده الخاص."
    },
    "foods": {
     "en": "Whole-food variety remains the primary foundation.",
@@ -11864,28 +11695,7 @@ window.NG_DATA = {
    "deficiency": null,
    "excess": null,
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No specific absorption enhancer is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معزز امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific absorption inhibitor is stated in the cited ODS fact sheet; the field is marked as not verified rather than inferred.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي معيق امتصاص محدد؛ لذلك يُعلَّم الحقل بأنه غير متحقق بدل استنتاجه."
-    },
-    {
-     "en": "No specific drug interaction is stated in the cited ODS fact sheet; check the source before combining with prescription medicines.",
-     "ar": "لم يُذكر في صحيفة ODS المستشهد بها أي تفاعل دوائي محدد؛ راجع المصدر قبل الجمع مع أدوية موصوفة."
-    },
-    {
-     "en": "There is no single RDA, AI or UL for a multivitamin/mineral product; each nutrient in the formula must be checked against its own limit.",
-     "ar": "لا توجد جرعة موصى بها أو حد أعلى واحد لمنتج الفيتامينات والمعادن المتعددة؛ يجب التحقق من كل عنصر في التركيبة مقابل حده الخاص."
-    },
-    {
-     "en": "Deficiency and excess symptoms do not apply to the product as a whole; see the relevant single-nutrient entry.",
-     "ar": "لا تنطبق أعراض النقص أو الزيادة على المنتج ككل؛ راجع مدخل المغذي المفرد المعني."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Multivitamin/mineral supplements — NIH ODS consumer fact sheet",
@@ -11902,14 +11712,8 @@ window.NG_DATA = {
    ],
    "verified": "2026-11-17",
    "nextReview": "2027-11-17",
-   "rda": {
-    "en": "Varies by formulation",
-    "ar": "تختلف حسب التركيبة"
-   },
-   "ul": {
-    "en": "Check each nutrient's UL",
-    "ar": "انتبه للحد الأعلى لكل عنصر داخل المنتج"
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null
   },
@@ -11933,20 +11737,11 @@ window.NG_DATA = {
     "en": "Adaptogenic herb studied for stress resilience, mild anxiety, and sleep quality.",
     "ar": "عشبة تكيفية تُدرس لتحسين المرونة أمام التوتر، وللقلق الخفيف وجودة النوم."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -11963,29 +11758,13 @@ window.NG_DATA = {
      "url": "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Avoid during pregnancy; use caution in autoimmune conditions, thyroid disorders, or liver disease (rare liver injury reports exist).",
     "ar": "تُتجنب أثناء الحمل، ويُحذر استخدامها مع أمراض الغدة الدرقية أو المناعة الذاتية أو الكبد، فقد سُجّلت حالات نادرة لإصابة الكبد."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Ashwagandha — NIH ODS consumer fact sheet",
@@ -11996,12 +11775,6 @@ window.NG_DATA = {
     {
      "label": "Ashwagandha — NIH ODS professional fact sheet",
      "url": "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
@@ -12028,20 +11801,11 @@ window.NG_DATA = {
     "en": "Studied primarily for menopausal hot flashes and vasomotor symptoms.",
     "ar": "يُدرس لتخفيف الهبات الساخنة وأعراض سن اليأس."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12052,29 +11816,13 @@ window.NG_DATA = {
      "url": "https://ods.od.nih.gov/factsheets/BlackCohosh-HealthProfessional"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Rare reports of liver injury; discontinue immediately if jaundice or dark urine appears. Caution in hormone-sensitive conditions.",
-    "ar": "سُجّلت حالات نادرة لإصابة الكبد؛ أوقفه فوراً عند ظهور اصفرار الجلد أو العينين أو تغيّر لون البول. يُحذر في الحالات الحساسة للهرمونات."
+    "ar": "سُجّلت حالات نادرة لإصابة الكبد؛ أوقفه فورًا عند ظهور اصفرار الجلد أو العينين أو تغيّر لون البول. يُحذر في الحالات الحساسة للهرمونات."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Black cohosh — NIH ODS professional fact sheet",
@@ -12087,12 +11835,6 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/black-cohosh",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12118,20 +11860,11 @@ window.NG_DATA = {
     "en": "Botanical traditionally used for sleep latency and mild nervous tension.",
     "ar": "نبات تقليدي يُستخدم للمساعدة على النوم وتهدئة التوتر الخفيف."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12142,29 +11875,13 @@ window.NG_DATA = {
      "url": "https://ods.od.nih.gov/factsheets/Valerian-HealthProfessional"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Can cause additive drowsiness with alcohol, benzodiazepines, antihistamines, or sleep medications.",
     "ar": "قد يضاعف النعاس مع الكحول أو المهدئات أو مضادات الهيستامين أو أدوية النوم."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Valerian — NIH ODS professional fact sheet",
@@ -12177,12 +11894,6 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/valerian",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12206,62 +11917,27 @@ window.NG_DATA = {
     "en": "Antioxidant-rich palm berry; limited clinical proof for weight loss or anti-aging.",
     "ar": "ثمار غنية بمضادات الأكسدة، دون أدلة قوية على إنقاص الوزن."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "No strong clinical evidence supports weight-loss or anti-ageing claims; whole foods remain the better antioxidant source.",
     "ar": "لا توجد أدلة سريرية قوية لإنقاص الوزن أو مقاومة الشيخوخة؛ الاعتماد على الغذاء الكامل أفضل لمضادات الأكسدة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Acai — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/acai",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12283,22 +11959,13 @@ window.NG_DATA = {
    },
    "role": {
     "en": "Traditionally used for cholesterol and nutrition.",
-    "ar": "يُستخدم تقليدياً لخفض الكوليسترول."
+    "ar": "يُستخدم تقليديًا لخفض الكوليسترول."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12309,41 +11976,19 @@ window.NG_DATA = {
      "url": "https://medlineplus.gov/druginfo/herb_All.html"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Raw sprouts carry bacterial contamination risks; high doses may trigger lupus flares or interact with warfarin (vitamin K content). MedlinePlus no longer hosts a standalone alfalfa monograph, so the link opens its live A–Z herbs index.",
     "ar": "قد يتداخل مع الوارفارين لاحتوائه على فيتامين ك، ويُحذر لمرضى الذئبة. لم يعد MedlinePlus يستضيف صفحة مستقلة للفصفصة، لذا يفتح الرابط فهرسه الحي للأعشاب."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Alfalfa — MedlinePlus herb index",
      "url": "https://medlineplus.gov/druginfo/herb_All.html",
      "accessed": "2026-11-17",
      "publisher": "MedlinePlus"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12368,20 +12013,11 @@ window.NG_DATA = {
     "en": "Topical gel soothes mild burns/skin; oral aloe latex is a harsh stimulant laxative.",
     "ar": "الجل الموضعي يهدئ الحروق الخفيفة؛ أما خلاصة الصبار الفموية فملين قوي قد يضر."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12392,41 +12028,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/aloe-vera"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Oral non-decolorized whole-leaf aloe extract carries safety warnings (cramps, electrolyte loss).",
     "ar": "تجنب المستخلص الفموي غير المنقى لما يسببه من تقلصات وإسهال وفقدان أملاح."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Aloe vera — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/aloe-vera",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12450,20 +12064,11 @@ window.NG_DATA = {
     "en": "Traditional Chinese herb studied for immune and fatigue support.",
     "ar": "عشبة تقليدية تُدرس لدعم المناعة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12474,41 +12079,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/astragalus"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May interact with immunosuppressant medications.",
     "ar": "قد يتعارض مع الأدوية المثبطة للمناعة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Astragalus — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/astragalus",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12532,20 +12115,11 @@ window.NG_DATA = {
     "en": "Nutrient-dense bee product promoted for energy/allergies.",
     "ar": "منتج نحلي يُروج له للطاقة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12556,41 +12130,19 @@ window.NG_DATA = {
      "url": "https://medlineplus.gov/druginfo/herb_All.html"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Can trigger severe allergic reactions (anaphylaxis) in pollen/bee-allergic individuals; may interact with warfarin. Linked to the MedlinePlus A–Z herbs index because no standalone monograph is published.",
     "ar": "قد يسبب حساسية شديدة لمن يتحسس من حبوب اللقاح أو لسعات النحل. الرابط يفتح فهرس الأعشاب في MedlinePlus لعدم توفر صفحة مستقلة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Bee pollen — MedlinePlus herb index",
      "url": "https://medlineplus.gov/druginfo/herb_All.html",
      "accessed": "2026-11-17",
      "publisher": "MedlinePlus"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12615,20 +12167,11 @@ window.NG_DATA = {
     "en": "Plant alkaloid researched for blood glucose, lipid metabolism, and weight support.",
     "ar": "مركب نباتي تُدرس فائدته في دعم مستويات السكر والدهون في الدم."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12639,41 +12182,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/berberine-and-weight-loss-what-you-need-to-know"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Can interact with CYP enzymes, cyclosporine, and diabetes/blood pressure medications (hypoglycemia risk). Avoid in pregnancy/breastfeeding.",
     "ar": "قد يتداخل مع أدوية السكري والضغط وبعض مثبطات المناعة؛ يُمنع للحامل والمرضع."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Berberine — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/berberine-and-weight-loss-what-you-need-to-know",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12697,62 +12218,27 @@ window.NG_DATA = {
     "en": "Anthocyanin-rich berry studied for eye/vascular support.",
     "ar": "ثمار غنية بالأنثوسيانين تُدرس لصحة العين والأوعية."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Leaf extracts in high doses are unsafe long-term; fruit is generally safe.",
-    "ar": "ثماره آمنة عموماً، أما مستخلص الأوراق بجرعات عالية فغير آمن على المدى الطويل."
+    "ar": "ثماره آمنة عمومًا، أما مستخلص الأوراق بجرعات عالية فغير آمن على المدى الطويل."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Bilberry — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/bilberry",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12778,20 +12264,11 @@ window.NG_DATA = {
     "en": "Promoted for weight loss (contains p-synephrine).",
     "ar": "يُروج له لإنقاص الوزن (يحوي السينفرين)."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12802,41 +12279,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/bitter-orange"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Can elevate heart rate and blood pressure, especially combined with caffeine; avoid in cardiovascular disease.",
     "ar": "قد يرفع ضغط الدم ونبض القلب، خاصة مع الكافيين؛ يُتجنب في أمراض القلب والأوعية."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Bitter orange — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/bitter-orange",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12861,20 +12316,11 @@ window.NG_DATA = {
     "en": "Protein-digesting enzyme from pineapple studied for swelling/sinus inflammation.",
     "ar": "إنزيم من الأناناس يُدرس لتخفيف التورم والالتهابات."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -12885,41 +12331,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/bromelain"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May increase bleeding risk with anticoagulants and increase absorption of certain antibiotics.",
     "ar": "قد يزيد خطر النزيف مع مميعات الدم، ويزيد امتصاص بعض المضادات الحيوية."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Bromelain — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/bromelain",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -12943,62 +12367,27 @@ window.NG_DATA = {
     "en": "Studied for migraine prevention and allergic rhinitis.",
     "ar": "يُدرس للوقاية من الشقيقة وحساسية الأنف."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Use ONLY products certified free of pyrrolizidine alkaloids (PA-free): these alkaloids can cause severe liver damage.",
     "ar": "استخدم فقط المنتجات الموثقة بخلوها من قلويدات البيروليزيدين (PA-free) السامة للكبد."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Butterbur — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/butterbur",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13022,20 +12411,11 @@ window.NG_DATA = {
     "en": "Amazonian vine studied for osteoarthritis/rheumatoid inflammation.",
     "ar": "نبات يُدرس لالتهابات المفاصل."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -13046,41 +12426,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/cats-claw"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May interact with blood pressure, blood-thinning, and immunosuppressant drugs.",
     "ar": "قد يتداخل مع أدوية الضغط والمناعة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Cat's claw — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/cats-claw",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13103,64 +12461,29 @@ window.NG_DATA = {
    },
    "role": {
     "en": "Traditionally used for mild sleep, anxiety, and digestive comfort.",
-    "ar": "يُستخدم تقليدياً للاسترخاء والهضم والنوم الخفيف."
+    "ar": "يُستخدم تقليديًا للاسترخاء والهضم والنوم الخفيف."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May trigger reactions in people allergic to ragweed/daisy family.",
     "ar": "قد يسبب حساسية لمن يتحسس من عائلة الأقحوان."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Chamomile — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/chamomile",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13185,20 +12508,11 @@ window.NG_DATA = {
     "en": "Studied for premenstrual syndrome (PMS) and cycle regularity.",
     "ar": "يُدرس لمتلازمة ما قبل الحيض وتنظيم الدورة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -13209,41 +12523,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/chasteberry"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Affects dopamine/pituitary hormones; avoid with hormone therapy, birth control pills, or dopamine drugs.",
     "ar": "يؤثر على الهرمونات والدوبامين؛ تجنبه مع الحبوب الهرمونية."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Chasteberry — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/chasteberry",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13268,20 +12560,11 @@ window.NG_DATA = {
     "en": "Studied for blood sugar support (evidence remains inconclusive).",
     "ar": "تُدرس لدعم سكر الدم (الأدلة غير حاسمة)."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -13292,41 +12575,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/cinnamon"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Cassia cinnamon is high in coumarin, which in heavy supplement doses can stress the liver; Ceylon cinnamon is much lower in coumarin.",
     "ar": "قرفة الكاسيا عالية الكومارين، الذي قد يرهق الكبد عند الإفراط في المكملات؛ أما قرفة سيلان فتحتوي على نسبة أقل بكثير."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Cinnamon — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/cinnamon",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13351,62 +12612,27 @@ window.NG_DATA = {
     "en": "Studied for reducing recurrent urinary tract infections (UTIs) in women.",
     "ar": "يُدرس للوقاية من تكرار التهابات المسالك البولية."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Helps prevent bacterial adhesion rather than treating an active UTI. High intakes may raise urinary oxalate.",
-    "ar": "يفيد في منع التصاق البكتيريا، لا في علاج الالتهاب النشط الذي يحتاج مضاداً حيوياً. والإفراط قد يرفع أوكسالات البول."
+    "ar": "يفيد في منع التصاق البكتيريا، لا في علاج الالتهاب النشط الذي يحتاج مضادًا حيويًا. والإفراط قد يرفع أوكسالات البول."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Cranberry — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/cranberry",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13430,20 +12656,11 @@ window.NG_DATA = {
     "en": "Leaves act as mild diuretic; root traditionally used for digestion.",
     "ar": "الأوراق مدرة خفيفة للبول والجذر للهضم."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -13454,41 +12671,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/dandelion"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Caution with diuretics, lithium, or ragweed allergies.",
     "ar": "يُحذر مع مدرات البول أو الليثيوم أو حساسية عائلة الأقحوان."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Dandelion — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/dandelion",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13513,62 +12708,27 @@ window.NG_DATA = {
     "en": "Widely used for common cold prevention/duration (study results are mixed).",
     "ar": "تُستخدم على نطاق واسع لنزلات البرد، مع نتائج دراسات متباينة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Caution in autoimmune conditions or ragweed allergies.",
     "ar": "يُحذر استخدامها مع أمراض المناعة الذاتية أو حساسية حبوب اللقاح."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Echinacea — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/echinacea",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13593,62 +12753,27 @@ window.NG_DATA = {
     "en": "Studied for early upper-respiratory viral symptoms.",
     "ar": "يُدرس لأعراض الجهاز التنفسي العلوي المبكرة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Raw/unripe berries, leaves, and bark contain cyanogenic glycosides and are toxic; only properly cooked or standardized commercial extracts are safe.",
-    "ar": "الثمار غير الناضجة والأوراق واللحاء تحتوي غليكوسيدات سيانوجينية سامة؛ لا تستخدم إلا المستخلصات التجارية المعالجة أو الثمار المطبوخة جيداً."
+    "ar": "الثمار غير الناضجة والأوراق واللحاء تحتوي غليكوسيدات سيانوجينية سامة؛ لا تستخدم إلا المستخلصات التجارية المعالجة أو الثمار المطبوخة جيدًا."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Elderberry — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/elderberry",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13673,20 +12798,11 @@ window.NG_DATA = {
     "en": "Source of gamma-linolenic acid (GLA) studied for eczema and breast pain.",
     "ar": "مصدر لحمض GLA يُدرس للإكزيما وآلام الثدي."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -13697,41 +12813,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/evening-primrose-oil"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Caution with blood thinners and seizure disorders.",
     "ar": "يُحذر مع مميعات الدم أو الصرع."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Evening primrose oil — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/evening-primrose-oil",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13756,20 +12850,11 @@ window.NG_DATA = {
     "en": "Studied for blood sugar control and lactation support.",
     "ar": "تُدرس لسكر الدم وإدرار الحليب."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -13780,41 +12865,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/fenugreek"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May lower blood glucose and interact with diabetes meds or warfarin; avoid concentrated doses during pregnancy.",
     "ar": "قد تخفض سكر الدم وتتداخل مع أدوية السكري والوارفارين؛ تُتجنب الجرعات المركزة أثناء الحمل."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Fenugreek — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/fenugreek",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13838,62 +12901,27 @@ window.NG_DATA = {
     "en": "Studied for migraine prevention.",
     "ar": "يُدرس للوقاية من الصداع النصفي."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Do not stop abruptly after prolonged use (rebound headaches); avoid in pregnancy.",
     "ar": "تجنب إيقافه فجأة بعد استخدام طويل، ويُمنع للحامل."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Feverfew — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/feverfew",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -13919,20 +12947,11 @@ window.NG_DATA = {
     "en": "Source of soluble fiber, lignans, and plant omega-3 (ALA).",
     "ar": "مصدر للألياف والليغنان وأوميغا-3 النباتي (ALA)."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": {
     "en": "Grinding whole seeds improves access to nutrients; take with plenty of water.",
     "ar": "طحن البذور الكاملة يحسّن الاستفادة من المغذيات؛ وتُؤخذ مع ماء وفير."
@@ -13946,37 +12965,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/flaxseed-and-flaxseed-oil"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Grind whole seeds to absorb nutrients; drink plenty of water and separate from oral medications by 1–2 hours.",
     "ar": "تُطحن البذور للاستفادة منها، وتُؤخذ مع ماء وفير، وتُفصل عن الأدوية الفموية بساعة إلى ساعتين."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Flaxseed — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/flaxseed-and-flaxseed-oil",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14002,20 +13003,11 @@ window.NG_DATA = {
     "en": "Studied for modest blood pressure and cholesterol support.",
     "ar": "يُدرس لدعم ضغط الدم والكوليسترول بشكل طفيف."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14032,41 +13024,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/garlic"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Concentrated supplements can increase bleeding risk before surgery or alongside blood thinners, and may reduce levels of some HIV protease inhibitors.",
     "ar": "المكملات المركزة قد تزيد خطر النزيف قبل الجراحة أو مع مميعات الدم، وقد تخفض مستويات بعض أدوية فيروس نقص المناعة (مثبطات البروتياز)."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Garlic — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/garlic",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14089,22 +13059,13 @@ window.NG_DATA = {
    },
    "role": {
     "en": "Well-studied for nausea (motion sickness, pregnancy-related, post-op) and mild GI/joint support.",
-    "ar": "من الأعشاب المدروسة جيداً للغثيان (دوار الحركة، وغثيان الحمل، وبعد الجراحة)، ولدعم الهضم والمفاصل بشكل خفيف."
+    "ar": "من الأعشاب المدروسة جيدًا للغثيان (دوار الحركة، وغثيان الحمل، وبعد الجراحة)، ولدعم الهضم والمفاصل بشكل خفيف."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14115,41 +13076,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/ginger"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "High supplemental doses may mildly inhibit platelet aggregation; check with clinician during pregnancy or with blood thinners.",
     "ar": "الجرعات المكملة العالية قد تثبط تجمع الصفائح بشكل خفيف؛ استشر الطبيب أثناء الحمل أو مع مميعات الدم."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Ginger — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/ginger",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14174,20 +13113,11 @@ window.NG_DATA = {
     "en": "Leaf extract studied for peripheral circulation and cognitive support.",
     "ar": "مستخلص يُدرس لدعم الدورة الدموية الطرفية والذاكرة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14198,41 +13128,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/ginkgo"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May increase bleeding risk with anticoagulants/antiplatelets (warfarin, aspirin). Never consume raw/roasted ginkgo seeds (toxic).",
     "ar": "قد يزيد خطر النزيف مع مميعات الدم (الوارفارين والأسبرين). البذور النيئة سامة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Ginkgo — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/ginkgo",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14257,20 +13165,11 @@ window.NG_DATA = {
     "en": "Studied for fatigue, cognition, and glucose metabolism.",
     "ar": "يُدرس للنشاط والتركيز ودعم سكر الدم."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14287,41 +13186,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/asian-ginseng"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May cause insomnia, affect blood sugar, and interact with warfarin and stimulants.",
-    "ar": "قد يسبب أرقاً ويتداخل مع الوارفارين وأدوية السكري."
+    "ar": "قد يسبب أرقًا ويتداخل مع الوارفارين وأدوية السكري."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Ginseng (Asian) — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/asian-ginseng",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14344,22 +13221,13 @@ window.NG_DATA = {
    },
    "role": {
     "en": "Contains berberine; traditionally used for mucosal/GI support.",
-    "ar": "يحوي البربارين، ويُستخدم تقليدياً لدعم الأغشية المخاطية والجهاز الهضمي."
+    "ar": "يحوي البربارين، ويُستخدم تقليديًا لدعم الأغشية المخاطية والجهاز الهضمي."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14370,41 +13238,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/goldenseal"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Inhibits CYP2D6 & CYP3A4 liver enzymes, altering blood levels of many prescription drugs.",
     "ar": "يثبط إنزيمات الكبد CYP وقد يغير مستويات أدوية عديدة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Goldenseal — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/goldenseal",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14429,20 +13275,11 @@ window.NG_DATA = {
     "en": "Polyphenol antioxidant studied for venous insufficiency and blood pressure.",
     "ar": "مضاد أكسدة يُدرس لصحة الأوردة وضغط الدم."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14453,41 +13290,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/grape-seed-extract"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May enhance effects of blood-pressure or blood-thinning drugs.",
     "ar": "قد يعزز أثر أدوية الضغط والمميعات."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Grape seed extract — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/grape-seed-extract",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14513,20 +13328,11 @@ window.NG_DATA = {
     "en": "Rich in catechins (EGCG); studied for cardiometabolic and antioxidant support.",
     "ar": "غني بالكاتيكين (EGCG)؛ يُدرس لصحة القلب والأيض."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14537,41 +13343,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/green-tea"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Brewed tea is very safe; concentrated green tea extract pills (especially on an empty stomach) have rare reports of liver injury and contain caffeine unless decaffeinated.",
-    "ar": "الشاي المغلي آمن جداً؛ أما كبسولات المستخلص المركزة، وخاصة على معدة فارغة، فقد ارتبطت بحالات نادرة لإصابة الكبد، وهي تحتوي كافيين ما لم تكن منزوعة الكافيين."
+    "ar": "الشاي المغلي آمن جدًا؛ أما كبسولات المستخلص المركزة، وخاصة على معدة فارغة، فقد ارتبطت بحالات نادرة لإصابة الكبد، وهي تحتوي كافيين ما لم تكن منزوعة الكافيين."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Green tea — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/green-tea",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14595,20 +13379,11 @@ window.NG_DATA = {
     "en": "Studied for mild chronic heart failure support alongside standard care.",
     "ar": "يُدرس لدعم قصور القلب المزمن الخفيف إلى جانب العلاج القياسي."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14619,41 +13394,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/hawthorn"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "NEVER use for heart conditions without cardiologist supervision; interacts with digoxin and blood pressure meds.",
     "ar": "لا يُستخدم لأمراض القلب إلا بإشراف طبيب؛ يتداخل مع الديجوكسين وأدوية الضغط."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Hawthorn — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/hawthorn",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14677,62 +13430,27 @@ window.NG_DATA = {
     "en": "Promoted for appetite suppression without reliable human clinical evidence.",
     "ar": "يُروج له لسد الشهية دون أدلة سريرية كافية."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Little reliable evidence for appetite suppression; long-term safety is unknown and some marketed products have been found adulterated.",
     "ar": "لا دليل موثوق على كبح الشهية، وسلامته على المدى الطويل غير معروفة، وقد وُجدت بعض المنتجات المباعة مغشوشة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Hoodia — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/hoodia",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14757,62 +13475,27 @@ window.NG_DATA = {
     "en": "Seed extract (standardized escin) studied for chronic venous insufficiency/leg swelling.",
     "ar": "مستخلص البذور يُدرس لقصور الأوردة وتورم الساقين."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Raw seeds/bark are poisonous (esculin); only escin-standardized seed extracts without esculin are safe.",
     "ar": "البذور النيئة سامة؛ استخدم فقط المستخلصات القياسية الخالية من الإسكولين."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Horse chestnut — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/horse-chestnut",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -14835,22 +13518,13 @@ window.NG_DATA = {
    },
    "role": {
     "en": "Traditionally used for short-term anxiety relief.",
-    "ar": "تُستخدم تقليدياً للقلق قصير الأمد."
+    "ar": "تُستخدم تقليديًا للقلق قصير الأمد."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -14861,29 +13535,13 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/kava"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "SAFETY WARNING: Linked to severe, sometimes fatal liver toxicity. Avoid with liver disease, alcohol, or hepatotoxic drugs.",
-    "ar": "تحذير أمان: ارتبطت بحالات تسمم كبدي خطيرة، وبعضها قاتل. تجنبها تماماً مع أمراض الكبد أو الكحول أو الأدوية السامة للكبد."
+    "ar": "تحذير أمان: ارتبطت بحالات تسمم كبدي خطيرة، وبعضها قاتل. تجنبها تمامًا مع أمراض الكبد أو الكحول أو الأدوية السامة للكبد."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Kava — NIH NCCIH herb page",
@@ -14894,12 +13552,6 @@ window.NG_DATA = {
     {
      "label": "Kava — NIH ODS safety note",
      "url": "https://ods.od.nih.gov/Health_Information/kava.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
@@ -14927,62 +13579,27 @@ window.NG_DATA = {
     "en": "Studied via aromatherapy and oral preparations for mild anxiety.",
     "ar": "يُدرس عبر الاستنشاق أو المستخلصات الفموية للقلق الخفيف."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Essential oils should never be swallowed undiluted.",
     "ar": "الزيوت العطرية لا تُبلع مباشرة دون تخفيف أو مستحضر مخصص."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Lavender — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/lavender",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15007,20 +13624,11 @@ window.NG_DATA = {
     "en": "Used for soothing GI/throat irritation; DGL removes glycyrrhizin.",
     "ar": "يُستخدم لتهدئة المعدة والحلق (النوع DGL منزوع الغليسيريزين)."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -15031,41 +13639,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/licorice-root"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Whole licorice (glycyrrhizin) raises blood pressure and drops potassium dangerously if overused.",
     "ar": "عرق السوس الكامل (الغليسيريزين) يرفع ضغط الدم ويخفض البوتاسيوم بشكل خطير عند الإفراط، وخاصة لدى مرضى الضغط."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Licorice root — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/licorice-root",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15092,62 +13678,27 @@ window.NG_DATA = {
     "en": "Studied for liver antioxidant support; clinical evidence for liver disease remains mixed.",
     "ar": "يُدرس لدعم مضادات الأكسدة في الكبد، مع تباين الأدلة السريرية."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "May cause mild GI upset or allergic reactions in people sensitive to ragweed/Asteraceae plants.",
-    "ar": "قد يسبب اضطراباً معوياً خفيفاً أو حساسية لمن يتحسس من عائلة الأقحوان (النجميات)."
+    "ar": "قد يسبب اضطرابًا معويًا خفيفًا أو حساسية لمن يتحسس من عائلة الأقحوان (النجميات)."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Milk thistle — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/milk-thistle",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15171,62 +13722,27 @@ window.NG_DATA = {
     "en": "Studied in Europe as complementary oncology care (injectable).",
     "ar": "يُدرس في أوروبا كعلاج تكميلي مساند في الأورام، ويُعطى بالحقن تحت إشراف طبي."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Raw plant/berries are poisonous; injectable preparations require strict medical oversight.",
     "ar": "النبات النيء سام ولا يُؤخذ إلا تحت إشراف طبي متخصص."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Mistletoe — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/european-mistletoe",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15250,62 +13766,27 @@ window.NG_DATA = {
     "en": "Polynesian fruit promoted for general wellness.",
     "ar": "فاكهة استوائية تُروج للصحة العامة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "High potassium content (danger in kidney disease); rare reports of liver toxicity.",
     "ar": "غني بالبوتاسيوم (خطر على مرضى الكلى)، مع تقارير نادرة لإصابة الكبد."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Noni — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/noni",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15328,64 +13809,29 @@ window.NG_DATA = {
    },
    "role": {
     "en": "Traditionally used for mild anxiety and sleep.",
-    "ar": "تُستخدم تقليدياً للتوتر الخفيف والنوم."
+    "ar": "تُستخدم تقليديًا للتوتر الخفيف والنوم."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Avoid combining with sedatives; avoid during pregnancy.",
     "ar": "تجنب دمجها مع المهدئات وأثناء الحمل."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Passionflower — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/passionflower",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15408,64 +13854,29 @@ window.NG_DATA = {
    },
    "role": {
     "en": "Enteric-coated capsules show benefit for IBS abdominal cramps.",
-    "ar": "الكبسولات المغلفة معوياً تفيد في تقلصات القولون العصبي."
+    "ar": "الكبسولات المغلفة معويًا تفيد في تقلصات القولون العصبي."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Can worsen acid reflux (GERD) if not enteric-coated.",
-    "ar": "قد يزيد ارتجاع المريء إذا لم يكن مغلفاً معوياً."
+    "ar": "قد يزيد ارتجاع المريء إذا لم يكن مغلفًا معويًا."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Peppermint oil — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/peppermint-oil",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15489,20 +13900,11 @@ window.NG_DATA = {
     "en": "Polyphenol-rich fruit studied for cardiovascular antioxidant support.",
     "ar": "غني بمضادات الأكسدة، ويُدرس لدعم صحة القلب."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -15513,41 +13915,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/pomegranate"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Lab studies suggest the juice may inhibit CYP3A4, but human evidence is limited; check with a pharmacist if you take drugs with a narrow therapeutic index.",
     "ar": "تشير دراسات مخبرية إلى احتمال تثبيطه بعض إنزيمات الكبد، لكن الأدلة البشرية محدودة؛ راجع الصيدلي إن كنت تتناول أدوية ضيقة المجال العلاجي."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Pomegranate — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/pomegranate",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15572,20 +13952,11 @@ window.NG_DATA = {
     "en": "Isoflavone-rich herb studied for menopause symptoms.",
     "ar": "نبات غني بالأيزوفلافون يُدرس لأعراض سن اليأس."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -15596,41 +13967,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/red-clover"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Caution with hormone-sensitive conditions and anticoagulants.",
     "ar": "يُحذر مع الحالات الحساسة للهرمونات ومميعات الدم."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Red clover — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/red-clover",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15655,62 +14004,27 @@ window.NG_DATA = {
     "en": "Adaptogen researched for fatigue, mental stamina, and mild stress.",
     "ar": "عشبة تكيفية تُدرس للإجهاد الذهني والبدني."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Usually taken in the morning/early afternoon as it can feel mildly stimulating.",
-    "ar": "تُؤخذ صباحاً عادةً لأنها قد تسبب نشاطاً يزعج النوم ليلاً."
+    "ar": "تُؤخذ صباحًا عادةً لأنها قد تسبب نشاطًا يزعج النوم ليلًا."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Rhodiola — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/rhodiola",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15735,62 +14049,27 @@ window.NG_DATA = {
     "en": "Studied for hot flashes, sore throat, and memory.",
     "ar": "تُدرس للهبات الساخنة والذاكرة والتهاب الحلق."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Common culinary amounts are safe; large concentrated oil/extract doses contain thujone (neurotoxic).",
     "ar": "الكميات الغذائية آمنة؛ الزيت المركز عالي الثوجون سام للأعصاب."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Sage — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/sage",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15815,62 +14094,27 @@ window.NG_DATA = {
     "en": "Studied for benign prostatic hyperplasia (BPH) urinary symptoms (large trials show little benefit over placebo).",
     "ar": "يُدرس لأعراض تضخم البروستاتا الحميد (التجارب الكبرى أظهرت فائدة محدودة)."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Inform your physician before PSA testing or urologic evaluation.",
     "ar": "أخبر طبيبك قبل فحص البروستاتا (PSA)."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Saw palmetto — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/saw-palmetto",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15896,20 +14140,11 @@ window.NG_DATA = {
     "en": "Source of phytoestrogens studied for menopausal hot flashes and cholesterol.",
     "ar": "مصدر للفيتواستروجين يُدرس لأعراض سن اليأس والكوليسترول."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -15920,41 +14155,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/soy"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Whole soy foods are safe; consult an oncologist before concentrated isoflavone pills in hormone-receptor-positive breast cancer.",
     "ar": "أغذية الصويا الكاملة آمنة؛ استشر الطبيب قبل حبوب الأيزوفلافون المركزة."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Soy — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/soy",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -15979,20 +14192,11 @@ window.NG_DATA = {
     "en": "Studied for mild-to-moderate depressive symptoms.",
     "ar": "تُدرس لأعراض الاكتئاب الخفيف إلى المتوسط."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
@@ -16009,29 +14213,13 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/st-johns-wort"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "MAJOR DRUG INTERACTION: Strongly induces CYP3A4 & P-gp, dangerously lowering levels of birth control pills, blood thinners, transplant drugs, HIV meds, and causing serotonin syndrome with SSRIs.",
     "ar": "تحذير دوائي شديد: تقلل فعالية أدوية كثيرة (حبوب منع الحمل، مميعات الدم، أدوية القلب والزراعة) وقد تسبب متلازمة السيروتونين مع مضادات الاكتئاب."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "St. John's wort — NIH NCCIH herb page",
@@ -16044,12 +14232,6 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/st-johns-wort-and-depression-in-depth",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -16073,62 +14255,27 @@ window.NG_DATA = {
     "en": "Studied for rheumatoid arthritis.",
     "ar": "تُدرس لالتهاب المفاصل الروماتويدي."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "HIGH TOXICITY RISK: Can cause severe GI, kidney, bone-density, and fertility side effects unless medically purified.",
-    "ar": "خطورة سمية عالية: قد تسبب أضراراً شديدة في الجهاز الهضمي والكلى وكثافة العظام والخصوبة، ما لم تُحضَّر طبياً بشكل منقّى."
+    "ar": "خطورة سمية عالية: قد تسبب أضرارًا شديدة في الجهاز الهضمي والكلى وكثافة العظام والخصوبة، ما لم تُحضَّر طبيًا بشكل منقّى."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    },
-    {
-     "en": "Specific drug interactions beyond the general safety note were not verified in the cited source; check the source page before use.",
-     "ar": "لم يتم التحقق من تفاعلات دوائية محددة تتجاوز تنبيه السلامة العام في المصدر المستشهد به؛ راجع صفحة المصدر قبل الاستخدام."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Thunder god vine — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/thunder-god-vine",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -16155,20 +14302,11 @@ window.NG_DATA = {
     "en": "Polyphenol-rich rhizome studied for joint inflammation and antioxidant pathways.",
     "ar": "جذمور غني بالكركمين يُدرس لدعم المفاصل ومسارات مضادات الأكسدة."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": {
     "en": "Black pepper piperine and lipid formulations are used to improve curcumin absorption.",
     "ar": "يُستخدم البيبيرين الموجود في الفلفل الأسود والأشكال الدهنية لتحسين امتصاص الكركمين."
@@ -16188,37 +14326,19 @@ window.NG_DATA = {
      "url": "https://www.nccih.nih.gov/health/turmeric"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "Low natural absorption; often paired with piperine (black pepper) or lipid forms. High-dose extracts carry rare liver-injury cautions and mild blood-thinning potential.",
-    "ar": "امتصاصه الطبيعي منخفض، لذا يُقرن أحياناً بالفلفل الأسود (بيبيرين) أو بأشكال دهنية. المستخلصات المركزة تستدعي حذراً مع مميعات الدم، وسُجّلت معها حالات نادرة لإصابة الكبد."
+    "ar": "امتصاصه الطبيعي منخفض، لذا يُقرن أحيانًا بالفلفل الأسود (بيبيرين) أو بأشكال دهنية. المستخلصات المركزة تستدعي حذرًا مع مميعات الدم، وسُجّلت معها حالات نادرة لإصابة الكبد."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Turmeric — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/turmeric",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -16244,65 +14364,34 @@ window.NG_DATA = {
     "en": "Promoted for erectile dysfunction and athletic fat loss.",
     "ar": "يُروج له للقدرة الجنسية وحرق الدهون."
    },
-   "rda": {
-    "en": "Not applicable — no RDA or AI is established for herbs.",
-    "ar": "لا ينطبق — لا توجد جرعة موصى بها يومياً (RDA/AI) مثبتة للأعشاب."
-   },
-   "ul": {
-    "en": "No established UL; this does not mean the herb is safe at any dose.",
-    "ar": "لا يوجد حد أعلى آمن مثبت؛ وهذا لا يعني أن العشبة آمنة بأي جرعة."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable — herbs are supplemental botanicals, not essential nutrients.",
-    "ar": "لا ينطبق — الأعشاب مكملات نباتية وليست مغذيات أساسية."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [
     {
-     "en": "Case reports describe dangerous rises in blood pressure and heart rate; specific drug-by-drug data were not verified in the cited source.",
-     "ar": "تصف تقارير حالات ارتفاعاً خطيراً في ضغط الدم ونبض القلب؛ ولم يتم التحقق من بيانات تفاعل دوائي محددة لكل دواء في المصدر المستشهد به.",
+     "en": "Case reports describe dangerous rises in blood pressure and heart rate; the cited page gives no drug-by-drug detail.",
+     "ar": "تصف تقارير حالات ارتفاعًا خطيرًا في ضغط الدم ونبض القلب؛ ولا تقدم الصفحة المستشهد بها تفصيلاً لكل دواء على حدة.",
      "sev": "high",
      "url": "https://www.nccih.nih.gov/health/yohimbe"
     }
    ],
-   "deficiency": {
-    "en": "Not applicable — no essential nutrient deficiency syndrome.",
-    "ar": "لا ينطبق — لا توجد متلازمة نقص لمغذٍ أساسي."
-   },
+   "deficiency": null,
    "excess": {
     "en": "SAFETY WARNING: Frequently causes rapid heart rate, high blood pressure, anxiety, and dangerous drug interactions.",
     "ar": "تحذير: قد يسبب تسارع نبض القلب وارتفاع الضغط والقلق الشديد."
    },
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "No RDA, AI or UL is established for this herb. The absence of a UL is not evidence of safety.",
-     "ar": "لا توجد جرعة موصى بها يومياً (RDA/AI) ولا حد أعلى آمن (UL) مثبت لهذه العشبة. وغياب الحد الأعلى ليس دليلاً على السلامة."
-    },
-    {
-     "en": "Absorption enhancers and inhibitors specific to this herb were not verified in the cited source.",
-     "ar": "لم يتم التحقق من عوامل تعزيز أو إعاقة الامتصاص الخاصة بهذه العشبة في المصدر المستشهد به."
-    },
-    {
-     "en": "A deficiency syndrome does not apply because herbs are not essential nutrients.",
-     "ar": "لا تنطبق أعراض النقص لأن الأعشاب ليست مغذيات أساسية."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Yohimbe — NIH NCCIH herb page",
      "url": "https://www.nccih.nih.gov/health/yohimbe",
      "accessed": "2026-11-17",
      "publisher": "NIH NCCIH"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
     }
    ],
    "verified": "2026-11-17",
@@ -16323,42 +14412,18 @@ window.NG_DATA = {
     "en": "Explains how herbal supplements are standardized, regulated, and evaluated for safety and drug interactions.",
     "ar": "يشرح كيفية معايرة المكملات العشبية وتنظيمها وتقييم سلامتها وتداخلاتها الدوائية."
    },
-   "rda": {
-    "en": "Not applicable — see each nutrient entry for its RDA/AI.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة جرعته الموصى بها."
-   },
-   "ul": {
-    "en": "Not applicable — see each nutrient entry for its UL.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة حده الأعلى."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
-   "excess": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "deficiency": null,
+   "excess": null,
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "This is a reference overview, not a nutrient monograph; RDA, AI, UL, food sources and deficiency symptoms do not apply to the topic as a whole.",
-     "ar": "هذا عرض مرجعي عام وليس دراسة مغذٍّ واحد؛ لذلك لا تنطبق الجرعة الموصى بها ولا الحد الأعلى ولا المصادر الغذائية ولا أعراض النقص على الموضوع ككل."
-    },
-    {
-     "en": "Specific figures or product claims not stated in the cited NIH page were not verified and are not reproduced here.",
-     "ar": "لم يتم التحقق من أي أرقام أو ادعاءات عن منتجات غير مذكورة في صفحة المعهد الوطني للصحة المستشهد بها، ولم تُنقل هنا."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Botanical dietary supplements — overview — NIH ODS consumer fact sheet",
@@ -16369,12 +14434,6 @@ window.NG_DATA = {
     {
      "label": "Botanical dietary supplements — overview — NIH ODS professional fact sheet",
      "url": "https://ods.od.nih.gov/factsheets/BotanicalBackground-HealthProfessional",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
@@ -16397,42 +14456,18 @@ window.NG_DATA = {
     "en": "Evidence review covering creatine, caffeine, protein, beta-alanine, HMB, beetroot/nitrate, and safety.",
     "ar": "مراجعة للأدلة تشمل الكرياتين والكافيين والبروتين وبيتا ألانين وHMB والنترات (الشوندر)، مع تقييم السلامة."
    },
-   "rda": {
-    "en": "Not applicable — see each nutrient entry for its RDA/AI.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة جرعته الموصى بها."
-   },
-   "ul": {
-    "en": "Not applicable — see each nutrient entry for its UL.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة حده الأعلى."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
-   "excess": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "deficiency": null,
+   "excess": null,
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "This is a reference overview, not a nutrient monograph; RDA, AI, UL, food sources and deficiency symptoms do not apply to the topic as a whole.",
-     "ar": "هذا عرض مرجعي عام وليس دراسة مغذٍّ واحد؛ لذلك لا تنطبق الجرعة الموصى بها ولا الحد الأعلى ولا المصادر الغذائية ولا أعراض النقص على الموضوع ككل."
-    },
-    {
-     "en": "Specific figures or product claims not stated in the cited NIH page were not verified and are not reproduced here.",
-     "ar": "لم يتم التحقق من أي أرقام أو ادعاءات عن منتجات غير مذكورة في صفحة المعهد الوطني للصحة المستشهد بها، ولم تُنقل هنا."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Dietary supplements for exercise and athletic performance — NIH ODS consumer fact sheet",
@@ -16443,12 +14478,6 @@ window.NG_DATA = {
     {
      "label": "Dietary supplements for exercise and athletic performance — NIH ODS professional fact sheet",
      "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
@@ -16471,42 +14500,18 @@ window.NG_DATA = {
     "en": "Critical review of green tea extract, green coffee bean, garcinia, bitter orange, and adulteration risks.",
     "ar": "تقييم علمي لمستخلص الشاي الأخضر، القهوة الخضراء، الغارسينيا، ومخاطر الغش الدوائي."
    },
-   "rda": {
-    "en": "Not applicable — see each nutrient entry for its RDA/AI.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة جرعته الموصى بها."
-   },
-   "ul": {
-    "en": "Not applicable — see each nutrient entry for its UL.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة حده الأعلى."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
-   "excess": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "deficiency": null,
+   "excess": null,
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "This is a reference overview, not a nutrient monograph; RDA, AI, UL, food sources and deficiency symptoms do not apply to the topic as a whole.",
-     "ar": "هذا عرض مرجعي عام وليس دراسة مغذٍّ واحد؛ لذلك لا تنطبق الجرعة الموصى بها ولا الحد الأعلى ولا المصادر الغذائية ولا أعراض النقص على الموضوع ككل."
-    },
-    {
-     "en": "Specific figures or product claims not stated in the cited NIH page were not verified and are not reproduced here.",
-     "ar": "لم يتم التحقق من أي أرقام أو ادعاءات عن منتجات غير مذكورة في صفحة المعهد الوطني للصحة المستشهد بها، ولم تُنقل هنا."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Dietary supplements for weight loss — NIH ODS consumer fact sheet",
@@ -16517,12 +14522,6 @@ window.NG_DATA = {
     {
      "label": "Dietary supplements for weight loss — NIH ODS professional fact sheet",
      "url": "https://ods.od.nih.gov/factsheets/WeightLoss-HealthProfessional",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
@@ -16545,52 +14544,22 @@ window.NG_DATA = {
     "en": "Reviews vitamins C & D, zinc, elderberry, andrographis, ginseng, NAC, and probiotics for immunity.",
     "ar": "يراجع دور فيتامين سي وفيتامين د والزنك والبيلسان والأندروغرافيس والجنسنغ وNAC والبروبيوتيك في المناعة."
    },
-   "rda": {
-    "en": "Not applicable — see each nutrient entry for its RDA/AI.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة جرعته الموصى بها."
-   },
-   "ul": {
-    "en": "Not applicable — see each nutrient entry for its UL.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة حده الأعلى."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
-   "excess": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "deficiency": null,
+   "excess": null,
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "This is a reference overview, not a nutrient monograph; RDA, AI, UL, food sources and deficiency symptoms do not apply to the topic as a whole.",
-     "ar": "هذا عرض مرجعي عام وليس دراسة مغذٍّ واحد؛ لذلك لا تنطبق الجرعة الموصى بها ولا الحد الأعلى ولا المصادر الغذائية ولا أعراض النقص على الموضوع ككل."
-    },
-    {
-     "en": "Specific figures or product claims not stated in the cited NIH page were not verified and are not reproduced here.",
-     "ar": "لم يتم التحقق من أي أرقام أو ادعاءات عن منتجات غير مذكورة في صفحة المعهد الوطني للصحة المستشهد بها، ولم تُنقل هنا."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Dietary supplements for immune function and infectious disease — NIH ODS professional fact sheet",
      "url": "https://ods.od.nih.gov/factsheets/ImmuneFunction-HealthProfessional",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
@@ -16613,52 +14582,22 @@ window.NG_DATA = {
     "en": "Stage-by-stage guidance on folate, iron, iodine, choline, vitamin D, calcium, omega-3s, and ginger.",
     "ar": "إرشاد مرحلي لحمض الفوليك والحديد واليود والكولين وفيتامين د والكالسيوم وأوميغا-3 والزنجبيل أثناء الحمل."
    },
-   "rda": {
-    "en": "Not applicable — see each nutrient entry for its RDA/AI.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة جرعته الموصى بها."
-   },
-   "ul": {
-    "en": "Not applicable — see each nutrient entry for its UL.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة حده الأعلى."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
-   "excess": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "deficiency": null,
+   "excess": null,
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "This is a reference overview, not a nutrient monograph; RDA, AI, UL, food sources and deficiency symptoms do not apply to the topic as a whole.",
-     "ar": "هذا عرض مرجعي عام وليس دراسة مغذٍّ واحد؛ لذلك لا تنطبق الجرعة الموصى بها ولا الحد الأعلى ولا المصادر الغذائية ولا أعراض النقص على الموضوع ككل."
-    },
-    {
-     "en": "Specific figures or product claims not stated in the cited NIH page were not verified and are not reproduced here.",
-     "ar": "لم يتم التحقق من أي أرقام أو ادعاءات عن منتجات غير مذكورة في صفحة المعهد الوطني للصحة المستشهد بها، ولم تُنقل هنا."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Dietary supplements during pregnancy — NIH ODS professional fact sheet",
      "url": "https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
@@ -16681,52 +14620,22 @@ window.NG_DATA = {
     "en": "Consumer primer on reading Supplement Facts labels, spotting quality seals, and discussing supplements with doctors.",
     "ar": "دليل تمهيدي لقراءة ملصق الحقائق التغذوية، والتعرّف على شهادات الجودة، ومناقشة المكملات مع الطبيب."
    },
-   "rda": {
-    "en": "Not applicable — see each nutrient entry for its RDA/AI.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة جرعته الموصى بها."
-   },
-   "ul": {
-    "en": "Not applicable — see each nutrient entry for its UL.",
-    "ar": "لا ينطبق — راجع مدخل كل مغذٍّ لمعرفة حده الأعلى."
-   },
+   "rda": null,
+   "ul": null,
    "dri": null,
    "ulTable": null,
-   "foods": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "foods": null,
    "enhance": null,
    "inhibit": null,
    "drugs": [],
-   "deficiency": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
-   "excess": {
-    "en": "Not applicable to a topic overview.",
-    "ar": "لا ينطبق على موضوع مرجعي عام."
-   },
+   "deficiency": null,
+   "excess": null,
    "conflicts": [],
-   "unverified": [
-    {
-     "en": "This is a reference overview, not a nutrient monograph; RDA, AI, UL, food sources and deficiency symptoms do not apply to the topic as a whole.",
-     "ar": "هذا عرض مرجعي عام وليس دراسة مغذٍّ واحد؛ لذلك لا تنطبق الجرعة الموصى بها ولا الحد الأعلى ولا المصادر الغذائية ولا أعراض النقص على الموضوع ككل."
-    },
-    {
-     "en": "Specific figures or product claims not stated in the cited NIH page were not verified and are not reproduced here.",
-     "ar": "لم يتم التحقق من أي أرقام أو ادعاءات عن منتجات غير مذكورة في صفحة المعهد الوطني للصحة المستشهد بها، ولم تُنقل هنا."
-    }
-   ],
+   "unverified": [],
    "sources": [
     {
      "label": "Dietary supplements: what you need to know — NIH ODS consumer fact sheet",
      "url": "https://ods.od.nih.gov/factsheets/WYNTK-Consumer",
-     "accessed": "2026-11-17",
-     "publisher": "NIH ODS"
-    },
-    {
-     "label": "NIH ODS — Nutrient Recommendations (DRI)",
-     "url": "https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx",
      "accessed": "2026-11-17",
      "publisher": "NIH ODS"
     }
