@@ -1785,7 +1785,7 @@ window.NG_DATA = {
    "drugs": [
     {
      "en": "Orlistat, cholestyramine, anticonvulsants and glucocorticoids lower 25(OH)D levels.",
-     "ar": "تخفض الأوريستات والكوليستيرامين ومضادات الاختلاج والغлюكوكورتيكويدات مستوى 25(OH)D.",
+     "ar": "تخفض الأوريستات والكوليستيرامين ومضادات الاختلاج والغلوكوكورتيكويدات مستوى 25(OH)D.",
      "sev": "moderate",
      "src": "ods-prof",
      "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional"
