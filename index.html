@@ -277,16 +277,17 @@
   }
   .letter-heading .line { flex:1; height:1px; background:var(--line); }
 
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(285px,1fr)); gap:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(285px,100%),1fr)); gap:14px; }
   .card {
     background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
-    padding:18px 18px 16px; display:flex; flex-direction:column; gap:8px;
+    padding:18px 18px 16px; display:flex; flex-direction:column; gap:8px; min-width:0;
     transition:box-shadow .15s ease, transform .15s ease, border-color .15s ease;
   }
   .card:hover { box-shadow:0 16px 34px -22px rgba(36,69,58,.4); transform:translateY(-2px); border-color:var(--sage); }
-  .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; flex-wrap:wrap; }
   .card h3 {
     margin:0; font-size:1.08rem; font-weight:600; color:var(--ink); cursor:pointer; line-height:1.3;
+    min-width:0; overflow-wrap:break-word;
   }
   .card h3:hover { color:var(--forest-2); text-decoration:underline; text-underline-offset:3px; }
   .card h3:focus-visible { outline:2px solid var(--gold); outline-offset:3px; border-radius:4px; }
@@ -453,7 +454,7 @@
   }
   .modal {
     background:var(--card); color:var(--ink); border:1px solid var(--line);
-    border-radius:20px; max-width:680px; width:100%; max-height:88vh; overflow-y:auto;
+    border-radius:20px; max-width:760px; width:100%; max-height:88vh; overflow-y:auto;
     padding:24px 26px; box-shadow:0 24px 60px -12px rgba(0,0,0,.45); position:relative;
   }
   .modal-head { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:14px; }
@@ -479,6 +480,27 @@
     display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;
     margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
   }
+  .modal-sec h4 .mini { font-weight:400; color:var(--muted); font-size:.72rem; letter-spacing:0; }
+  .modal-sec--warn { background:var(--warn-bg); border:1px solid var(--warn-line); border-radius:10px; padding:9px 12px; }
+  .modal-sec--warn h4 { color:var(--warn); }
+  .ng-table-wrap { overflow-x:auto; margin-top:8px; border:1px solid var(--line); border-radius:10px; }
+  .ng-table { width:100%; border-collapse:collapse; font-size:.79rem; min-width:480px; }
+  .ng-table th, .ng-table td { border-top:1px solid var(--line); padding:5px 8px; text-align:start; vertical-align:top; }
+  .ng-table thead th { border-top:none; background:var(--cream-2); font-weight:700; color:var(--forest); }
+  .ng-table tbody tr:nth-child(even) { background:var(--cream); }
+  .ng-table .num { font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .ng-list { margin:4px 0 0; padding-inline-start:18px; font-size:.89rem; }
+  .ng-list li { margin:3px 0; }
+  .ng-src { display:block; font-size:.8rem; margin-top:4px; color:var(--muted); overflow-wrap:anywhere; }
+  .ng-src a { color:var(--forest-2); }
+  .ng-meta { font-size:.78rem; color:var(--muted); margin-top:10px; }
+  .sev {
+    display:inline-block; font-size:.63rem; font-weight:700; letter-spacing:.03em;
+    border-radius:999px; padding:2px 7px; margin-inline-end:6px; vertical-align:1px; white-space:nowrap;
+  }
+  .sev.high { background:var(--danger-bg); border:1px solid var(--danger-line); color:var(--danger); }
+  .sev.moderate { background:var(--warn-bg); border:1px solid var(--warn-line); color:var(--warn); }
+  .sev.info { background:var(--ok-bg); border:1px solid var(--ok-line); color:var(--ok); }
 
   /* ---------- Back to top & Footer ---------- */
   #toTop {
@@ -552,7 +574,7 @@
     .toolbar { grid-template-columns:1fr; }
     .toolbar .search-wrap { grid-column:auto; }
     .chips { gap:6px; }
-    .grid { grid-template-columns:1fr; }
+    .grid { grid-template-columns:minmax(0,1fr); }
     .chip, .pick-pill, .icon-btn { min-height:40px; }
     .trust-row { font-size:.72rem; gap:6px 14px; }
   }
@@ -563,10 +585,54 @@
       transition-duration:.01ms !important;
     }
   }
+  /* ---------- Full-document PDF export ---------- */
+  #printRoot { display:none; }
   @media print {
-    .topbar, .toolbar, .chips, .subchips, .az-nav, #toTop, .modal-backdrop, .star-btn, .detail-btn { display:none !important; }
-    body { background:#fff; color:#000; }
-    .card, .table-wrap { box-shadow:none; break-inside:avoid; }
+    @page { size:A4; margin:14mm 12mm 16mm; }
+    html, body { background:#fff !important; color:#000 !important; }
+    body > *:not(#printRoot) { display:none !important; }
+    #printRoot {
+      display:block !important; color:#111; background:#fff;
+      font-size:9.3pt; line-height:1.52;
+      -webkit-print-color-adjust:exact; print-color-adjust:exact;
+    }
+    #printRoot *, #printRoot *::before, #printRoot *::after { box-shadow:none !important; }
+    #printRoot .pr-cover { break-after:page; min-height:255mm; display:flex; flex-direction:column; justify-content:center; }
+    #printRoot .pr-toc { break-after:page; }
+    #printRoot .pr-about { break-after:page; }
+    #printRoot .pr-entry { break-before:page; }
+    #printRoot .pr-entry.pr-first { break-before:auto; }
+    #printRoot h1 { font-size:26pt; line-height:1.15; margin:0 0 6mm; }
+    #printRoot h2 { font-size:16pt; line-height:1.25; margin:0 0 3mm; color:#24453a; break-after:avoid; }
+    #printRoot h3 { font-size:10.5pt; margin:4mm 0 1.5mm; color:#24453a; break-after:avoid; }
+    #printRoot h4 { font-size:9.6pt; margin:3mm 0 1mm; break-after:avoid; }
+    #printRoot p { margin:0 0 2mm; }
+    #printRoot a { color:#24453a; text-decoration:none; }
+    #printRoot .pr-muted { color:#555; }
+    #printRoot .pr-rule { border-top:1px solid #bbb; margin:4mm 0; }
+    #printRoot .pr-kicker { font-size:8pt; letter-spacing:.13em; text-transform:uppercase; color:#8f6428; font-weight:700; }
+    #printRoot .pr-sub { font-size:11pt; color:#333; margin-bottom:5mm; }
+    #printRoot .pr-disclaimer { border:1px solid #d9c9a4; background:#fbf6ea; padding:3mm 4mm; margin:4mm 0; font-size:8.6pt; }
+    #printRoot .pr-entry-head { border-bottom:2px solid #24453a; padding-bottom:2mm; margin-bottom:3mm; }
+    #printRoot .pr-entry-meta { font-size:8.4pt; color:#555; }
+    #printRoot .pr-facts { display:flex; gap:3mm; margin:2mm 0 3mm; }
+    #printRoot .pr-fact { flex:1; border:1px solid #ccc; padding:2mm 2.5mm; break-inside:avoid; }
+    #printRoot .pr-fact .lbl { font-size:7pt; letter-spacing:.05em; text-transform:uppercase; color:#666; font-weight:700; }
+    #printRoot .pr-fact .val { font-size:9pt; font-weight:600; }
+    #printRoot table { width:100%; border-collapse:collapse; font-size:8pt; margin:1.5mm 0 3mm; }
+    #printRoot th, #printRoot td { border:1px solid #bbb; padding:1.2mm 1.8mm; text-align:start; vertical-align:top; }
+    #printRoot thead th { background:#eee7d8; }
+    #printRoot tr, #printRoot .pr-block, #printRoot .pr-source { break-inside:avoid; }
+    #printRoot .pr-toc ol { margin:2mm 0 0; padding-inline-start:6mm; columns:2; column-gap:10mm; font-size:9pt; }
+    #printRoot .pr-toc li { margin:0 0 1mm; break-inside:avoid; }
+    #printRoot .pr-toc h3 { break-after:avoid; }
+    #printRoot .pr-list { margin:1mm 0 2mm; padding-inline-start:5mm; }
+    #printRoot .pr-list li { margin:0 0 1mm; break-inside:avoid; }
+    #printRoot .pr-source { margin:0 0 1.2mm; font-size:7.8pt; overflow-wrap:anywhere; }
+    #printRoot .pr-footer-note { margin-top:5mm; border-top:1px solid #bbb; padding-top:2mm; font-size:7.6pt; color:#555; }
+    #printRoot .pr-sev { font-weight:700; }
+    #printRoot .pr-avoid { break-inside:avoid; }
+    #printRoot .pr-pagebreak { break-before:page; }
   }
 </style>
 </head>
@@ -748,6 +814,10 @@
   </div>
 </div>
 
+<!-- Full-document export target (screen-hidden; printed by Export PDF) -->
+<div id="printRoot" aria-hidden="true"></div>
+
+<script src="data.js"></script>
 <script>
 /* ============================================================================
    1. I18N UI DICTIONARY (EN / AR)
@@ -778,7 +848,7 @@ const UI = {
       '': 'All',
       Vitamin: 'Vitamins',
       Mineral: 'Minerals',
-      Herb: 'Herbs &amp; Botanicals',
+      Herb: 'Herbs & Botanicals',
       Topic: 'Topic Overviews',
       Other: 'Other nutrients',
       Saved: 'Saved ★'
@@ -853,7 +923,7 @@ const UI = {
     cmpAll: 'All nutrients',
     cmpVit: 'Vitamins only',
     cmpMin: 'Minerals only',
-    printBtn: 'Print / Save PDF',
+    printBtn: 'Export complete PDF',
     cmpHeaders: ['Nutrient', 'Class', 'Adult RDA / AI', 'Upper Limit (UL)', 'Primary Role', 'Top Dietary Sources'],
     cmpNote: '<strong>Notes on RDA vs AI &amp; UL:</strong> <em>RDA</em> (Recommended Dietary Allowance) meets needs of 97–98% of healthy individuals; <em>AI</em> (Adequate Intake) is used when evidence is insufficient for an RDA. <em>UL</em> is the highest daily intake unlikely to cause adverse effects (some ULs apply to supplements only, e.g., magnesium 350 mg, niacin 35 mg, folic acid 1,000 mcg).',
     intTitle: 'Synergies, Antagonisms & Daily Timing Guide',
@@ -887,7 +957,43 @@ const UI = {
       aliases: 'Common Forms / Aliases',
       links: 'Official Government Fact Sheets',
       searchDsld: 'Search product labels for this →',
-      notEst: 'Not established'
+      notEst: 'Not established',
+      dri: 'RDA / AI by Age and Sex',
+      ulTable: 'Tolerable Upper Intake by Age',
+      ulNote: 'Upper Limit Note',
+      absorption: 'Absorption Enhancers & Inhibitors',
+      enhance: 'Enhancers',
+      inhibit: 'Inhibitors',
+      drugs: 'Known Drug & Herb Interactions',
+      deficiency: 'Deficiency Symptoms',
+      excess: 'Excess / Toxicity Symptoms',
+      conflicts: 'Source Conflicts',
+      unverified: 'Not Verified',
+      sources: 'Sources & Access Dates',
+      verified: 'Last verified',
+      nextReview: 'Next review',
+      accessed: 'Accessed',
+      noInteractions: 'No specific drug interaction was verified for this entry in the cited source.',
+      sourceNote: 'Source links are secondary verification references, not a prerequisite for understanding the content.',
+      disclaimerShort: 'Educational reference only — not medical advice.',
+      severity: { high: 'High risk', moderate: 'Moderate', info: 'Information' },
+      printNote: 'This PDF edition contains all 88 entries with their DRI tables, safety notes, sources and verification dates.'
+    },
+    pdf: {
+      kicker: 'Independent · Non-commercial · Government-sourced',
+      title: 'The Nutrient Glossary',
+      subtitle: 'A complete reference for vitamins, minerals, herbs and supplement topics',
+      edition: 'Complete PDF edition',
+      generated: 'Generated',
+      contents: 'Contents',
+      about: 'About this edition',
+      aboutBody: 'This edition reproduces every entry on the website: reference intakes by age and sex, upper limits, food sources, absorption factors, documented interactions, deficiency and excess symptoms, source conflicts, unverified items, citations and verification dates.',
+      verification: 'Verification and review',
+      sources: 'Sources',
+      entries: 'entries',
+      langNote: 'This edition is set in English. A full Arabic edition is available from the same page.',
+      coverDisclaimer: 'Educational reference only. This document does not replace individual advice from a physician, pharmacist or registered dietitian, and it is not a prescription.',
+      tocHint: 'Each entry begins on a new page. Tables and interaction blocks are kept whole.'
     }
   },
   ar: {
@@ -990,7 +1096,7 @@ const UI = {
     cmpAll: 'جميع العناصر',
     cmpVit: 'الفيتامينات فقط',
     cmpMin: 'المعادن فقط',
-    printBtn: 'طباعة / حفظ PDF',
+    printBtn: 'تصدير نسخة PDF كاملة',
     cmpHeaders: ['العنصر', 'التصنيف', 'الاحتياج اليومي (RDA/AI)', 'الحد الأعلى (UL)', 'الدور الأساسي', 'أبرز المصادر الغذائية'],
     cmpNote: '<strong>ملاحظة حول RDA و UL:</strong> <em>RDA</em> هو المدخول اليومي الذي يغطي احتياج 97–98% من الأشخاص الأصحاء، و<em>AI</em> مدخول كافٍ يُعتمد عليه عند عدم كفاية الأدلة لتحديد RDA. <em>UL</em> هو الحد اليومي الأعلى الذي يُرجَّح ألا يسبب أضراراً (بعض الحدود تخص المكملات وحدها، مثل المغنيسيوم 350 ملغ، والنياسين 35 ملغ، وحمض الفوليك 1,000 مكغ).',
     intTitle: 'التآزرات ودليل التوقيت اليومي',
@@ -1024,7 +1130,43 @@ const UI = {
       aliases: 'الأشكال الشائعة والمرادفات',
       links: 'النشرات الحكومية الرسمية',
       searchDsld: 'البحث عن منتجات تحتوي هذا العنصر ←',
-      notEst: 'غير محدد'
+      notEst: 'غير محدد',
+      dri: 'الاحتياج اليومي حسب العمر والجنس',
+      ulTable: 'الحد الأعلى الآمن حسب العمر',
+      ulNote: 'ملاحظة على الحد الأعلى',
+      absorption: 'عوامل تعزيز الامتصاص وإعاقته',
+      enhance: 'المعززات',
+      inhibit: 'المعيقات',
+      drugs: 'التفاعلات الدوائية والعشبية المعروفة',
+      deficiency: 'أعراض النقص',
+      excess: 'أعراض الزيادة والتسمم',
+      conflicts: 'تعارض المصادر',
+      unverified: 'ما لم يتم التحقق منه',
+      sources: 'المصادر وتواريخ الاطلاع',
+      verified: 'آخر تحقق',
+      nextReview: 'المراجعة التالية',
+      accessed: 'تاريخ الاطلاع',
+      noInteractions: 'لم يتم التحقق من تفاعل دوائي محدد لهذا المدخل في المصدر المستشهد به.',
+      sourceNote: 'روابط المصادر مراجع تحقق ثانوية، وليست شرطاً لفهم المحتوى.',
+      disclaimerShort: 'مرجع تثقيفي فقط — ليس نصيحة طبية.',
+      severity: { high: 'خطر مرتفع', moderate: 'متوسط', info: 'معلومة' },
+      printNote: 'تضم نسخة الـPDF هذه المدخلات الثمانية والثمانين كاملة مع جداول الاحتياج والتنبيهات والمصادر وتواريخ التحقق.'
+    },
+    pdf: {
+      kicker: 'مستقل · غير تجاري · مصادر حكومية',
+      title: 'دليل المغذيات',
+      subtitle: 'مرجع شامل للفيتامينات والمعادن والأعشاب وموضوعات المكملات',
+      edition: 'نسخة PDF كاملة',
+      generated: 'تاريخ الإنشاء',
+      contents: 'المحتويات',
+      about: 'عن هذه النسخة',
+      aboutBody: 'تعيد هذه النسخة إنتاج كل مدخل في الموقع: المدخول المرجعي حسب العمر والجنس، والحد الأعلى، والمصادر الغذائية، وعوامل الامتصاص، والتفاعلات الموثقة، وأعراض النقص والزيادة، وتعاريض المصادر، وما لم يتم التحقق منه، والإحالات وتواريخ التحقق.',
+      verification: 'التحقق والمراجعة',
+      sources: 'المصادر',
+      entries: 'مدخلاً',
+      langNote: 'أُعدت هذه النسخة باللغة العربية، وتتوفر نسخة إنجليزية كاملة من الصفحة نفسها.',
+      coverDisclaimer: 'مرجع تثقيفي فقط. لا تغني هذه الوثيقة عن استشارة فردية من طبيب أو صيدلي أو أخصائي تغذية مسجل، وليست وصفة طبية.',
+      tocHint: 'يبدأ كل مدخل في صفحة جديدة، وتُحفظ الجداول وكتل التفاعلات كاملة دون تقسيم.'
     }
   }
 };
@@ -1857,9 +1999,17 @@ let savedSet = new Set(JSON.parse(localStorage.getItem("ng_saved") || "[]"));
 let selectedPicks = new Set();
 let dsldState = { q:"", from:0, size:18, total:0 };
 
+const NG = (typeof window !== "undefined" && window.NG_DATA) ? window.NG_DATA : null;
+const NG_ENTRIES = (NG && NG.entries) || {};
+
 const ENTRIES = DATA.map(([name, cat, latin, source, links]) => {
   const d = DETAILS[name] || {};
-  return { name, cat, latin, source, links, ...d };
+  const x = NG_ENTRIES[name] || {};
+  return {
+    name, cat, latin, source, links, ...d,
+    aliases: [...new Set([...(d.aliases || []), ...(x.aliases || [])])],
+    ng: x
+  };
 });
 const ENTRY_MAP = Object.fromEntries(ENTRIES.map(e => [e.name, e]));
 
@@ -1872,6 +2022,34 @@ function savePrefs(){
 function displayName(e){
   if(lang === "ar" && e.ar) return e.ar;
   return e.name;
+}
+
+/* Verification dates are stored as ISO strings and formatted for the active
+   language. Latin digits are kept in Arabic so they match the cited tables. */
+function fmtDate(iso){
+  if(!iso) return "";
+  try {
+    const locale = lang === "ar" ? "ar-u-nu-latn" : "en-GB";
+    return new Intl.DateTimeFormat(locale, { day:"numeric", month:"long", year:"numeric" })
+      .format(new Date(iso + "T00:00:00"));
+  } catch(e) { return iso; }
+}
+
+function verificationNotice(t){
+  const meta = (NG && NG.meta) || {};
+  const accessed = fmtDate(meta.accessed || "2026-11-17");
+  const next = fmtDate(meta.nextReview || "2027-11-17");
+  if(lang === "ar"){
+    return `<strong>التحقق والمراجعة:</strong> روجعت المدخلات الثمانية والثمانون مقابل مصادر مكتب المكملات الغذائية التابع للمعهد الوطني للصحة، والمركز الوطني للصحة التكميلية والتكاملية، وميدلاين بلس بتاريخ <strong>${esc(accessed)}</strong>. ويعرض كل مدخل تاريخ تحققه وتاريخ مراجعته التالية (<strong>${esc(next)}</strong>). وتُفحص الروابط كل ثلاثة أشهر، وتُراجع القيم مقابل منشورات الأكاديميات الوطنية للمدخول المرجعي عند كل مراجعة. قيم البالغين للاسترشاد فقط، والنشرة الرسمية المرتبطة هي المرجع في الحمل والأطفال والحالات المرضية.`;
+  }
+  return `<strong>Verification and review.</strong> All 88 entries were checked against NIH ODS, NIH NCCIH and MedlinePlus on <strong>${esc(accessed)}</strong>. Each entry shows its own verification date and next review date (<strong>${esc(next)}</strong>). Links are re-checked quarterly, and values are re-checked against the National Academies Dietary Reference Intakes at each review. Adult values are for orientation only; the linked official fact sheet is authoritative for pregnancy, children and clinical care.`;
+}
+
+function disclaimerNotice(t){
+  if(NG && NG.meta && NG.meta.disclaimer){
+    return `<strong>${lang === "ar" ? "تنويه" : "Disclaimer"}:</strong> ${esc(lang === "ar" ? NG.meta.disclaimer.ar : NG.meta.disclaimer.en)}`;
+  }
+  return t.disclaimer;
 }
 
 /* Alphabetical key — in Arabic, the definite article "ال" and diacritics are
@@ -2036,8 +2214,8 @@ function applyLanguage(){
   $("sortMode").value = prevSort;
 
   $("kbdHint").innerHTML = t.kbdHint;
-  $("verifyNotice").innerHTML = t.verifyNotice;
-  $("disclaimerNotice").innerHTML = t.disclaimer;
+  $("verifyNotice").innerHTML = verificationNotice(t);
+  $("disclaimerNotice").innerHTML = disclaimerNotice(t);
 
   // Footer
   $("footBrand").textContent = lang === "ar" ? "دليل المغذيات" : "The Nutrient Glossary";
@@ -2325,18 +2503,66 @@ function openModal(name){
   const role = lang === "ar" ? (e.roleAr || e.role) : e.role;
   const foods = lang === "ar" ? (e.foodsAr || e.foods) : e.foods;
   const tips = lang === "ar" ? (e.tipsAr || e.tips) : e.tips;
+  const x = e.ng || {};
+  const L = o => o ? (lang === "ar" ? (o.ar || o.en) : (o.en || o.ar)) : "";
+  const tableHTML = tbl => {
+    if(!tbl || !tbl.rows?.length) return "";
+    const cols = ["age", "male", "female"];
+    if(tbl.rows.some(r => r.pregnancy?.en)) cols.push("pregnancy");
+    if(tbl.rows.some(r => r.lactation?.en)) cols.push("lactation");
+    return `<div class="ng-table-wrap"><table class="ng-table">
+      <thead><tr>${cols.map(c => `<th>${esc(L(tbl.headers[c]))}</th>`).join("")}</tr></thead>
+      <tbody>${tbl.rows.map(r => `<tr>${cols.map(c => `<td class="${c === "age" ? "" : "num"}">${esc(bidiRanges(L(r[c]) || "—"))}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table></div>${tbl.note ? `<p class="ng-src">${esc(bidiRanges(L(tbl.note)))}</p>` : ""}
+      ${tbl.source ? `<p class="ng-src"><a href="${esc(tbl.source.url)}" target="_blank" rel="noopener">${esc(tbl.source.label)} ↗</a> · ${m.accessed} ${esc(fmtDate(tbl.source.accessed))}</p>` : ""}`;
+  };
 
   let html = "";
   if(rda || ul){
     html += `<div class="fact-grid">
       ${rda ? `<div class="fact-box"><div class="lbl">${m.rda}</div><div class="val">${esc(bidiRanges(rda))}</div></div>` : ""}
       ${ul ? `<div class="fact-box"><div class="lbl">${m.ul}</div><div class="val">${esc(bidiRanges(ul))}</div></div>` : ""}
+      ${x.classification ? `<div class="fact-box"><div class="lbl">${m.classif}</div><div class="val">${esc(L(x.classification))}</div></div>` : ""}
     </div>`;
   }
   if(role) html += `<div class="modal-sec"><h4>${m.role}</h4><p>${esc(bidiRanges(role))}</p></div>`;
+  if(x.dri) html += `<div class="modal-sec"><h4>${m.dri} <span class="mini">NIH ODS</span></h4>${tableHTML(x.dri)}</div>`;
+  if(x.ulTable) html += `<div class="modal-sec"><h4>${m.ulTable} <span class="mini">NIH ODS</span></h4>${tableHTML(x.ulTable)}</div>`;
   if(foods) html += `<div class="modal-sec"><h4>${m.foods}</h4><p>${esc(bidiRanges(foods))}</p></div>`;
-  if(tips) html += `<div class="modal-sec"><h4>${m.tips}</h4><p>${esc(bidiRanges(tips))}</p></div>`;
+  if(x.enhance || x.inhibit){
+    html += `<div class="modal-sec"><h4>${m.absorption}</h4>`;
+    if(x.enhance) html += `<p><strong>${m.enhance}:</strong> ${esc(bidiRanges(L(x.enhance)))}</p>`;
+    if(x.inhibit) html += `<p><strong>${m.inhibit}:</strong> ${esc(bidiRanges(L(x.inhibit)))}</p>`;
+    html += `</div>`;
+  }
+  if(x.drugs?.length){
+    html += `<div class="modal-sec"><h4>${m.drugs}</h4><ul class="ng-list">${x.drugs.map(d =>
+      `<li><span class="sev ${esc(d.sev || "info")}">${esc(m.severity[d.sev] || m.severity.info)}</span>${esc(bidiRanges(L(d)))}
+        ${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener" aria-label="${esc(m.sources)}">↗</a>` : ""}</li>`).join("")}</ul></div>`;
+  } else if(x.category === "Herb"){
+    html += `<div class="modal-sec"><h4>${m.drugs}</h4><p>${m.noInteractions}</p></div>`;
+  }
+  if(x.deficiency) html += `<div class="modal-sec"><h4>${m.deficiency}</h4><p>${esc(bidiRanges(L(x.deficiency)))}</p></div>`;
+  if(x.excess) html += `<div class="modal-sec"><h4>${m.excess}</h4><p>${esc(bidiRanges(L(x.excess)))}</p></div>`;
+  if(x.ulNote) html += `<div class="modal-sec"><h4>${m.ulNote}</h4><p>${esc(bidiRanges(L(x.ulNote)))}</p></div>`;
+  if(x.conflicts?.length){
+    html += `<div class="modal-sec modal-sec--warn"><h4>${m.conflicts}</h4><ul class="ng-list">${x.conflicts.map(c => `<li>${esc(bidiRanges(L(c)))}</li>`).join("")}</ul></div>`;
+  }
+  if(x.unverified?.length){
+    html += `<div class="modal-sec modal-sec--warn"><h4>${m.unverified}</h4><ul class="ng-list">${x.unverified.map(c => `<li>${esc(bidiRanges(L(c)))}</li>`).join("")}</ul></div>`;
+  }
+  if(tips && e.cat !== "Herb") html += `<div class="modal-sec"><h4>${m.tips}</h4><p>${esc(bidiRanges(tips))}</p></div>`;
   if(e.aliases?.length) html += `<div class="modal-sec"><h4>${m.aliases}</h4><p style="color:var(--muted);">${esc(e.aliases.join(" · "))}</p></div>`;
+
+  if(x.sources?.length){
+    html += `<div class="modal-sec"><h4>${m.sources}</h4>
+      ${x.sources.map(s => `<span class="ng-src"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)} ↗</a> · ${m.accessed} ${esc(fmtDate(s.accessed))}</span>`).join("")}
+      <p class="ng-meta">${esc(m.sourceNote)}</p>
+    </div>`;
+  }
+  if(x.verified){
+    html += `<p class="ng-meta">${m.verified}: ${esc(fmtDate(x.verified))} · ${m.nextReview}: ${esc(fmtDate(x.nextReview))} · ${esc(NG?.meta?.disclaimer? L(NG.meta.disclaimer) : m.disclaimerShort)}</p>`;
+  }
 
   html += `<div class="modal-sec"><h4>${m.links}</h4><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;">
     ${e.links.map(([lbl, url]) => `<a class="btn-outline" style="text-decoration:none;font-size:.83rem;padding:6px 14px;" href="${esc(url)}" target="_blank" rel="noopener">${esc(t.linkLabels[lbl] || lbl)} (${esc(e.source)}) ↗</a>`).join("")}
@@ -2432,7 +2658,156 @@ $("cmpBody").addEventListener("click", ev => {
 });
 $("cmpFilter").addEventListener("input", renderCompare);
 $("cmpType").addEventListener("change", renderCompare);
-$("printBtn").onclick = () => window.print();
+
+/* ============================================================================
+   9b. COMPLETE PDF EXPORT
+   Builds a self-contained print document (cover, contents, every entry,
+   sources and verification dates) and prints only that document.
+   ============================================================================ */
+function buildPrintDocument(){
+  const root = $("printRoot");
+  if(!root) return;
+  const t = UI[lang], m = t.modal, p = t.pdf;
+  const meta = (NG && NG.meta) || {};
+  const L = o => o ? (lang === "ar" ? (o.ar || o.en) : (o.en || o.ar)) : "";
+  const asOf = fmtDate(meta.accessed || "2026-11-17");
+  const next = fmtDate(meta.nextReview || "2027-11-17");
+  const groups = [
+    { key: "Vitamin", title: t.cats.Vitamin },
+    { key: "Mineral", title: t.cats.Mineral },
+    { key: "Herb", title: t.cats.Herb },
+    { key: "Other", title: t.cats.Other },
+    { key: "Topic", title: t.cats.Topic }
+  ];
+  const sortName = e => lang === "ar" ? arSortKey(displayName(e)) : displayName(e).toLowerCase();
+  const byGroup = g => ENTRIES.filter(e => e.cat === g.key).sort((a, b) => {
+    if(lang === "ar") return cmpAr(displayName(a), displayName(b));
+    return sortName(a).localeCompare(sortName(b), "en");
+  });
+
+  const tableHTML = tbl => {
+    if(!tbl || !tbl.rows?.length) return "";
+    const cols = ["age", "male", "female"];
+    if(tbl.rows.some(r => r.pregnancy?.en)) cols.push("pregnancy");
+    if(tbl.rows.some(r => r.lactation?.en)) cols.push("lactation");
+    return `<div class="pr-block">
+      <table><thead><tr>${cols.map(c => `<th>${esc(L(tbl.headers[c]))}</th>`).join("")}</tr></thead>
+      <tbody>${tbl.rows.map(r => `<tr>${cols.map(c => `<td>${esc(bidiRanges(L(r[c]) || "—"))}</td>`).join("")}</tr>`).join("")}</tbody></table>
+      ${tbl.note ? `<p class="pr-muted">${esc(bidiRanges(L(tbl.note)))}</p>` : ""}
+      ${tbl.source ? `<p class="pr-source"><a href="${esc(tbl.source.url)}">${esc(tbl.source.label)}</a> · ${esc(m.accessed)} ${esc(fmtDate(tbl.source.accessed))}</p>` : ""}
+    </div>`;
+  };
+
+  const section = (title, body) => body ? `<div class="pr-block"><h3>${esc(title)}</h3>${body}</div>` : "";
+
+  const entryHTML = (e, isFirst) => {
+    const x = e.ng || {};
+    const role = L(x.role) || (lang === "ar" ? (e.roleAr || e.role) : e.role);
+    const foods = L(x.foods) || (lang === "ar" ? (e.foodsAr || e.foods) : e.foods);
+    const rda = L(x.rda) || (lang === "ar" ? (e.rdaAr || e.rda) : e.rda);
+    const ul = L(x.ul) || (lang === "ar" ? (e.ulAr || e.ul) : e.ul);
+    const tips = lang === "ar" ? (e.tipsAr || e.tips) : e.tips;
+    const alt = lang === "ar" ? e.name : (e.ar || "");
+    let html = `<section class="pr-entry${isFirst ? " pr-first" : ""}">
+      <div class="pr-entry-head">
+        <div class="pr-kicker">${esc(t.cats[e.cat] || e.cat)}${x.classification ? " · " + esc(L(x.classification)) : ""}</div>
+        <h2>${esc(displayName(e))}</h2>
+        <div class="pr-entry-meta">${esc(alt)}${e.latin ? " · " + esc(e.latin) : ""}${e.source ? " · " + esc(e.source) : ""}</div>
+      </div>
+      <div class="pr-facts">
+        <div class="pr-fact"><div class="lbl">${esc(m.rda)}</div><div class="val">${esc(bidiRanges(rda || "—"))}</div></div>
+        <div class="pr-fact"><div class="lbl">${esc(m.ul)}</div><div class="val">${esc(bidiRanges(ul || "—"))}</div></div>
+      </div>`;
+    html += section(m.role, role ? `<p>${esc(bidiRanges(role))}</p>` : "");
+    if(x.dri) html += section(m.dri, tableHTML(x.dri));
+    if(x.ulTable) html += section(m.ulTable, tableHTML(x.ulTable));
+    html += section(m.foods, foods ? `<p>${esc(bidiRanges(foods))}</p>` : "");
+    if(x.enhance || x.inhibit){
+      html += section(m.absorption,
+        (x.enhance ? `<p><strong>${esc(m.enhance)}:</strong> ${esc(bidiRanges(L(x.enhance)))}</p>` : "") +
+        (x.inhibit ? `<p><strong>${esc(m.inhibit)}:</strong> ${esc(bidiRanges(L(x.inhibit)))}</p>` : ""));
+    }
+    if(x.drugs?.length){
+      const drugSrc = x.drugs.find(d => d.url)?.url || x.sources?.[0]?.url || "";
+      const drugSource = (x.sources || []).find(s => s.url === drugSrc);
+      const drugAccessed = drugSource?.accessed || meta.accessed;
+      html += section(m.drugs, `<ul class="pr-list">${x.drugs.map(d =>
+        `<li><span class="pr-sev">${esc(m.severity[d.sev] || m.severity.info)}:</span> ${esc(bidiRanges(L(d)))}</li>`).join("")}</ul>` +
+        (drugSrc ? `<p class="pr-source"><a href="${esc(drugSrc)}">${esc(drugSource?.label || m.sources)}</a> · ${esc(m.accessed)} ${esc(fmtDate(drugAccessed))}</p>` : ""));
+    } else if(x.category === "Herb"){
+      html += section(m.drugs, `<p>${esc(m.noInteractions)}</p>`);
+    }
+    html += section(m.deficiency, x.deficiency ? `<p>${esc(bidiRanges(L(x.deficiency)))}</p>` : "");
+    html += section(m.excess, x.excess ? `<p>${esc(bidiRanges(L(x.excess)))}</p>` : "");
+    html += section(m.ulNote, x.ulNote ? `<p>${esc(bidiRanges(L(x.ulNote)))}</p>` : "");
+    if(x.conflicts?.length) html += section(m.conflicts, `<ul class="pr-list">${x.conflicts.map(c => `<li>${esc(bidiRanges(L(c)))}</li>`).join("")}</ul>`);
+    if(x.unverified?.length) html += section(m.unverified, `<ul class="pr-list">${x.unverified.map(c => `<li>${esc(bidiRanges(L(c)))}</li>`).join("")}</ul>`);
+    if(tips && e.cat !== "Herb") html += section(m.tips, `<p>${esc(bidiRanges(tips))}</p>`);
+    if(e.aliases?.length) html += section(m.aliases, `<p>${esc(e.aliases.join(" · "))}</p>`);
+    if(x.sources?.length){
+      html += section(m.sources, x.sources.map(s =>
+        `<p class="pr-source"><a href="${esc(s.url)}">${esc(s.label)}</a> · ${esc(m.accessed)} ${esc(fmtDate(s.accessed))}</p>`).join(""));
+    }
+    html += `<p class="pr-footer-note">${esc(m.verified)}: ${esc(fmtDate(x.verified || meta.accessed))} · ${esc(m.nextReview)}: ${esc(fmtDate(x.nextReview || meta.nextReview))} · ${esc(m.sourceNote)}</p>`;
+    html += `</section>`;
+    return html;
+  };
+
+  let html = `<section class="pr-cover">
+    <div class="pr-kicker">${esc(p.kicker)}</div>
+    <h1>${esc(p.title)}</h1>
+    <p class="pr-sub">${esc(p.subtitle)}</p>
+    <div class="pr-rule"></div>
+    <p><strong>${esc(p.edition)}</strong> · ${ENTRIES.length} ${esc(p.entries)} · ${esc(p.generated)} ${esc(asOf)}</p>
+    <p class="pr-muted">${esc(p.langNote)}</p>
+    <div class="pr-disclaimer"><strong>${esc(lang === "ar" ? "تنويه" : "Disclaimer")}:</strong> ${esc(p.coverDisclaimer)}</div>
+    <p class="pr-muted">azzubair.ly/nutrient-glossary</p>
+  </section>`;
+
+  html += `<section class="pr-toc">
+    <h2>${esc(p.contents)}</h2>
+    <p class="pr-muted">${esc(p.tocHint)}</p>`;
+  groups.forEach(g => {
+    const items = byGroup(g);
+    if(!items.length) return;
+    html += `<h3>${esc(g.title)} (${items.length})</h3><ol>${items.map(e =>
+      `<li>${esc(displayName(e))}${lang === "ar" ? "" : " — " + esc(e.ar || "")}</li>`).join("")}</ol>`;
+  });
+  html += `</section>`;
+
+  html += `<section class="pr-about">
+    <h2>${esc(p.about)}</h2>
+    <p>${esc(p.aboutBody)}</p>
+    <p>${esc(L(meta.sourceNote) || "")}</p>
+    <p>${esc(L(meta.conflictNote) || "")}</p>
+    <h3>${esc(p.verification)}</h3>
+    <p>${esc(L(meta.reviewPolicy) || "")}</p>
+    <p><strong>${esc(m.verified)}:</strong> ${esc(asOf)} · <strong>${esc(m.nextReview)}:</strong> ${esc(next)}</p>
+    <div class="pr-disclaimer">${esc(L(meta.disclaimer) || "")}</div>
+  </section>`;
+
+  let first = true;
+  groups.forEach(g => {
+    byGroup(g).forEach(e => {
+      html += entryHTML(e, first);
+      first = false;
+    });
+  });
+
+  root.innerHTML = html;
+}
+
+function exportPDF(){
+  buildPrintDocument();
+  const finish = () => {
+    try { window.print(); }
+    finally { document.title = UI[lang].docTitle; }
+  };
+  // Give the browser one frame to lay out the generated document before printing.
+  requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(finish, 60)));
+}
+
+$("printBtn").onclick = exportPDF;
 
 /* ============================================================================
    10. INTERACTIONS & DAILY TIMING
