@@ -17,7 +17,7 @@ herbs and supplement topics.
   values; a field that does not apply is simply left out
 - A live search of real product labels in the NIH Dietary Supplement Label Database
   (DSLD v9 API)
-- Full right-to-left Arabic layout, dark / light themes, no tracking scripts
+- Full right-to-left Arabic layout, dark / light themes, and Google Analytics 4 page-view tracking
 
 ## Data and verification
 
